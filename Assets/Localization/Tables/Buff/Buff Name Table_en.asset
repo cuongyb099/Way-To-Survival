@@ -1,0 +1,236 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Buff Name Table_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: c95b51ae00502aa40bf8f5ebad5217ae, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 6179708859773091850
+  m_TableData:
+  - m_Id: 196690829312
+    m_Localized: Rage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5300449959936
+    m_Localized: Increase <color=#FFB600>ATK</color> by <color=#3ECDFF>{0}%</color>
+    m_Metadata:
+      m_Items:
+      - rid: 6179708859773091850
+  - m_Id: 2820299284480
+    m_Localized: Life Steal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6333515423744
+    m_Localized: 'When dealing damage to an enemy, heal an ammount equal to <color=#3ECDFF>{0}%</color>
+      of the <color=#FFB600>Damage Dealt</color> '
+    m_Metadata:
+      m_Items:
+      - rid: 6179708859773091850
+  - m_Id: 1276480839680
+    m_Localized: Chaos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5749127241728
+    m_Localized: After <color=#3ECDFF>{1}</color> shots/slashes Increase <color=#FFB600>ATK
+      Speed</color> by <color=#3ECDFF>{0}%</color> for <color=#3ECDFF>{2}</color>
+      seconds, each stack is time independent
+    m_Metadata:
+      m_Items:
+      - rid: 6179708859773091850
+  - m_Id: 1836495921152
+    m_Localized: 'Rapid Fire
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5375829991424
+    m_Localized: "Increase <color=#FFB600>ATK Speed</color> by <color=#3ECDFF>{0}%</color>\r"
+    m_Metadata:
+      m_Items:
+      - rid: 6179708859773091850
+  - m_Id: 636614598656
+    m_Localized: Muscle UP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5643770519552
+    m_Localized: Increase <color=#FFB600>Base ATK</color> by <color=#3ECDFF>{0}</color>
+    m_Metadata:
+      m_Items:
+      - rid: 6179708859773091850
+  - m_Id: 241267892224
+    m_Localized: Weapon Tweaking
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6107962531840
+    m_Localized: Increase <color=#FFB600>Flat ATK</color> by <color=#3ECDFF>{0}</color>
+    m_Metadata:
+      m_Items:
+      - rid: 6179708859773091850
+  - m_Id: 663546224640
+    m_Localized: Increase Armour
+    m_Metadata:
+      m_Items: []
+  - m_Id: 700405768192
+    m_Localized: Hardened
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2954982580224
+    m_Localized: Haste
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2777076981760
+    m_Localized: Mag Extension
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2715055808512
+    m_Localized: Mag Increase
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1591921860608
+    m_Localized: 'Opened Wound
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1533583286272
+    m_Localized: 'Better Aiming
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1512959893504
+    m_Localized: Stabilize
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1472426139648
+    m_Localized: On Target
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1320688803840
+    m_Localized: Trigger Discipline
+    m_Metadata:
+      m_Items: []
+  - m_Id: 737034625024
+    m_Localized: Resilience Aura
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1136168787968
+    m_Localized: Vitality Surge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1009731493888
+    m_Localized: Health Infusion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5743162941440
+    m_Localized: Increase <color=#FFB600>Base HP</color> by <color=#3ECDFF>{0}</color>
+    m_Metadata:
+      m_Items:
+      - rid: 6179708859773091850
+  - m_Id: 5746979758080
+    m_Localized: Increase <color=#FFB600>Mag Capacity</color> by <color=#3ECDFF>{0}%</color>
+    m_Metadata:
+      m_Items:
+      - rid: 6179708859773091850
+  - m_Id: 5750758825984
+    m_Localized: Increase <color=#FFB600>Crit Rate</color> by <color=#3ECDFF>{0}%</color>
+    m_Metadata:
+      m_Items:
+      - rid: 6179708859773091850
+  - m_Id: 5974411698176
+    m_Localized: Increase <color=#FFB600>Crit Damage</color> by <color=#3ECDFF>{0}%</color>
+    m_Metadata:
+      m_Items:
+      - rid: 6179708859773091850
+  - m_Id: 6087200727040
+    m_Localized: Increase <color=#FFB600>DEF</color> by <color=#3ECDFF>{0}%</color>
+    m_Metadata:
+      m_Items:
+      - rid: 6179708859773091850
+  - m_Id: 6109594116096
+    m_Localized: Attacks have <color=#3ECDFF>{1}%</color> chance to deal damage equal
+      to <color=#3ECDFF>{0}%</color> of <color=#FFB600>ATK</color>
+    m_Metadata:
+      m_Items:
+      - rid: 6179708859773091850
+  - m_Id: 6281048875008
+    m_Localized: Increase <color=#FFB600>HP</color> by <color=#3ECDFF>{0}%</color>
+    m_Metadata:
+      m_Items:
+      - rid: 6179708859773091850
+  - m_Id: 6365195001856
+    m_Localized: 'Reduce <color=#FFB600>Gun Recoil</color> by <color=#3ECDFF>{0}%</color>  '
+    m_Metadata:
+      m_Items:
+      - rid: 6179708859773091850
+  - m_Id: 6387655499776
+    m_Localized: 'Reduce <color=#FFB600>Gun Spread</color> by <color=#3ECDFF>{0}%</color>  '
+    m_Metadata:
+      m_Items:
+      - rid: 6179708859773091850
+  - m_Id: 6409713344512
+    m_Localized: Increase <color=#FFB600>Movement Speed</color> by <color=#3ECDFF>{0}%</color>
+    m_Metadata:
+      m_Items:
+      - rid: 6179708859773091850
+  - m_Id: 6563593969664
+    m_Localized: Increase <color=#FFB600>Mag Capacity</color> by <color=#3ECDFF>{0}</color>
+    m_Metadata:
+      m_Items:
+      - rid: 6179708859773091850
+  - m_Id: 6644229464064
+    m_Localized: Increase <color=#FFB600>Flat DEF</color> by <color=#3ECDFF>{0}</color>
+    m_Metadata:
+      m_Items:
+      - rid: 6179708859773091850
+  - m_Id: 6653658259456
+    m_Localized: Increase <color=#FFB600>Flat HP</color> by <color=#3ECDFF>{0}</color>
+    m_Metadata:
+      m_Items:
+      - rid: 6179708859773091850
+  - m_Id: 16890390353780736
+    m_Localized: Event_Player_ATKBuff
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16890627810107392
+    m_Localized: Increase <color=#D70000>Zombies ATK</color> by 30% for this wave
+    m_Metadata:
+      m_Items:
+      - rid: 6179708859773091850
+  - m_Id: 16891507292741632
+    m_Localized: Event_Player_SPDBuff
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16891558987538432
+    m_Localized: Increase <color=#FFB600>Player Movement Speed</color> by 30% for
+      this wave
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16900209349468160
+    m_Localized: Increase <color=#D70000>Zombies Movement Speed</color> by 30% for
+      this wave
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16900971488059392
+    m_Localized: Increase <color=#FFB600>Player ATK</color> by 30% for this wave
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 6179708859773091850
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00e06f1bd204000000e0efa2c205000000e0af923a05000000e06fa8e304000000e0ef0a2205000000e0ef1e8e05000000e02f2f3905000000e0af123a05000000e0eff33a05000000e0af066f05000000e06f498905000000e02f808e05000000e0af6bb605000000e02f03ca05000000e0ef3dcf05000000e0af60d405000000e0af34f805000000e0effa0a06000000e0ef2c0d06000000a0a7beef013c00

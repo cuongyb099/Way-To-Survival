@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43b711d6332bd8843b490e4dd2fa031b, type: 3}
+  m_Name: MythListSO
+  m_EditorClassIdentifier: 
+  Buffs:
+  - {fileID: 11400000, guid: 9c90044d50dac544d9d6595e5300c9fd, type: 2}
+  - {fileID: 11400000, guid: 2ec444e8bfa7db243a84535bef3f5c7d, type: 2}
+  - {fileID: 11400000, guid: cb42c7dbd3b50fd48856c2a69b3425a2, type: 2}
+  - {fileID: 11400000, guid: b985d49d26b17624aba2c646ac98190e, type: 2}
+  - {fileID: 11400000, guid: 1cdeb6f06a499cb469df644c5fa429de, type: 2}
+  - {fileID: 11400000, guid: 3c1fb846cea9e3a45bef867ebe351d04, type: 2}
+  - {fileID: 11400000, guid: 574340c6fe538d24987f77836605d49a, type: 2}
+  - {fileID: 11400000, guid: 6b021afd12ba27b48bf956820e979f53, type: 2}
+  - {fileID: 11400000, guid: 2102c1fc8a684094c8c79b654a910ea5, type: 2}

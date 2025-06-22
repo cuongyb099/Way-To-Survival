@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1d061253-4c50-410e-860e-6602e203124c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../.idea/.idea.My project/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/.idea.My project/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/.idea.My project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/.idea.My project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/.idea.WTS/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/.idea.WTS/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/.idea.WTS/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Art.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Art/Rectangle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Art/Rectangle.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Art/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Art/UI/Btn Build.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Art/UI/Btn Build.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Art/UI/Buiding Btn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Art/UI/Buiding Btn.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Art/UI/Joystick.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Art/UI/Joystick.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mat/Green.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mat/Green.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mat/Object Transparent.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mat/White.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mat/White.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Plugins.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProBuilder Data.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProBuilder Data/Default Material Palette.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProBuilder Data/New Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Resources/BillingMode.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Resources/BillingMode.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Resources/DOTweenSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Scene.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Scene/basic.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Building.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Building/BaseStructure.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DamageInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DamageInfo.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/DamageInfo.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Input System.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Input System/Player Controls.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Input System/Player Controls.inputactions.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tech.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tech/Logger.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tech/Logger/LogCommon.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tech/Logger/LogCommon.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tech/Observer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tech/Observer/EventID.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tech/Observer/Subject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tech/Pooling.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tech/Pooling/ObjectPool.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tech/Singleton.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tech/Singleton/Singleton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tech/Tech.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tech/Tech.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Settings.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Settings/High_PipelineAsset.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Settings/High_PipelineAsset.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Settings/High_PipelineAsset_ForwardRenderer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Settings/High_PipelineAsset_ForwardRenderer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Settings/Low_PipelineAsset.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Settings/Low_PipelineAsset.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Settings/Low_PipelineAsset_ForwardRenderer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Settings/Low_PipelineAsset_ForwardRenderer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Settings/Medium_PipelineAsset.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Settings/Medium_PipelineAsset.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Settings/Medium_PipelineAsset_ForwardRenderer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Settings/Medium_PipelineAsset_ForwardRenderer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Settings/Very High_PipelineAsset.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Settings/Very High_PipelineAsset.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Settings/Very High_PipelineAsset_ForwardRenderer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Settings/Very High_PipelineAsset_ForwardRenderer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Settings/Very Low_PipelineAsset.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Settings/Very Low_PipelineAsset.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Settings/Very Low_PipelineAsset_ForwardRenderer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Settings/Very Low_PipelineAsset_ForwardRenderer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Shader/Object Transparent.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Shader/Object Transparent.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TileMap.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TileMap/Rectangle.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TileMap/Rectangle.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/AudioManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/ClusterInputManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/DynamicsManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/EditorSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/InputManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/MemorySettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/NavMeshAreas.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/PackageManagerSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/Packages/com.unity.services.core/Settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/Physics2DSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/PresetManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/ProjectVersion.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/SceneTemplateSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/TimeManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/URPProjectSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/UnityConnectSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/VFXManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/VersionControlSettings.asset" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/IDamagable.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2kzQUheIbkxCmSigtyZOqInzdNg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.tools",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\longh\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\longh\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\longh\\AppData\\Local\\Symbols\\src"
+    ]
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1d061253-4c50-410e-860e-6602e203124c" name="Changes" comment="" />
+      <created>1724283943024</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1724283943024</updated>
+      <workItem from="1724283944574" duration="401000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

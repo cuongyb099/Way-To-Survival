@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7852836c0c2d412d869116496805ab45, type: 3}
+  m_Name: Wave Do An
+  m_EditorClassIdentifier: 
+  <ChooseSpawnPointStrategy>k__BackingField: 3
+  <TimeStrategy>k__BackingField: 1
+  <EnemiesPrefabs>k__BackingField:
+  - SpawnRate: 1
+    Prefab: {fileID: 4701767259370979263, guid: 34ab8271d2c8f2b49b6762642729733e, type: 3}
+  <SpecifiedWaveIndex>k__BackingField: 0
+  <DelayTime>k__BackingField: 0.25
+  <Amount>k__BackingField: 10
+  <UseEnemyAmountChangeStrategy>k__BackingField: 1
+  <EnemyChangeStrategy>k__BackingField: 0
+  <ChangeFlat>k__BackingField: 1
+  <ChangePercent>k__BackingField: 0
+  <ChangeCurve>k__BackingField:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  <SpecifiedChange>k__BackingField: 

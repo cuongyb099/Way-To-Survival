@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Art/Font/ChakraPetch-Italic.ttf.meta
+guid: 9a78515d933ce1c4f9b646cd250f407c
+========
+guid: f0a6734441127174faad241027c2d3ab
+>>>>>>>> katDevelop:Assets/Art/Font/Prompt-BoldItalic.ttf.meta
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+<<<<<<<< HEAD:Assets/Art/Font/ChakraPetch-Italic.ttf.meta
+  - Chakra Petch
+========
+  - Prompt
+>>>>>>>> katDevelop:Assets/Art/Font/Prompt-BoldItalic.ttf.meta
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

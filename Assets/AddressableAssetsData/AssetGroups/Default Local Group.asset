@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 7b6457b04081fa04bb2db89e5736b50b
+  m_SerializeEntries:
+  - m_GUID: 72a45060b5c67964a8d7d4ad074f976b
+    m_Address: UI/Structure Slot
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4efd46026f3db27439749c4c2250ce5a
+    m_Address: Assets/Prefab/UI/Popup
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ff90a11aec98d764798b7b58dd1a696f
+    m_Address: Assets/Data/Items
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Inventory
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0c8f845dbe4ac44409a43f402bd4c069
+    m_Address: Assets/Scripts/Inventory System/Sample/Gold.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Inventory
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b9b8f14ef8de9424e9e4eacb848c43c7
+    m_Address: Assets/Prefab/UI/Item Shop/Gun Item.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f4892d64385379048864b0ceb9ce2705
+    m_Address: Assets/Prefab/UI/Item Shop/Item Panel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: f87357868bafec74b8eaa3e2bab0161e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: a3ca01059b5fd1143b048ea39d6258c6, type: 2}
+    - {fileID: 11400000, guid: 963f37c3b24f01343bf0d090898f2018, type: 2}

@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Item Table Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Item Table
+  m_TableCollectionNameGuidString: fd6713aa530e7a244b6d797fbc2425fb
+  m_Entries:
+  - m_Id: 1139121577984
+    m_Key: Item_Weapon_Gun_AK12SO_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1441891606528
+    m_Key: Item_Weapon_Gun_AWMSO_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1445427404800
+    m_Key: Item_Weapon_Gun_Mag7SO_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1456244514816
+    m_Key: Item_Weapon_Gun_USPSO_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1461286068224
+    m_Key: Item_Weapon_Gun_XM1014SO_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1748902076416
+    m_Key: Item_Weapon_Melee_BayonetSO_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2952562466816
+    m_Key: Item_Weapon_Gun_MP5SO_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2804799958409216
+    m_Key: Item_Weapon_Gun_AK12SO_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2804835744210944
+    m_Key: Item_Weapon_Gun_AWMSO_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2804863774744576
+    m_Key: Item_Weapon_Gun_Mag7SO_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2804900923695104
+    m_Key: Item_Weapon_Gun_USPSO_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2804945404289024
+    m_Key: Item_Weapon_Gun_XM1014SO_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2804979273293824
+    m_Key: Item_Weapon_Melee_BayonetSO_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2805007387713536
+    m_Key: Item_Weapon_Gun_MP5SO_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2805612407676928
+    m_Key: Item_Weapon_Gun_RevolverSO_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2805614236393472
+    m_Key: Item_Weapon_Gun_RevolverSO_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2805886224424960
+    m_Key: Item_Weapon_Gun_SCARSO_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2805922366742528
+    m_Key: Item_Weapon_Gun_SCARSO_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58675206979104768
+    m_Key: Item_Weapon_MedkitClass
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 6179708858981154840
+  references:
+    version: 2
+    RefIds:
+    - rid: 6179708858981154840
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1734878685348

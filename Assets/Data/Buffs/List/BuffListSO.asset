@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e30461c4b03b4449287df572115758, type: 3}
+  m_Name: BuffListSO
+  m_EditorClassIdentifier: 
+  Buffs:
+    _serializedList:
+    - Key: 0
+      Value: {fileID: 11400000, guid: 47b340003829af64c854b62a798a69fc, type: 2}
+    - Key: 1
+      Value: {fileID: 11400000, guid: dd6d938039d60bc47a7c7371ea9eefc7, type: 2}
+    - Key: 2
+      Value: {fileID: 11400000, guid: 9dd3c35422a6863498dbfe1e0a226261, type: 2}
+    - Key: 3
+      Value: {fileID: 11400000, guid: 907161304f50dc64ebeb871d18897c71, type: 2}
+    - Key: 4
+      Value: {fileID: 11400000, guid: 6d997d9e8d82d674fbffa1e6ecc057d4, type: 2}
+  BuffRarityCard:
+    _serializedList:
+    - Key: 0
+      Value: {fileID: 2938606218471527010, guid: d1cb382dfcb17f74ab7e112daec4e357, type: 3}
+    - Key: 1
+      Value: {fileID: 2938606218471527010, guid: 25023e3a20c9196499871e611f75bc1b, type: 3}
+    - Key: 2
+      Value: {fileID: 2938606218471527010, guid: 17a9c6d25f4a02843967d21fa524923f, type: 3}
+    - Key: 3
+      Value: {fileID: 2938606218471527010, guid: fe4150b567778ed41bdca45d0ea1b515, type: 3}
+    - Key: 4
+      Value: {fileID: 2938606218471527010, guid: 0ba5a95691b2dc34c942f4f82f80d582, type: 3}
+  BuffRarityRate:
+    _serializedList:
+    - Key: 0
+      Value: 100
+    - Key: 1
+      Value: 70
+    - Key: 2
+      Value: 30
+    - Key: 3
+      Value: 10
+    - Key: 4
+      Value: 1

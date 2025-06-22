@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f08d2ae4cba14087c1ed36193d82b, type: 3}
+  m_Name: SprinKnockback
+  m_EditorClassIdentifier: 
+  mBehaviorSource:
+    behaviorName: Behavior
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(5.25529861,15.6523743)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(0.460412979,107.301041)"},"ID":1,"Name":"Sequence","Instant":true,"AbortTypeabortType":"LowerPriority","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.StackedConditional","NodeData":{"Offset":"(-166.844879,144.7013)"},"ID":2,"Name":"Stacked
+        Conditional","Instant":true,"Conditional[]conditionals":[{"Type":"CanSeePlayerBehaviorJob","Value":{"SharedTransformPlayerTransform":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Player","IsShared":true,"IsGlobal":true,"TransformmValue":0},"CanSeePlayerDataData":{"BooleanSeePlayer":false,"Vector3OriginPoint":"(0,0,0)","Vector3Direction":"(0,0,0)","SingleDistance":0,"EntitiesJobSOEntitiesJob":1}}},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.Math.BoolComparison","Value":{"SharedBoolbool1":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"Interrupted
+        Sprint Attack","IsShared":true,"BooleanmValue":false},"SharedBoolbool2":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}}}],"ComparisonTypecomparisonType":"Sequence","BooleangraphLabel":true},{"Type":"BehaviorDesigner.Runtime.Tasks.ReturnSuccess","NodeData":{"Offset":"(12.9000616,146.347183)"},"ID":3,"Name":"Return
+        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(1.35139656,102.972977)"},"ID":4,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.Math.BoolComparison","NodeData":{"Offset":"(-60.54019,108.005119)"},"ID":5,"Name":"Bool
+        Comparison","Instant":true,"SharedBoolbool1":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"Is
+        Sprint","IsShared":true,"BooleanmValue":false},"SharedBoolbool2":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}},{"Type":"RotateToTarget","NodeData":{"Offset":"(78.33334,107.777771)"},"ID":6,"Name":"Rotate
+        To Target","Instant":true,"SharedTransformTarget":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Player","IsShared":true,"IsGlobal":true,"TransformmValue":2}}]}]},{"Type":"ZombieSprintToward","NodeData":{"Offset":"(146.174484,140.157547)"},"ID":7,"Name":"Zombie
+        Sprint Toward","Instant":true,"SharedTransformPlayerTransform":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Player","IsShared":true,"IsGlobal":true,"TransformmValue":3},"SingleSpeedAdd":15,"SharedFloatATK":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Atk","IsShared":true,"SinglemValue":0},"SharedFloatCooldown":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":6},"SharedBoolInterrupted":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"Interrupted
+        Sprint Attack","IsShared":true,"BooleanmValue":false},"SharedBoolIsSprint":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"Is
+        Sprint","IsShared":true,"BooleanmValue":false},"SharedLayerMaskLayerMask":{"Type":"BehaviorDesigner.Runtime.SharedLayerMask","Name":null,"LayerMaskmValue":257}}]},"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"Offset
+        Check","IsShared":true,"Vector3mValue":"(0,0.73,0)"},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Attack
+        State Count","IsShared":true,"SinglemValue":2},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Hit
+        State Count","IsShared":true,"SinglemValue":1},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Dead
+        State Count","IsShared":true,"SinglemValue":3},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"Random
+        All Part Skin","IsShared":true,"BooleanmValue":true},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Range
+        Weak Attack","IsShared":true,"SinglemValue":1},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Atk","IsShared":true,"SinglemValue":0},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"Interrupted
+        Sprint Attack","IsShared":true,"BooleanmValue":false},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"Is
+        Sprint","IsShared":true,"BooleanmValue":false}]}'
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 0}
+        - {fileID: 11400000, guid: a72399f4b85f4f742a887082e47a4703, type: 2}
+        - {fileID: 0}
+        - {fileID: 0}
+        byteData: 
+        byteDataArray: 
+      Version: 1.7.8

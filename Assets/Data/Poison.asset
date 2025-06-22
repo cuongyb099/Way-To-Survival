@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aacf4ccd30c7074ea78a8c4408f751e, type: 3}
+  m_Name: Poison
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField:
+    m_TableReference:
+      m_TableCollectionName: GUID:214a6a5ee4f3aa24c8d190319db00089
+    m_TableEntryReference:
+      m_KeyId: 13068390400
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  <Description>k__BackingField:
+    m_TableReference:
+      m_TableCollectionName: GUID:214a6a5ee4f3aa24c8d190319db00089
+    m_TableEntryReference:
+      m_KeyId: 176130347008
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  <Icon>k__BackingField: {fileID: 0}
+  <HasDuration>k__BackingField: 1
+  <Duration>k__BackingField: 3
+  <Stackable>k__BackingField: 0
+  <MaxStack>k__BackingField: 64
+  <EffectType>k__BackingField: 0
+  <UseAdvanceUpdate>k__BackingField: 1
+  PoisonParticleEffect: {fileID: 5286363564607844765, guid: 5711f98d0b0ae3640b7234cb869420c6, type: 3}
+  references:
+    version: 2
+    RefIds: []

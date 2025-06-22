@@ -1,0 +1,204 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Buff Name Table Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Buff Name Table
+  m_TableCollectionNameGuidString: c95b51ae00502aa40bf8f5ebad5217ae
+  m_Entries:
+  - m_Id: 5300449959936
+    m_Key: Buff_ATK_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 196690829312
+    m_Key: Buff_ATK_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5375829991424
+    m_Key: Buff_ATKSPD_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1836495921152
+    m_Key: Buff_ATKSPD_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 636614598656
+    m_Key: Buff_BaseATK_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5643770519552
+    m_Key: Buff_BaseATK_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1136168787968
+    m_Key: Buff_BaseHP_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5743162941440
+    m_Key: Buff_BaseHP_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2777076981760
+    m_Key: Buff_BulletCap_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5746979758080
+    m_Key: Buff_BulletCap_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1276480839680
+    m_Key: Buff_Chaos_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5749127241728
+    m_Key: Buff_Chaos_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1320688803840
+    m_Key: Buff_CritDamage_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5974411698176
+    m_Key: Buff_CritDamage_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1472426139648
+    m_Key: Buff_CritRate_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5750758825984
+    m_Key: Buff_CritRate_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 663546224640
+    m_Key: Buff_DEF_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6087200727040
+    m_Key: Buff_DEF_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 241267892224
+    m_Key: Buff_FlatATK_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6107962531840
+    m_Key: Buff_FlatATK_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2715055808512
+    m_Key: Buff_FlatBulletCap_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6563593969664
+    m_Key: Buff_FlatBulletCap_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 700405768192
+    m_Key: Buff_FlatDEF_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6644229464064
+    m_Key: Buff_FlatDEF_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1009731493888
+    m_Key: Buff_FlatHP_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6653658259456
+    m_Key: Buff_FlatHP_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1591921860608
+    m_Key: Buff_FollowUpDamage_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6109594116096
+    m_Key: Buff_FollowUpDamage_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 737034625024
+    m_Key: Buff_HP_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6281048875008
+    m_Key: Buff_HP_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2820299284480
+    m_Key: Buff_HPSteal_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6333515423744
+    m_Key: Buff_HPSteal_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1512959893504
+    m_Key: Buff_Recoil_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6365195001856
+    m_Key: Buff_Recoil_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1533583286272
+    m_Key: Buff_ReduceSpread_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6387655499776
+    m_Key: Buff_ReduceSpread_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2954982580224
+    m_Key: Buff_Speed_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6409713344512
+    m_Key: Buff_Speed_Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16890390353780736
+    m_Key: Event_Player_ATKBuff
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16890627810107392
+    m_Key: Event_Zombies_ATKBuffDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16891507292741632
+    m_Key: Event_Player_SPDBuff
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16891558987538432
+    m_Key: Event_Player_SPDBuffDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16900209349468160
+    m_Key: Event_Zombies_SPDBuffDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16900971488059392
+    m_Key: Event_Player_ATKBuffDescription
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 6179708859773091840
+  references:
+    version: 2
+    RefIds:
+    - rid: 6179708859773091840
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1734881287778

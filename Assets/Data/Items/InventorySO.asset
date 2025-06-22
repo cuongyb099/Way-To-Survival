@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64255744fe265a49a55a669a4ec70a7, type: 3}
+  m_Name: InventorySO
+  m_EditorClassIdentifier: 
+  <ItemDataList>k__BackingField:
+  - <StaticData>k__BackingField: {fileID: 11400000, guid: d579466d3374fea458330fbf73f3264d, type: 2}
+    _quantity: 1
+  - <StaticData>k__BackingField: {fileID: 11400000, guid: dc806d9533910b140ae1162cb0409cdc, type: 2}
+    _quantity: 1
+  - <StaticData>k__BackingField: {fileID: 11400000, guid: 7a36b1b36103bda49b73e21904d14441, type: 2}
+    _quantity: 1
+  - <StaticData>k__BackingField: {fileID: 11400000, guid: c5135a2d58fb8e94daaeabc0c76506d6, type: 2}
+    _quantity: 1
+  - <StaticData>k__BackingField: {fileID: 11400000, guid: c74faa70357a645489223741c269384f, type: 2}
+    _quantity: 1
+  - <StaticData>k__BackingField: {fileID: 11400000, guid: 1d41d42934d3a4b4089fe23949c7d4ca, type: 2}
+    _quantity: 1
+  - <StaticData>k__BackingField: {fileID: 11400000, guid: ad59c0a3a2e9bdb468e0f181c56729f8, type: 2}
+    _quantity: 999

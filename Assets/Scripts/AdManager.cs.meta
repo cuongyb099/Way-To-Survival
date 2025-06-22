@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scripts/NPC/DoctorController.cs.meta
+guid: 98f7fec37d3a3e849bccc52b515da063
+========
+guid: 5d89e4af1ec059e48a5dbaf5b3ed180a
+>>>>>>>> commonDevelop:Assets/Scripts/AdManager.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

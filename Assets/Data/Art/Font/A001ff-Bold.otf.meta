@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Art/Font/A001ff-Bold.otf.meta
+guid: b9f1c602ab3d76f4ebef1a75f3dba9f4
+========
+guid: 0c3c227845aba904ead81caaba667970
+>>>>>>>> katDevelop:Assets/Art/Font/Prompt-Black.ttf.meta
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Prompt
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

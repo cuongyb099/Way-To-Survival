@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scripts/Gun/Bullet/Bullet.cs.meta
+guid: 0f483b6edf440034ba7aea28dbdfe9a7
+========
+guid: 4a5a667437555454b9dcd8f60e4baa49
+>>>>>>>> origin/katDevelop:Assets/Scripts/General/AudioChild.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

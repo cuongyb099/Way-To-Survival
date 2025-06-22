@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f08d2ae4cba14087c1ed36193d82b, type: 3}
+  m_Name: Dead State
+  m_EditorClassIdentifier: 
+  mBehaviorSource:
+    behaviorName: Behavior
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(-1417.87476,-801)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-1.65783691,137.40741)","Comment":"Dead
+        State"},"ID":1,"Name":"Sequence","Instant":true,"AbortTypeabortType":"LowerPriority","Children":[{"Type":"IsDead","NodeData":{"Offset":"(-261.927216,105.668213)"},"ID":2,"Name":"Is
+        Dead","Instant":true},{"Type":"PlaySound","NodeData":{"Offset":"(-147.905212,106.224304)"},"ID":3,"Name":"Play
+        Sound","Instant":true,"SharedAudioClipArrayAudioClips":{"Type":"SharedAudioClipArray","Name":"Dead
+        Sound","IsShared":true,"AudioClip[]mValue":[0,1,2,3,4,5,6,7]},"SharedSoundSettingSetting":{"Type":"SharedSoundSetting","Name":"Sound
+        Setting","IsShared":true,"IsGlobal":true,"SoundSettingmValue":{"SingleVolume":1,"SinglePitch":1,"SingleStereoPan":0,"SingleSpatialBlend":1,"SingleMinDistance":1,"SingleMaxDistance":30,"BooleanLoop":false,"AudioRolloffModeRolloffMode":"Linear","SoundVolumeTypeVolumeType":"MASTER_VOLUME"}},"SharedBoolUseDelayTime":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatDelayTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":0.25}},{"Type":"SetActiveCollider","NodeData":{"Offset":"(-16.2252331,105.668221)"},"ID":4,"Name":"Set
+        Active Collider","Instant":true,"SharedTransformTargetObject":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null},"SharedBoolActive":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}},{"Type":"SetActiveAgent","NodeData":{"Offset":"(124.499275,105.668213)"},"ID":5,"Name":"Set
+        Active Agent","Instant":true,"SharedBoolActive":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(242.533264,109.533325)"},"ID":6,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":3},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.UnityGameObject.SetActive","NodeData":{"Offset":"(348.706451,107.071289)"},"ID":7,"Name":"Set
+        Active","Instant":true,"SharedGameObjecttargetGameObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":null},"SharedBoolactive":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}}]},"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"Offset
+        Check","IsShared":true,"Vector3mValue":"(0,0,0)"},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Dead
+        State","IsShared":true,"SinglemValue":0},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"Is
+        Dead End","IsShared":true,"BooleanmValue":false},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Dead
+        State Count","IsShared":true,"SinglemValue":0},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"Use
+        Random Dead State Feature","IsShared":true,"BooleanmValue":true},{"Type":"SharedAudioClipArray","Name":"Dead
+        Sound","IsShared":true,"AudioClip[]mValue":[8,9,10,11,12,13,14,15]}]}'
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 8300000, guid: 6588136431d0fb544b7751158ce08cff, type: 3}
+        - {fileID: 8300000, guid: f9d41d8fcaff4cc4994d74e7b3e09f0f, type: 3}
+        - {fileID: 8300000, guid: 947e404a97eaaf647a596af8bbf5e9f8, type: 3}
+        - {fileID: 8300000, guid: d6971d0ea71726e4e90fd41029bfc532, type: 3}
+        - {fileID: 8300000, guid: 6e309c7fbafefc346bf7cba31252b32d, type: 3}
+        - {fileID: 8300000, guid: 2faf13c63874aad499afd7584312f864, type: 3}
+        - {fileID: 8300000, guid: e4545936cc2f2484296c6de776d25433, type: 3}
+        - {fileID: 8300000, guid: a98bee336ca0524469699b2b2f713681, type: 3}
+        - {fileID: 8300000, guid: 6588136431d0fb544b7751158ce08cff, type: 3}
+        - {fileID: 8300000, guid: f9d41d8fcaff4cc4994d74e7b3e09f0f, type: 3}
+        - {fileID: 8300000, guid: 947e404a97eaaf647a596af8bbf5e9f8, type: 3}
+        - {fileID: 8300000, guid: d6971d0ea71726e4e90fd41029bfc532, type: 3}
+        - {fileID: 8300000, guid: 6e309c7fbafefc346bf7cba31252b32d, type: 3}
+        - {fileID: 8300000, guid: 2faf13c63874aad499afd7584312f864, type: 3}
+        - {fileID: 8300000, guid: e4545936cc2f2484296c6de776d25433, type: 3}
+        - {fileID: 8300000, guid: a98bee336ca0524469699b2b2f713681, type: 3}
+        byteData: 
+        byteDataArray: 
+      Version: 1.7.8

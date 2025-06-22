@@ -1,0 +1,39 @@
+{
+  "UID": "00001",
+  "Username": "Thinh",
+  "Money": 1000.0,
+  "Inventory": [
+    {
+      "ID": "AK12SO_4",
+      "Quantity": 0
+    },
+    {
+      "ID": "AUGSO_4",
+      "Quantity": 0
+    },
+    {
+      "ID": "AWMSO_4",
+      "Quantity": 0
+    },
+    {
+      "ID": "MP5SO_4",
+      "Quantity": 0
+    },
+    {
+      "ID": "USPSO_4",
+      "Quantity": 0
+    },
+    {
+      "ID": "RevolverSO_4",
+      "Quantity": 0
+    },
+    {
+      "ID": "XM1014SO_4",
+      "Quantity": 0
+    },
+    {
+      "ID": "BayonetSO",
+      "Quantity": 0
+    }
+  ]
+}

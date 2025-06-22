@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59205e98b25a304aac3cf684f1d5aa3, type: 3}
+  m_Name: XM1014SO_4
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField:
+    m_TableReference:
+      m_TableCollectionName: GUID:fd6713aa530e7a244b6d797fbc2425fb
+    m_TableEntryReference:
+      m_KeyId: 2804945404289024
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  <Description>k__BackingField:
+    m_TableReference:
+      m_TableCollectionName: GUID:fd6713aa530e7a244b6d797fbc2425fb
+    m_TableEntryReference:
+      m_KeyId: 1461286068224
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  <Icon>k__BackingField: {fileID: -1031477617, guid: 7d14fe165a6225e499757a3668bbe881, type: 3}
+  <Unique>k__BackingField: 1
+  <BuyPrice>k__BackingField: 1500
+  <SellPrice>k__BackingField: 0
+  <MaxStack>k__BackingField: 1
+  <Modifiers>k__BackingField: 
+  <Rarity>k__BackingField: 3
+  <Prefab>k__BackingField: {fileID: -4200236506036093466, guid: f85e0a07b49e2c34589b813c03737d9c, type: 3}
+  <WeaponType>k__BackingField: 2
+  <ShootingSpeed>k__BackingField: 1
+  <Damage>k__BackingField: 1
+  <Weight>k__BackingField: 1
+  <ReleaseToShoot>k__BackingField: 0
+  <AttackSounds>k__BackingField:
+  - {fileID: 8300000, guid: fe9c6fc296f100044b864f2bd639c3ca, type: 3}
+  <BulletPrefab>k__BackingField: {fileID: 984755602444092648, guid: bff9cb15c026277498f4541bb37853a4, type: 3}
+  <ShellPrefab>k__BackingField: {fileID: 6182647827399181740, guid: b90d077f25e2ca04c9360f25f237a5fb, type: 3}
+  <MagPrefab>k__BackingField: {fileID: 6182647827399181740, guid: a1e78c6635fd42541975b5cdc3cfdfab, type: 3}
+  <Aim>k__BackingField: 5
+  <SpreadMax>k__BackingField: 10
+  <Recoil>k__BackingField: 0
+  <RecoilResetTime>k__BackingField: 0
+  <MaxCapacity>k__BackingField: 4
+  <GunReloadType>k__BackingField: 0
+  <TailSound>k__BackingField: {fileID: 8300000, guid: 577cb100552dc7044853df3840905615, type: 3}
+  <CockingSound>k__BackingField: {fileID: 8300000, guid: a02bc36fa5f93cf4a8fd0cf3114a6486, type: 3}
+  <MagSoundIn>k__BackingField: {fileID: 8300000, guid: b6f4cac3255303c4b88398310d196511, type: 3}
+  <MagSoundOut>k__BackingField: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []

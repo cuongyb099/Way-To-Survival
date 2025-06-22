@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Item Table_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: fd6713aa530e7a244b6d797fbc2425fb, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 1139121577984
+    m_Localized: Ak12
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1441891606528
+    m_Localized: AWM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1445427404800
+    m_Localized: mag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2804799958409216
+    m_Localized: AK-12
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2804835744210944
+    m_Localized: AWM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2804863774744576
+    m_Localized: MAG-7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2804900923695104
+    m_Localized: USP-S
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2804945404289024
+    m_Localized: XM1014
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2804979273293824
+    m_Localized: Bayonet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2805007387713536
+    m_Localized: MP5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2805612407676928
+    m_Localized: Revolver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2805922366742528
+    m_Localized: SCAR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58675206979104768
+    m_Localized: Medkit
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -819100962, guid: da41a8dd3b5ec434a802d9b5a2a0a777, type: 3}
+  m_Name: BehaviorDesignerGlobalVariables
+  m_EditorClassIdentifier: 
+  mVariableData:
+    variableStartIndex: 
+    JSONSerialization: '{"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Move","IsShared":true,"IsGlobal":true,"Tooltip":"Move","StringmValue":"Move"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Player
+      Tag","IsShared":true,"IsGlobal":true,"Tooltip":"Player","StringmValue":"Player"},{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"Offset
+      Check","IsShared":true,"IsGlobal":true,"Vector3mValue":"(0,1.5,0)"},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Standing
+      Range Weak Attack","IsShared":true,"IsGlobal":true,"SinglemValue":1.5},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Crawl
+      Range Weak Attack","IsShared":true,"IsGlobal":true,"SinglemValue":2},{"Type":"BehaviorDesigner.Runtime.SharedLayerMask","Name":"TargetMask","IsShared":true,"IsGlobal":true,"LayerMaskmValue":8},{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Player","IsShared":true,"IsGlobal":true},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Max
+      Calm State Count","IsShared":true,"IsGlobal":true,"SinglemValue":3},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Max
+      Attack State Count","IsShared":true,"IsGlobal":true,"SinglemValue":3},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Rotate
+      Time","IsShared":true,"IsGlobal":true,"SinglemValue":0.6},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Anim
+      Para Zombie State","IsShared":true,"IsGlobal":true,"StringmValue":"Zombie State"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Anim
+      Para Calm State","IsShared":true,"IsGlobal":true,"StringmValue":"Calm State"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Anim
+      Para Normal Attack","IsShared":true,"IsGlobal":true,"StringmValue":"Normal
+      Attack"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Small Attack
+      Hitbox","IsShared":true,"IsGlobal":true,"StringmValue":"Small Attack Hitbox"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Anim
+      Para Attack State","IsShared":true,"IsGlobal":true,"StringmValue":"Attack State"},{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":"Zombie
+      Skin No Leg Count","IsShared":true,"IsGlobal":true,"Int32mValue":2},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Crawl
+      Index","IsShared":true,"IsGlobal":true,"SinglemValue":3},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Calm
+      Index","IsShared":true,"IsGlobal":true,"SinglemValue":2},{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"Offset
+      Check Crawl","IsShared":true,"IsGlobal":true,"Vector3mValue":"(0,0.78,0)"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Get
+      Hit","IsShared":true,"IsGlobal":true,"StringmValue":"Hit"},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Max
+      Hit State Count","IsShared":true,"IsGlobal":true,"SinglemValue":1},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Get
+      Hit State","IsShared":true,"IsGlobal":true,"StringmValue":"Get Hit State"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Is
+      Attack End","IsShared":true,"IsGlobal":true,"StringmValue":"Is Attack End"},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Max
+      Dead State","IsShared":true,"IsGlobal":true,"SinglemValue":4},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Anim
+      Para Dead","IsShared":true,"IsGlobal":true,"StringmValue":"Dead"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Is
+      Dead End","IsShared":true,"IsGlobal":true,"StringmValue":"Is Dead End"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Dead
+      State","IsShared":true,"IsGlobal":true,"StringmValue":"Dead State"},{"Type":"SharedSoundSetting","Name":"Sound
+      Setting","IsShared":true,"IsGlobal":true,"SoundSettingmValue":{"SingleVolume":1,"SinglePitch":1,"SingleStereoPan":0,"SingleSpatialBlend":1,"SingleMinDistance":1,"SingleMaxDistance":30,"BooleanLoop":false,"AudioRolloffModeRolloffMode":"Linear","SoundVolumeTypeVolumeType":"MASTER_VOLUME"}}]}'
+    fieldSerializationData:
+      typeName: []
+      fieldNameHash: 
+      startIndex: 
+      dataPosition: 
+      unityObjects: []
+      byteData: 
+      byteDataArray: 
+  mVersion: 1.7.8

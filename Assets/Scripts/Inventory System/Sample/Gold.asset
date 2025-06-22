@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59205e98b25a304aac3cf684f1d5aa3, type: 3}
+  m_Name: Gold
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  <Description>k__BackingField:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  <Icon>k__BackingField: {fileID: 0}
+  <Unique>k__BackingField: 0
+  <BuyPrice>k__BackingField: 0
+  <SellPrice>k__BackingField: 0
+  <MaxStack>k__BackingField: 1
+  <Modifiers>k__BackingField: 
+  WeaponPrefab: {fileID: 0}
+  BulletPrefab: {fileID: 0}
+  ShellPrefab: {fileID: 0}
+  MagPrefab: {fileID: 0}
+  WeaponType: 0
+  ShootingSpeed: 0
+  Damage: 0
+  Aim: 0
+  SpreadMax: 0
+  Recoil: 0
+  RecoilResetTime: 0
+  Weight: 0
+  MaxCapacity: 0
+  ReleaseToShoot: 0
+  ShootingSounds: []
+  TailSound: {fileID: 0}
+  CockingSound: {fileID: 0}
+  MagSoundIn: {fileID: 0}
+  MagSoundOut: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
