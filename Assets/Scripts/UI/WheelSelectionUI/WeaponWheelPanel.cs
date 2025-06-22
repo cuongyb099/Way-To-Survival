@@ -10,7 +10,7 @@ public class WeaponWheelPanel : FadeBlurPanel
     [SerializeField] private Button InventoryBtn;
     [SerializeField] private Button BackgroundBtn;
     
-    protected virtual void Awake()
+    protected override void OnAwake()
     {
         LoadButton();
                 
@@ -22,7 +22,7 @@ public class WeaponWheelPanel : FadeBlurPanel
 
     public void ToggleWeaponWheelUI()
     {
-        UIManager.Instance.HidePanel(UIConstant.MainGameplayPanel);
+        UIManager.Instance.HidePanel(UIConstant.GameplayPanel);
         UIManager.Instance.ShowPanel(UIConstant.WeaponWheelPanel);
     }
     
@@ -53,25 +53,25 @@ public class WeaponWheelPanel : FadeBlurPanel
         BackgroundBtn.onClick.AddListener(() =>
         {
             Hide();
-            UIManager.Instance.ShowPanel(UIConstant.MainGameplayPanel);
+            UIManager.Instance.ShowPanel(UIConstant.GameplayPanel);
         });
         Items[0].ItemButton.onClick.AddListener(()=>
         {
             GameManager.Instance.Player.SwitchWeapon(0);
             Hide();
-            UIManager.Instance.ShowPanel(UIConstant.MainGameplayPanel);
+            UIManager.Instance.ShowPanel(UIConstant.GameplayPanel);
         });
         Items[1].ItemButton.onClick.AddListener(()=>
         {
             GameManager.Instance.Player.SwitchWeapon(1);
             Hide();
-            UIManager.Instance.ShowPanel(UIConstant.MainGameplayPanel);
+            UIManager.Instance.ShowPanel(UIConstant.GameplayPanel);
         });
         Items[2].ItemButton.onClick.AddListener(()=>
         {
             GameManager.Instance.Player.SwitchWeapon(2);
             Hide();
-            UIManager.Instance.ShowPanel(UIConstant.MainGameplayPanel);
+            UIManager.Instance.ShowPanel(UIConstant.GameplayPanel);
         });
     }
     private void OnDestroy()

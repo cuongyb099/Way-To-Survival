@@ -11,9 +11,10 @@ public class PausePanel : FadeBlurPanel
     [SerializeField] private Button _settingBtn;
     [SerializeField] private Button _restartBtn;
     [SerializeField] private Button _quitBtn;
-    
-    protected virtual void Awake()
+
+    protected override void OnAwake()
     {
+        base.OnAwake();
         LoadButton();
     }
 
@@ -22,7 +23,7 @@ public class PausePanel : FadeBlurPanel
         _resumeBtn.onClick.AddListener(() =>
         {
             Hide();
-            UIManager.Instance.ShowPanel(UIConstant.MainGameplayPanel);
+            UIManager.Instance.ShowPanel(UIConstant.GameplayPanel);
         });
         _settingBtn.onClick.AddListener(() =>
         {

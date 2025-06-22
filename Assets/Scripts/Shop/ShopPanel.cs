@@ -9,8 +9,9 @@ public class ShopPanel : FadeBlurPanel
     public int BuffPrice = 3;
     private PlayerController player;
 
-    private void Awake()
+    protected override void OnAwake()
     {
+        base.OnAwake();
         player = GameManager.Instance.Player;
     }
 

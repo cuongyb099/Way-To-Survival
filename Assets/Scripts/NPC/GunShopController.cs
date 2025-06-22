@@ -7,7 +7,7 @@ public class GunShopController : InteractableController
     public override void Interact(PlayerController source)
     {
         base.Interact(source);
-        UIManager.Instance.HidePanel(UIConstant.MainGameplayPanel);
+        UIManager.Instance.HidePanel(UIConstant.GameplayPanel);
         UIManager.Instance.ShowPanel(UIConstant.ShopPanel);
     }
 }

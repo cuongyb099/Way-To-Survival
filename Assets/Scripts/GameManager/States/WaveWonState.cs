@@ -23,7 +23,7 @@ public class WaveWonState : BaseState<EGameState>
         while (!_countDownSlider)
         {
             _countDownSlider = UIManager.Instance
-                .GetPanel<GameplayMainPanel>(UIConstant.MainGameplayPanel)
+                .GetPanel<GameplayMainPanel>(UIConstant.GameplayPanel)
                 .CountDownSlider;
             await Task.Delay(100);
         }
@@ -34,7 +34,7 @@ public class WaveWonState : BaseState<EGameState>
     {
         GameEvent.OnStartWinState?.Invoke();
         Timer = gameManager.WaveWonTime;
-        UIManager.Instance.HidePanel(UIConstant.MainGameplayPanel);
+        UIManager.Instance.HidePanel(UIConstant.GameplayPanel);
         UIManager.Instance.ShowPanel(UIConstant.BuffPanel);
         TimeManager.Instance.AdvanceTimeOfDay();
     }

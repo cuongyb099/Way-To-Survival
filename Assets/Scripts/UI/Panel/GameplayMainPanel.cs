@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameplayMainPanel : VisiablePanel
+public class GameplayMainPanel : PanelToggleByCanvas
 {
     [Header("Button")]
     [SerializeField] private Button _skipShoppingBtn;
@@ -15,7 +15,7 @@ public class GameplayMainPanel : VisiablePanel
     [field: Header("Slider")]
     [field: SerializeField] public Slider CountDownSlider { get; private set; }
 
-    protected virtual void Awake()
+    protected override void OnAwake()
     {
         LoadComponents();
         Show();

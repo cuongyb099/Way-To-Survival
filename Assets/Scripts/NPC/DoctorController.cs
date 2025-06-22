@@ -15,7 +15,7 @@ public class DoctorController : InteractableController
         }
         source.Resin -= buyPrice;
         
-        UIManager.Instance.HidePanel(UIConstant.MainGameplayPanel);
+        UIManager.Instance.HidePanel(UIConstant.GameplayPanel);
         UIManager.Instance.ShowPanel(UIConstant.BuffPanel);
         base.Interact(source);
     }

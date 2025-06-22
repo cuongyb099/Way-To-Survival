@@ -13,9 +13,10 @@ public class LosePanel : FadeBlurPanel
     [SerializeField] private Button _quitBtn;
     
     private float reward = 0;
-    
-    protected virtual void Awake()
+
+    protected override void OnAwake()
     {
+        base.OnAwake();
         LoadButton();
         reward = 0;
     }

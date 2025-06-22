@@ -16,7 +16,7 @@ public class InventoryPanel : PanelBase
         _exitButton.onClick.AddListener(() =>
         {
             Hide();
-            UIManager.Instance.ShowPanel(UIConstant.MainGameplayPanel);
+            UIManager.Instance.ShowPanel(UIConstant.GameplayPanel);
         });
     }
 }

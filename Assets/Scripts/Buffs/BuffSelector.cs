@@ -39,6 +39,6 @@ public class BuffSelector : MonoBehaviour
 	private void DeactivateParent()
 	{
 		UIManager.Instance.HidePanel(UIConstant.BuffPanel);
-		UIManager.Instance.ShowPanel(UIConstant.MainGameplayPanel);
+		UIManager.Instance.ShowPanel(UIConstant.GameplayPanel);
 	}
 }

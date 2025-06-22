@@ -22,7 +22,7 @@ public class ShoppingState : BaseState<EGameState>
 
         while (!_countDownSlider)
         {
-            var panel = UIManager.Instance.GetPanel<GameplayMainPanel>(UIConstant.MainGameplayPanel);
+            var panel = UIManager.Instance.GetPanel<GameplayMainPanel>(UIConstant.GameplayPanel);
             
             if (panel)
             {

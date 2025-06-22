@@ -6,7 +6,7 @@ public class FadeBlurPanel : PanelToggleByCanvas
 {
     public bool StopTime = false;
     public bool BlurBackground = false;
-    [Range(0.01f,2f)] public float TransitionDuration = 0.2f;
+    [Range(0f,2f)] public float TransitionDuration = 0.2f;
     public UnityEvent OnShowDo;
     public UnityEvent OnHideDo;
     private static Tweener tween;
