@@ -69,8 +69,9 @@ public class PlayerController : BasicController
         mainCamera = Camera.main;
 
         Weapons = new WeaponBase[3];
-		//InstantiateWeapon((WeaponData)StartingWeapon.CreateItemData(1,null),0);
-		PlayerDataPersistent.Instance.ApplyToPlayer(this);
+		InstantiateWeapon((WeaponData)StartingWeapon.CreateItemData(1,null),0);
+		if(PlayerDataPersistent.Instance != null)
+			PlayerDataPersistent.Instance.ApplyToPlayer(this);
 		
 		PlayerEvent.OnAttack += SetShootAnim;
 		PlayerEvent.OnRecieveCash += AddCash;
@@ -81,7 +82,7 @@ public class PlayerController : BasicController
 		
 		OnDeath += () =>
 		{
-			UIManager.Instance.ShowPanel(UIConstant.LostPanel); 
+			UIManager.Instance.ShowPanel(UIConstant.LosePanel); 
 			PlayerInput.Instance.InputActions.Disable();
 		};
 	}

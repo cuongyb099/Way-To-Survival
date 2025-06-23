@@ -51,6 +51,10 @@ public class WaveWonState : BaseState<EGameState>
 
     public override EGameState GetNextState()
     {
+        if (gameManager.Player.IsDead)
+        {
+            return EGameState.Died;
+        }
         if(Timer <= 0)
         {
             return EGameState.Shopping;

@@ -10,7 +10,7 @@ public class DiedState : BaseState<EGameState>
 
     public override void Enter()
     {
-        
+        UIManager.Instance.ShowPanel(UIConstant.LosePanel);
     }
 
     public override void Exit()

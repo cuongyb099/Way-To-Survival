@@ -26,7 +26,7 @@ public class PlayerDataPersistent : SingletonPersistent<PlayerDataPersistent>,IS
     protected override void Awake()
     {
         base.Awake();
-        StartingWeapons = new WeaponData[3];
+        StartingWeapons = new WeaponData[3]{null, null, null};
         StartingBuffs = new BaseBuffSO[4];
         ItemDataBase.OnLoadDone += Load;
     }

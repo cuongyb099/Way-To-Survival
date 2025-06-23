@@ -133,7 +133,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1162760403843552180, guid: f6932130ca752a447937e4a852ce31f0, type: 3}
       propertyPath: m_Name
-      value: Lose Canvas
+      value: LosePanel
       objectReference: {fileID: 0}
     - target: {fileID: 3650604809122564585, guid: f6932130ca752a447937e4a852ce31f0, type: 3}
       propertyPath: m_Alpha

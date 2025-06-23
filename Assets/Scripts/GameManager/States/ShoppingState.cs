@@ -52,6 +52,10 @@ public class ShoppingState : BaseState<EGameState>
 
     public override EGameState GetNextState()
     {
+        if (gameManager.Player.IsDead)
+        {
+            return EGameState.Died;
+        }
         if(Timer <= 0 || gameManager.SkipShopping)
         {
             return EGameState.Combat;
