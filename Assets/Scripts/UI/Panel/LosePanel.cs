@@ -29,7 +29,7 @@ public class LosePanel : FadeBlurPanel
             //Unload
             SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
             Resources.UnloadUnusedAssets();
-            LevelAsyncManager.Instance.SwitchToMainMenu();
+            LoadingAsyncManager.Instance.SwitchToMainMenu();
         });
     }
 

@@ -45,7 +45,7 @@ public class StartingSetupPanel : FadeBlurPanel
             if (CheckStartGear())
             {
                 PlayerDataPersistent.Instance.ChangeStartingWeapons(WeaponSlots[0].ItemBaseSoHolder,WeaponSlots[1].ItemBaseSoHolder,WeaponSlots[2].ItemBaseSoHolder);
-                LevelAsyncManager.Instance.SwitchToMap1();
+                LoadingAsyncManager.Instance.SwitchToMap1();
             }
             else Debug.Log("Can't Start Game");
         });
