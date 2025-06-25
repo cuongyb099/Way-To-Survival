@@ -1,13 +1,7 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using Tech.Json;
-using Unity.VisualScripting;
 using UnityEngine;
-using VolumetricFogAndMist2;
 
 namespace KatInventory
 {
@@ -16,18 +10,13 @@ namespace KatInventory
     {
         [field: SerializeField, Range(1, 1000)]
         public int Capacity { get; private set;} = 99;
-        //I Don't Want this variable Can Get When Game Build It Not Compile If Access It Game Build Failure
-        //Only Use For Debug
+
         [SerializeField]private List<ItemData> _inventory = new ();
         public List<ItemData> DataRuntime => _inventory;
-        public static readonly string SavePath = "Assets/Save/Inventory.json";
-// #else
-        //public static readonly string SavePath = Application.persistentDataPath + "/Local1283012364.json";
-
-        
 
         public static Action OnInventoryChange;
         public static Action OnAddItem;
+
         private ItemData FindFirstItemNotFullStack(ItemBaseSO itemBase)
         {
             for (int i = 0; i < _inventory.Count; i++)
@@ -171,6 +160,7 @@ namespace KatInventory
 
         public List<T> GetItemsOfType<T>() where T : ItemData
         {
+            Debug.Log(_inventory.OfType<T>().ToList().Count);
             return _inventory.OfType<T>().ToList();
         }
 
@@ -181,13 +171,14 @@ namespace KatInventory
         }
         public void Save(PlayerSaveData data)
         {
-            data.Inventory = _inventory;
+            
         }
         public void Load(PlayerSaveData data)
         {
-            _inventory = data.Inventory;
+            foreach (var item in data.Inventory)
+            {
+                AddItem(item.Item, item.Quantity);
+            }
         }
-
-        private static readonly string ID = "ID";
     }
 }

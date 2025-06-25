@@ -1606,7 +1606,7 @@ GameObject:
   - component: {fileID: 1062093490976276131}
   - component: {fileID: 6829283627896873492}
   - component: {fileID: 2591096999165255173}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Zombie Tank
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -1665,6 +1665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsTakingDamage: 0
   cashGiveAmount: 100
+  bulletGiveAmount: 0
   <MaxMoveAnimationSpeed>k__BackingField: 2
 --- !u!114 &1909890995935186922
 MonoBehaviour:

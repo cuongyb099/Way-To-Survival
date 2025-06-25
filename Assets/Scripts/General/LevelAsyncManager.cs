@@ -1,9 +1,7 @@
 using System.Collections;
-using System.Collections.Generic;
 using Tech.Singleton;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
 using Slider = UnityEngine.UI.Slider;
 
 public class LevelAsyncManager : SingletonPersistent<LevelAsyncManager>

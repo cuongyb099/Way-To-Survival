@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SwordData : ItemGOData
 {
-    public SwordData(ItemBaseSO staticData, int quantity, GameObject go) : base(staticData, quantity, go)
+    public SwordData(ItemBaseSO staticData, int quantity) : base(staticData, quantity)
     {
     }
 

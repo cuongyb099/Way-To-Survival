@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using KatInventory;
 using UnityEngine;
@@ -6,5 +5,12 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "InventorySO", menuName = "Inventory/new Inventory SO")]
 public class InventorySO : ScriptableObject
 {
-    [field: SerializeField] public List<ItemData> ItemDataList { get; private set; }
+    [field: SerializeField] public List<StartItem> ItemDataList { get; private set; }
+}
+
+[System.Serializable]
+public class StartItem
+{
+    public ItemBaseSO Item;
+    public int Quantity;
 }

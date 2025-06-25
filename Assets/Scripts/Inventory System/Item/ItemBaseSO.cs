@@ -21,7 +21,8 @@ namespace KatInventory
         public virtual int MaxStack { get; protected  set; } = 1;
         [field: SerializeField] public virtual Manipulator[] Modifiers { get; private set; }
         [field: SerializeField] public Rarity Rarity { get; protected set; }
-        public virtual ItemData CreateItemData(int quantity = 1,GameObject prefab = null)
+        
+        public virtual ItemData CreateItemData(int quantity = 1)
         {
             return new ItemData(this, Mathf.Clamp(quantity,0, MaxStack));
         }
@@ -31,6 +32,7 @@ namespace KatInventory
             Inventory.Instance.RemoveItem(this);
         }
         public abstract ItemType GetItemType();
+        
         public bool Equals(ItemBaseSO other)
         {
             if (!other) return false;

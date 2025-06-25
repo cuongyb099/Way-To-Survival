@@ -20,7 +20,8 @@ public class WeaponData : ItemGOData
     public UpgradableFloat Damage{ get; private set; }
     [JsonProperty("WeaponWeight", Order = 5)] 
     public UpgradableFloat Weight{ get; private set; }
-    public WeaponData(WeaponBaseSO staticData, int quantity, GameObject go) : base(staticData, quantity, go)
+    
+    public WeaponData(WeaponBaseSO staticData, int quantity) : base(staticData, quantity)
     {
         WeaponLevel = 0;
         ShootingSpeed = new UpgradableFloat(Random.Range(staticData.ShootingSpeed*0.8f,staticData.ShootingSpeed*1.1f));

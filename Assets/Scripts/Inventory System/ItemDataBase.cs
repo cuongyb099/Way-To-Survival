@@ -1,9 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-
-using Cysharp.Threading.Tasks;
 using Tech.Singleton;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 namespace KatInventory
@@ -18,7 +17,6 @@ namespace KatInventory
         
     #endif
         
-        private static string _itemAddressKey = "Inventory";
         public static Action OnLoadDone;
         
         protected override void Awake()
@@ -29,12 +27,7 @@ namespace KatInventory
 
         private async UniTaskVoid LoadInventoryAsync()
         {
-            while (!AddressablesManager.Instance)
-            {
-                await UniTask.Yield();
-            }
-            
-            var items = await AddressablesManager.Instance.LoadAssetsAsync<ItemBaseSO>(_itemAddressKey);
+            var items = await AddressablesManager.Instance.LoadAssetsAsync<ItemBaseSO>("Inventory");
             _itemDictionary = items.ToDictionary(item => item.ID);
             OnLoadDone?.Invoke();
         }

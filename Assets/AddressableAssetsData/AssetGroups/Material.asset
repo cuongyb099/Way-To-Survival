@@ -22,11 +22,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 4fc70c93c4f95294ea63608c1b333060
-    m_Address: Building Indicator
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4eab039da7b17cd4eb12b164005c510b
     m_Address: Bullet_Mat
     m_ReadOnly: 0
@@ -57,11 +52,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 7779dc656b28a7e40a1c77f921c0bb58
-    m_Address: Fade Object
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6eb5d25606b976047b3003a76d1fde7e
     m_Address: Gold_Mat
     m_ReadOnly: 0
@@ -69,11 +59,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: eea8f3de3a874a7469db9ca59997dac1
     m_Address: Green
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 1c0c63a848819f14a970d089bf57b9ac
-    m_Address: Grid Highlight
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

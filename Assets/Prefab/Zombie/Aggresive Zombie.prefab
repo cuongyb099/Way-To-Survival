@@ -4687,7 +4687,7 @@ GameObject:
   - component: {fileID: 2987023602200526735}
   - component: {fileID: 1993162655835041414}
   - component: {fileID: 7232910870129551495}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Aggresive Zombie
   m_TagString: Enemy
   m_Icon: {fileID: 0}

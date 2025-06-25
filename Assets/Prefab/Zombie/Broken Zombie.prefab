@@ -5158,7 +5158,7 @@ GameObject:
   - component: {fileID: 9072295973381218032}
   - component: {fileID: 468150157389778900}
   - component: {fileID: 7853982585905424383}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Broken Zombie
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -5217,6 +5217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsTakingDamage: 0
   cashGiveAmount: 20
+  bulletGiveAmount: 0
   <MaxMoveAnimationSpeed>k__BackingField: 2.5
 --- !u!114 &6539951806390241995
 MonoBehaviour:
