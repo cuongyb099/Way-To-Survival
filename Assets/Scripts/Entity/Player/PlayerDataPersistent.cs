@@ -1,11 +1,9 @@
-
 using System;
 using System.IO;
 using KatInventory;
 using Tech.Json;
 using Tech.Singleton;
 using UnityEngine;
-using UnityEngine.Networking;
 
 public class PlayerDataPersistent : SingletonPersistent<PlayerDataPersistent>,ISaveable
 {
@@ -30,7 +28,12 @@ public class PlayerDataPersistent : SingletonPersistent<PlayerDataPersistent>,IS
         StartingBuffs = new BaseBuffSO[4];
         ItemDataBase.OnLoadDone += Load;
     }
-    
+
+    private void OnDestroy()
+    {
+        ItemDataBase.OnLoadDone -= Load;
+    }
+
     [ContextMenu("Save")]
     public void Save()
     {
@@ -41,8 +44,11 @@ public class PlayerDataPersistent : SingletonPersistent<PlayerDataPersistent>,IS
     [ContextMenu("Load")]
     public void Load()
     {
+        Debug.Log("Load");
         if (!File.Exists(SavePath))
+        {
             _playerData = new PlayerSaveData("0","defaultUser",0f,_beginningInventory.ItemDataList);
+        }
         else
             Json.LoadJson(SavePath, out _playerData);
         Inventory.Instance.Load(_playerData);

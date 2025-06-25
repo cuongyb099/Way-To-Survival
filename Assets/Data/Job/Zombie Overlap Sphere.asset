@@ -16,4 +16,4 @@ MonoBehaviour:
   <Mask>k__BackingField:
     serializedVersion: 2
     m_Bits: 8
-  <TagCheck>k__BackingField: Player
+  <TagCheck>k__BackingField: Enemy

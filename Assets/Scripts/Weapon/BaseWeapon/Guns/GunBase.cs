@@ -63,6 +63,7 @@ public class GunBase : WeaponBase
 	protected override void Update()
 	{
 		Vector2 rotateInput = PlayerInput.Instance.ShootStickInput;
+		
 		//Controller
 		if (PlayerInput.Instance.IsAttackInput)
 		{

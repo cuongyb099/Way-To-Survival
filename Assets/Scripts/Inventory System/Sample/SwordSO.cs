@@ -9,9 +9,10 @@ namespace KatInventory.Sample
         
         //It Is Sample Please Don't Declare Variable like this with readonly variable
         public float DamageSample = 10f;
-        public override ItemData CreateItemData(int quantity, GameObject prefab)
+        
+        public override ItemData CreateItemData(int quantity = 1)
         {
-            return new SwordData(this, Mathf.Clamp(quantity, 0, MaxStack), prefab);
+            return new SwordData(this, Mathf.Clamp(quantity, 0, MaxStack));
         }
     }
 }

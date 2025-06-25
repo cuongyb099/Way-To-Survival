@@ -6,16 +6,25 @@ namespace KatInventory
     [System.Serializable]
     public class ItemGOData : ItemData
     {
-        public ItemGOData(ItemBaseSO staticData, int quantity, GameObject go) : base(staticData, quantity)
+        public ItemGOData(ItemBaseSO staticData, int quantity) : base(staticData, quantity)
         {
-            GoReference = go;
+            
         }
+        
         [JsonIgnore]
-        public GameObject GoReference { get; private set; }
+        protected GameObject goReference;
 
-        public void SetReference(GameObject go)
+        [JsonIgnore]
+        public virtual GameObject GoReference
         {
-            GoReference = go;
+            get
+            {
+                if (goReference) return goReference;
+                var data = this.StaticData as ItemGOBaseSO;
+                goReference = Object.Instantiate(data.Prefab).gameObject;
+                goReference.GetComponent<ItemBase>().SetData(this);
+                return goReference;
+            }
         }
     }
 }

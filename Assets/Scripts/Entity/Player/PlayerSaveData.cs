@@ -9,26 +9,17 @@ public class PlayerSaveData
     public string UID;
     public string Username;
     public float Money;
-    public List<ItemData> Inventory ;
+    public List<StartItem> Inventory ;
 
     public PlayerSaveData()
     {
-        Inventory = new List<ItemData>();
+        Inventory = new List<StartItem>();
     }
-    public PlayerSaveData(string uid, string username, float money, List<ItemData> inventory)
+    public PlayerSaveData(string uid, string username, float money, List<StartItem> inventory)
     {
         UID = uid;
         Username = username;
         Money = money;
-        CreateInventory(inventory);
-    }
-
-    private void CreateInventory(List<ItemData> inventory)
-    {
-        Inventory = new List<ItemData>();
-        foreach (var item in inventory)
-        {
-            Inventory.Add(item.StaticData.CreateItemData(item.Quantity));
-        }
+        Inventory = inventory;
     }
 }

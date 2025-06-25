@@ -613,9 +613,9 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3851452510139105976}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &8302148993384322073
 MonoBehaviour:
@@ -629,7 +629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bd6ddfefa8646a39eb84a6d446f3d46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <IsVisible>k__BackingField: 1
+  <IsVisible>k__BackingField: 0
   OnPanelHide:
     m_PersistentCalls:
       m_Calls: []
@@ -638,7 +638,7 @@ MonoBehaviour:
       m_Calls: []
   StopTime: 1
   BlurBackground: 1
-  TransitionDuration: 1.005
+  TransitionDuration: 1
   OnShowDo:
     m_PersistentCalls:
       m_Calls: []

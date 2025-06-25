@@ -1,12 +1,6 @@
-using System;
 using DG.Tweening;
 using ResilientCore;
-using System.Collections.Generic;
-using KatInventory;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.AddressableAssets;
-using UnityEngine.Serialization;
 
 public class PlayerController : BasicController
 {
@@ -69,7 +63,8 @@ public class PlayerController : BasicController
         mainCamera = Camera.main;
 
         Weapons = new WeaponBase[3];
-		InstantiateWeapon((WeaponData)StartingWeapon.CreateItemData(1,null),0);
+		InstantiateWeapon((WeaponData)StartingWeapon.CreateItemData(), 0);
+		
 		if(PlayerDataPersistent.Instance != null)
 			PlayerDataPersistent.Instance.ApplyToPlayer(this);
 		
@@ -130,16 +125,18 @@ public class PlayerController : BasicController
 
     // Weapon handle
     
-    public void InstantiateWeapon(WeaponData weapon, int index)
+    public void InstantiateWeapon(WeaponData weaponData, int index)
     {
-	    
 	    if (Weapons[index] != null)
 	    {
 		    Stats.GetStat(StatType.Speed).RemoveModifier(new StatModifier(-Weapons[index].WeaponData.Weight.Value,StatModType.Flat));
 		    Destroy(Weapons[index].gameObject);
 	    }
-		
-	    Weapons[index] = ((ItemGOData)weapon.WeaponSO.CreateExistingItemInWorld(parent: RightHandHoldPoint.transform,data: weapon)).GoReference.GetComponent<WeaponBase>();
+
+	    var weapon = weaponData.GoReference;
+	    weapon.gameObject.SetActive(false);
+	    weapon.transform.SetParent(RightHandHoldPoint, false);
+	    Weapons[index] = weapon.GetComponent<WeaponBase>();
 	    Weapons[index].gameObject.layer = gameObject.layer;
 	    Weapons[index].Initialize();
 	    

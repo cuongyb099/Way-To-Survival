@@ -1024,7 +1024,7 @@ GameObject:
   - component: {fileID: 3426233255519000152}
   - component: {fileID: 625001175177318904}
   - component: {fileID: 5017799148259628665}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Calm Zombie
   m_TagString: Enemy
   m_Icon: {fileID: 0}

@@ -17,8 +17,9 @@ public class WeaponBaseSO : ItemGOBaseSO
     [field:Header("Attack Sounds")]
     [field: SerializeField] public List<AudioClip> AttackSounds{ get; private set; }
     public override ItemType GetItemType() => ItemType.Weapon;
-    public override ItemData CreateItemData(int quantity, GameObject prefab)
+    
+    public override ItemData CreateItemData(int quantity = 1)
     {
-        return new WeaponData(this,quantity, prefab);
+        return new WeaponData(this,quantity);
     }
 }

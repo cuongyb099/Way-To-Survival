@@ -5117,7 +5117,7 @@ GameObject:
   - component: {fileID: 8273829413715221335}
   - component: {fileID: 8463158284588987312}
   - component: {fileID: 6341212300035411081}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Range Zombie
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -5175,6 +5175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsTakingDamage: 0
   cashGiveAmount: 70
+  bulletGiveAmount: 0
   <MaxMoveAnimationSpeed>k__BackingField: 2.5
 --- !u!114 &8458397377043749148
 MonoBehaviour:

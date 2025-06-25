@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using AYellowpaper.SerializedCollections;
 using KatInventory;
 using Tech.Singleton;

@@ -11,7 +11,8 @@ public class GunData : WeaponData
     public UpgradableFloat SpreadMax{ get; private set; }
     [JsonProperty("GunRecoil", Order = 8)] 
     public UpgradableFloat Recoil{ get; private set; }
-    public GunData(GunBaseSO staticData, int quantity, GameObject go) : base(staticData, quantity, go)
+    
+    public GunData(GunBaseSO staticData, int quantity) : base(staticData, quantity)
     {
         Aim = new UpgradableFloat(Random.Range(staticData.Aim*0.8f,staticData.Aim*1.1f));
         SpreadMax = new UpgradableFloat(Random.Range(staticData.SpreadMax*0.8f,staticData.SpreadMax*1.1f));

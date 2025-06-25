@@ -10,7 +10,7 @@ namespace Tech.Singleton
 		{
 			if (Instance != null)
 			{
-				Destroy(gameObject);
+				//Destroy(gameObject);
 				return;
 			}
 			Instance = this as T;

@@ -1589,6 +1589,7 @@ GameObject:
   - component: {fileID: 3031791971212988382}
   - component: {fileID: 7439982662963086764}
   - component: {fileID: 175240134634838677}
+  - component: {fileID: 5892316974111167312}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -1683,9 +1684,8 @@ MonoBehaviour:
   <GunSwitchCooldown>k__BackingField: 0.1
   <GroundLayer>k__BackingField:
     serializedVersion: 2
-    m_Bits: 1
-  <StartingWeapon>k__BackingField: {fileID: 0}
-  <StartingCash>k__BackingField: 0
+    m_Bits: 257
+  <StartingWeapon>k__BackingField: {fileID: 11400000, guid: b8afe054103a8d24198c3d6fbdc6615f, type: 2}
   RightHandHoldPoint: {fileID: 3795303615481606199}
   LeftHandHoldPoint: {fileID: 1350556748537550407}
   LineRendererL: {fileID: 4835556103140554942}
@@ -1788,6 +1788,24 @@ MonoBehaviour:
     <FloatRayLength>k__BackingField: 5
     <StepHeightMultiplier>k__BackingField: 10
     <CheckWallFWDRayLength>k__BackingField: 0.4
+--- !u!114 &5892316974111167312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6408194624831855760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 943f7088062f4f09a8150dd06fb632ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxRangeBuild: 5
+  buildPoint: {fileID: 0}
+  CanBuildColor: {r: 0.34074938, g: 0.9339623, b: 0.3216002, a: 1}
+  CanNotBuildColor: {r: 1, g: 0.25, b: 0.25, a: 1}
+  Buildings: []
+  CurrentStructure: {fileID: 0}
 --- !u!1 &6450202602350647660
 GameObject:
   m_ObjectHideFlags: 0
@@ -2027,7 +2045,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7219884405148029387}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -84.2, y: -42.36, z: -10.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

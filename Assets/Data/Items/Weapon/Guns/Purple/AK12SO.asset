@@ -43,6 +43,9 @@ MonoBehaviour:
   <Damage>k__BackingField: 3
   <Weight>k__BackingField: 1
   <ReleaseToShoot>k__BackingField: 0
+  <BuffUnlockByLevel>k__BackingField:
+    _buffLevels:
+      _serializedList: []
   <AttackSounds>k__BackingField:
   - {fileID: 8300000, guid: 3d6ee6e0515410c4c838911546c78c4a, type: 3}
   - {fileID: 8300000, guid: 40a9276065d69f04ebe73021676f7fc6, type: 3}
