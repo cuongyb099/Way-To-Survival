@@ -31,18 +31,6 @@ public class TestInventory : MonoBehaviour
             data.GoReference.gameObject.SetActive(true);
     }
 
-    [ContextMenu("Test Save")]
-    public void Save()
-    {
-        PlayerDataPersistent.Instance.Save();
-    }
-
-    [ContextMenu("Load")]
-    public void Load()
-    {
-        PlayerDataPersistent.Instance.Load();
-    }
-
     [ContextMenu("Encrypt")]
     public void test()
     {

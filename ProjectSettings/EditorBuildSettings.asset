@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scene/Intro.unity
+    guid: 2f1a9d93d6c9a3f438a9ee2c6f84d2d9
+  - enabled: 1
     path: Assets/Scene/MainMenu.unity
     guid: 1e464102320a0ff4f8e9e8941b5d80d8
   - enabled: 1
@@ -17,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Endless Mode UI.unity
     guid: cecd8f3a0b5088142963dad80f44f3a7
+  - enabled: 1
+    path: Assets/Scene/Loading.unity
+    guid: b8494e8b16be1d7468e4e02a30a04509
+  - enabled: 1
+    path: Assets/Scene/Game Init.unity
+    guid: 49d58c081fc2342468e8decbf50ce0c3
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 9fb82e484514cd844983c98ae090386f, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: b9fbcba96ea10e74d837ce29bec6b6a6, type: 2}

@@ -1,20 +1,16 @@
 using DG.Tweening;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class FadeBlurPanel : PanelToggleByCanvas
 {
     public bool StopTime = false;
     public bool BlurBackground = false;
     [Range(0f,2f)] public float TransitionDuration = 0.2f;
-    public UnityEvent OnShowDo;
-    public UnityEvent OnHideDo;
     private static Tweener tween;
     
     public override void Show()
     {
         base.Show();
-        OnShowDo?.Invoke();
         if (StopTime)
         {
             tween.SetUpdate(false);
@@ -28,7 +24,6 @@ public class FadeBlurPanel : PanelToggleByCanvas
     public override void Hide()
     {
         base.Hide();
-        OnHideDo?.Invoke();
         if (StopTime)
         {
             tween.SetUpdate(false);

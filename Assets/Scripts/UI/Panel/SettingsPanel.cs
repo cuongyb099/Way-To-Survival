@@ -42,11 +42,11 @@ public class SettingsPanel : FadeBlurPanel
         {
             AudioManager.Instance.SetUIVolume(x);
         });
-        OnShowDo.AddListener(() =>
+        OnPanelShow.AddListener(() =>
         {
             CameraManager.Instance.SetCam(CameraType.SettingCamera);
         });
-        OnHideDo.AddListener(() =>
+        OnPanelHide.AddListener(() =>
         {
             CameraManager.Instance.SetCam(CameraType.MainCamera);
         });

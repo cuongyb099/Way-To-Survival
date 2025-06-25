@@ -639,12 +639,6 @@ MonoBehaviour:
   StopTime: 1
   BlurBackground: 1
   TransitionDuration: 1
-  OnShowDo:
-    m_PersistentCalls:
-      m_Calls: []
-  OnHideDo:
-    m_PersistentCalls:
-      m_Calls: []
   _resumeBtn: {fileID: 4564235379288537162}
   _settingBtn: {fileID: 3857570383425630939}
   _restartBtn: {fileID: 3297422535041285953}
@@ -986,6 +980,7 @@ GameObject:
   - component: {fileID: 2757736671196587931}
   - component: {fileID: 1183139189292350320}
   - component: {fileID: 8413468429134091401}
+  - component: {fileID: 8712426827001837416}
   m_Layer: 5
   m_Name: Btn_Quit
   m_TagString: Untagged
@@ -1110,6 +1105,24 @@ MonoBehaviour:
   Clip: {fileID: 8300000, guid: 3fd646c7eac61d440b612ba42fc0e17c, type: 3}
   Type: 3
   Volume: 1
+--- !u!114 &8712426827001837416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6948558802616592833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3a101d080d470abadaeb2a8c878097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scenes:
+  - MainMenu
+  - MainMenu UI
+  OnBeforeLoading:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7268380302339000022
 GameObject:
   m_ObjectHideFlags: 0

@@ -44,7 +44,6 @@ public class PlayerDataPersistent : SingletonPersistent<PlayerDataPersistent>,IS
     [ContextMenu("Load")]
     public void Load()
     {
-        Debug.Log("Load");
         if (!File.Exists(SavePath))
         {
             _playerData = new PlayerSaveData("0","defaultUser",0f,_beginningInventory.ItemDataList);

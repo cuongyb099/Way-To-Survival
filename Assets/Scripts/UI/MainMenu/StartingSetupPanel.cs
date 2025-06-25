@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using KatInventory;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class StartingSetupPanel : FadeBlurPanel
@@ -14,7 +15,8 @@ public class StartingSetupPanel : FadeBlurPanel
     [SerializeField] private List<WeaponSlotUI> WeaponSlots;
     
     private List<WeaponItemUI> itemsUI = new List<WeaponItemUI>();
-
+    public UnityEvent OnEnterGame;
+    
     protected override void OnAwake()
     {
         base.OnAwake();
@@ -45,7 +47,7 @@ public class StartingSetupPanel : FadeBlurPanel
             if (CheckStartGear())
             {
                 PlayerDataPersistent.Instance.ChangeStartingWeapons(WeaponSlots[0].ItemBaseSoHolder,WeaponSlots[1].ItemBaseSoHolder,WeaponSlots[2].ItemBaseSoHolder);
-                LoadingAsyncManager.Instance.SwitchToMap1();
+                OnEnterGame?.Invoke();
             }
             else Debug.Log("Can't Start Game");
         });
