@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 7743219217815948456}
   - component: {fileID: 5085854432808924236}
   - component: {fileID: 4034191217942353858}
-  m_Layer: 0
+  - component: {fileID: -504078597296578013}
+  m_Layer: 13
   m_Name: Range Turret
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,8 +109,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.4, y: 1.4, z: 1.4}
+  m_Center: {x: 0, y: 0.24, z: 0}
 --- !u!114 &7743219217815948456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,6 +190,19 @@ MonoBehaviour:
       Version: 1.7.8
   gizmoViewMode: 2
   showBehaviorDesignerGizmo: 1
+--- !u!114 &-504078597296578013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57737691637219872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 430a0c91cf831ae42bc0e66f5da519ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _statsHolder: {fileID: 11400000, guid: 815c7dd96b75505449f4f18f6fed64a9, type: 2}
 --- !u!1 &268243542192031082
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,7 +214,7 @@ GameObject:
   - component: {fileID: 2302639223805324183}
   - component: {fileID: 5782673894765297011}
   - component: {fileID: 5644725623767368386}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -282,7 +296,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4026143554613061848}
   - component: {fileID: 7922689664430365887}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Place HitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,7 +340,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2498447427710977626}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}

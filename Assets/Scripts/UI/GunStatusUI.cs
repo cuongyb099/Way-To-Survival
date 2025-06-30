@@ -52,7 +52,7 @@ public class GunStatusUI : MonoBehaviour
     }
 	public void ChangeGun(WeaponBase weapon)
 	{
-		if (weapon.WeaponData.WeaponSO.WeaponType != WeaponType.Knife)
+		if (weapon.WeaponData.WeaponSO.WeaponType is WeaponType.Knife or WeaponType.SpecialWeapon)
 		{
 			gun = (GunBase)weapon;
 			gunAmmo = gun.Stats.GetAttribute(AttributeType.Bullets);

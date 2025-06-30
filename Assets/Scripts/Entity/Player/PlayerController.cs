@@ -172,7 +172,7 @@ public class PlayerController : BasicController
         Animator.SetFloat(Type, (float)currentSlot.WeaponData.WeaponSO.WeaponType);
         Animator.SetBool(ReloadGun, false);
         Stats.GetStat(StatType.Speed).AddModifier(new StatModifier(-currentSlot.WeaponData.Weight.Value,StatModType.Flat));
-        if (CurrentWeapon.WeaponData.WeaponSO.WeaponType == WeaponType.Knife)
+        if (CurrentWeapon.WeaponData.WeaponSO.WeaponType is WeaponType.Knife or WeaponType.SpecialWeapon)
         {
 	        CameraZoom.SetZoom(1f/Mathf.Cos(45f*Mathf.Deg2Rad));
         }
@@ -266,7 +266,7 @@ public class PlayerController : BasicController
 	public Gradient LineTargetColor;
 	public void SetLineRenderers()
 	{
-        if(CurrentWeapon.WeaponData.WeaponSO.WeaponType == WeaponType.Knife) return;
+        if(CurrentWeapon.WeaponData.WeaponSO.WeaponType is WeaponType.Knife or WeaponType.SpecialWeapon) return;
         GunBase gun = (GunBase)CurrentWeapon;
         float accuracy = gun.GunAccuracy;
 		LineRendererL.SetLineRenderer(gun.ShootPoint, gun.GunData.Aim.Value, Quaternion.Euler(

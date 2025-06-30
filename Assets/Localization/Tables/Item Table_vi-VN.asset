@@ -31,7 +31,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 58675206979104768
-    m_Localized: Hop Cuu Thuong
+    m_Localized: "H\u1ED9p c\u1EE9u th\u01B0\u01A1ng"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68345572538232832
+    m_Localized: "C\u1EDD l\xEA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68346409993940992
+    m_Localized: "H\u1ED9p \u0111\u1EA1n"
     m_Metadata:
       m_Items: []
   references:

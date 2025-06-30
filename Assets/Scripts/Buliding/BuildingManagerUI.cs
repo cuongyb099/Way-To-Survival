@@ -11,7 +11,7 @@ public class BuildingManagerUI : MonoBehaviour
     protected List<TurretData> buildings;
     private void Awake()
     {
-        buildings = Inventory.Instance.GetItemsOfType<TurretData>();
+        buildings = PlayerDataPersistent.Instance.PlayerData.Inventory.GetItemsOfType<TurretData>();
         
         foreach (var building in buildings)
         {

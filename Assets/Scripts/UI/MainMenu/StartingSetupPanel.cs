@@ -25,7 +25,7 @@ public class StartingSetupPanel : FadeBlurPanel
     {
         base.Show();
         
-        LoadWeaponItems(Inventory.Instance.GetItems(ItemType.Weapon));
+        LoadWeaponItems(PlayerDataPersistent.Instance.PlayerData.Inventory.GetItems(ItemType.Weapon));
     }
 
     public override void Hide()

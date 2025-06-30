@@ -71,7 +71,7 @@ public class WeaponUpgradePanel : FadeBlurPanel
     {
         if(obj.ItemData == null) return;
         
-        Inventory.Instance.AddItem(obj.ItemData.StaticData);
+        PlayerDataPersistent.Instance.PlayerData.Inventory.AddItem(obj.ItemData.StaticData);
         Debug.Log("xxx");
         obj.ResetData();
     }
@@ -88,7 +88,7 @@ public class WeaponUpgradePanel : FadeBlurPanel
     }
     private void LoadItems(ItemType itemType)
     {
-        IEnumerable<ItemData> items = Inventory.Instance.GetItems(itemType);
+        IEnumerable<ItemData> items = PlayerDataPersistent.Instance.PlayerData.Inventory.GetItems(itemType);
         if (!itemsUI.ContainsKey(itemType))
         {
             itemsUI.Add(itemType, new List<UIItem>());
@@ -146,7 +146,7 @@ public class WeaponUpgradePanel : FadeBlurPanel
             if (slot.ItemData == null)
             {
                 slot.ChangeItemDisplay(itemData,itemData.StaticData.Icon,1);
-                Inventory.Instance.RemoveItem(itemData.StaticData);
+                PlayerDataPersistent.Instance.PlayerData.Inventory.RemoveItem(itemData.StaticData);
                 return;
             }
         }

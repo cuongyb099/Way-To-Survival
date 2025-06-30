@@ -91,6 +91,18 @@ MonoBehaviour:
     m_Key: Item_Weapon_MedkitClass
     m_Metadata:
       m_Items: []
+  - m_Id: 68345572538232832
+    m_Key: Item_Weapon_Wrench
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68346106724790272
+    m_Key: Item_Weapon_WrenchDes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68346409993940992
+    m_Key: Item_Weapon_AmmoBag
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

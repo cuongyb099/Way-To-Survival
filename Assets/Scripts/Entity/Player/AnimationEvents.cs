@@ -59,7 +59,7 @@ public class AnimationEvents : MonoBehaviour
 	public void DamageMelee()
 	{
 		MeleeBase weapon = (MeleeBase)PlayerController.CurrentWeapon;
-		weapon?.DealDamage();
+		weapon?.MeleeLogic();
 	}
 	//Sounds
 	public void CockingSound()
