@@ -46,13 +46,13 @@ public class GunStatusUI : MonoBehaviour
 		    TextAmmo.text = "∞";
 	    else
 	    {
-		    string txt = (gun.GunData.GunSO.WeaponType is WeaponType.Pistol)? "∞": holdingAmmo.Value.ToString();
+		    string txt = (gun.GunData.GunSO.WeaponType is WeaponType.Pistol)? "∞": ((int)(holdingAmmo.Value/GunBase.bulletMultiplier[gun.GunData.GunSO.WeaponType])).ToString();
 		    TextAmmo.text = $"{gunAmmo.Value} <size=70%><voffset=4.86135><color=#FFFFFF8C>/{txt}</color></voffset></size>";
 	    }
     }
 	public void ChangeGun(WeaponBase weapon)
 	{
-		if (weapon.WeaponData.WeaponSO.WeaponType is WeaponType.Knife or WeaponType.SpecialWeapon)
+		if (weapon.WeaponData.WeaponSO.WeaponType is not (WeaponType.Knife or WeaponType.SpecialWeapon))
 		{
 			gun = (GunBase)weapon;
 			gunAmmo = gun.Stats.GetAttribute(AttributeType.Bullets);
