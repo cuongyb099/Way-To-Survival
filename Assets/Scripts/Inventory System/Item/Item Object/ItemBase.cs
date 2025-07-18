@@ -2,16 +2,15 @@ using UnityEngine;
 
 namespace KatInventory
 {
-    public abstract class ItemBase : MonoBehaviour
+    public abstract class ItemBase : MonoBehaviour, IItemInstance
     {
-        public ItemGOData Data { get; protected set; }
+        protected ItemGOData Data;
 
-        public void SetData(ItemGOData itemData)
+        public virtual void SetData(ItemData itemData)
         {
-            Data = itemData;
+            Data = itemData as ItemGOData;
         }
 
-        //Not Always Item Use This Method So Not Abstract
         public virtual void Use()
         {
             

@@ -37,12 +37,15 @@ MonoBehaviour:
   <MaxStack>k__BackingField: 1
   <Modifiers>k__BackingField: 
   <Rarity>k__BackingField: 2
-  <Prefab>k__BackingField: {fileID: -4200236506036093466, guid: f85e0a07b49e2c34589b813c03737d9c, type: 3}
+  <Prefab>k__BackingField: {fileID: 4180766260500403244, guid: f85e0a07b49e2c34589b813c03737d9c, type: 3}
   <WeaponType>k__BackingField: 0
   <ShootingSpeed>k__BackingField: 1
   <Damage>k__BackingField: 1
   <Weight>k__BackingField: 1
   <ReleaseToShoot>k__BackingField: 0
+  <BuffUnlockByLevel>k__BackingField:
+    _buffLevels:
+      _serializedList: []
   <AttackSounds>k__BackingField:
   - {fileID: 8300000, guid: fe9c6fc296f100044b864f2bd639c3ca, type: 3}
   <BulletPrefab>k__BackingField: {fileID: 984755602444092648, guid: bff9cb15c026277498f4541bb37853a4, type: 3}

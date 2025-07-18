@@ -1,7 +1,7 @@
 using BehaviorDesigner.Runtime;
 using BehaviorDesigner.Runtime.Tasks;
 
-[TaskCategory("AI")]
+[TaskCategory("NavMesh")]
 public class SetActiveAgent : BaseEnemyBehavior
 {
     public SharedBool Active;

@@ -1,9 +1,10 @@
 using System.Collections.Generic;
+using KatLib.Serialized_Type;
 using UnityEngine;
 
 public class ColliderDetectionCtrl : MonoBehaviour
 {
-    private Dictionary<int, ColliderDetection> _detectionDict;
+    private Dictionary<string, ColliderDetection> _detectionDict;
 
     private void Awake()
     {
@@ -13,21 +14,20 @@ public class ColliderDetectionCtrl : MonoBehaviour
     private void LoadComponent()
     {
         if(_detectionDict != null) return;
-        _detectionDict = new Dictionary<int, ColliderDetection>();
+        _detectionDict = new Dictionary<string, ColliderDetection>();
         foreach (ColliderDetection detection in transform.parent.GetComponentsInChildren<ColliderDetection>())
         {
-            _detectionDict.Add(detection.DetectionName.GetHashCode(), detection);
+            _detectionDict.Add(detection.DetectionName.Value, detection);
         }
     }
-
-    public ColliderDetection GetDetection(int hashCode)
+    
+    public ColliderDetection GetDetection(StringSO detectionName)
     {
-        LoadComponent();
-        return _detectionDict.GetValueOrDefault(hashCode);
+        return GetDetection(detectionName.Value);
     }
 
     public ColliderDetection GetDetection(string detectionName)
     {
-        return GetDetection(detectionName.GetHashCode());
+        return _detectionDict.GetValueOrDefault(detectionName);
     }
 }

@@ -11,10 +11,8 @@ public class EnemyBehaviorStatsLinking
     private static readonly int MoveSpeed = Animator.StringToHash("Move Speed");
     private static readonly string ATK = "Atk";
     private EnemyCtrl _enemyCtrl;
-    private Stat atkStat;
     private Stat atkSpeedStat;
     private Stat speedStat;
-    private BehaviorTree behaviorTree;
     private Animator animator;
     private AgentAuthoring agent;
     public EnemyBehaviorStatsLinking(EnemyCtrl enemyCtrl)
@@ -26,22 +24,12 @@ public class EnemyBehaviorStatsLinking
     {
         await UniTask.DelayFrame(2);
         
-        behaviorTree = _enemyCtrl.BTree;
         animator = _enemyCtrl.Anim;
         var statsCtrl = _enemyCtrl.Stats;
         agent = _enemyCtrl.Authoring;
 
-		atkStat = statsCtrl.GetStat(StatType.ATK);
         atkSpeedStat = statsCtrl.GetStat(StatType.ATKSpeed);
         speedStat = statsCtrl.GetStat(StatType.Speed);
-        
-        //ATK
-        
-        behaviorTree.SetVariableValue(ATK, atkStat.Value);
-        atkStat.OnValueChange += () =>
-        {
-            behaviorTree.SetVariableValue(ATK, atkStat.Value);
-        };
 
         //ATK Speed
         animator.SetFloat(ATKSpeed, atkSpeedStat.Value);

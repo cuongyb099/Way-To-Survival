@@ -48,7 +48,6 @@ public abstract class BaseStatusEffect :IEquatable<BaseStatusEffect>
         currentStack = 0;
         HandleStart();
         OnStart?.Invoke();
-        _= Test();
         if (Data.UseAdvanceUpdate)
         {
             _ = UpdateAsync();
@@ -78,11 +77,7 @@ public abstract class BaseStatusEffect :IEquatable<BaseStatusEffect>
         timer += Time.deltaTime;
         return timer > Data.Duration;
     }
-    private async Task Test(){
-        await Task.Run(() => {
-            Debug.Log(Thread.CurrentThread.ManagedThreadId);
-        });
-    }
+
     private async UniTaskVoid UpdateAsync()
     {
         while (!ForceStop)

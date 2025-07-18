@@ -2,7 +2,7 @@ using KatInventory;
 using UnityEngine;
 
 [RequireComponent(typeof(IndicatorBuilding))]
-public class Structure : ItemBase
+public abstract class Structure : BasicController, IItemInstance
 {
     protected IndicatorBuilding indicator;
     protected Collider collision;
@@ -14,8 +14,9 @@ public class Structure : ItemBase
         PlacmentHitBox = GetComponentInChildren<PlaceHitBox>();
     }
 
-    protected virtual void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         collision = GetComponent<Collider>();
         indicator = GetComponent<IndicatorBuilding>();
     }
@@ -31,4 +32,6 @@ public class Structure : ItemBase
         collision.enabled = true;
         indicator.ReturnDefault();   
     }
+
+    public abstract void SetData(ItemData itemData);
 }

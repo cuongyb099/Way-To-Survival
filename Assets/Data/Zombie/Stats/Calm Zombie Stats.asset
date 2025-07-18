@@ -16,11 +16,11 @@ MonoBehaviour:
     _serializedList:
     - Key: 0
       Value:
-        _baseValue: 5
-    - Key: 12
+        _baseValue: 6
+    - Key: 3
       Value:
         _baseValue: 1
-    - Key: 3
+    - Key: 7
       Value:
         _baseValue: 1
     - Key: 1

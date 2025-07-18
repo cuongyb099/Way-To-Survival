@@ -1,13 +1,13 @@
 using BehaviorDesigner.Runtime;
 using BehaviorDesigner.Runtime.Tasks;
 
-[TaskCategory("AI")]
+[TaskCategory("NavMesh")]
 public class DotsSetDestination : BaseEnemyBehavior
 {
     public SharedTransform Target;
     public override TaskStatus OnUpdate()
     {
-        if (Target.Value == null)
+        if (!Target.Value)
         {
             return TaskStatus.Failure;
         }

@@ -5,6 +5,6 @@ namespace KatInventory
     public abstract class ItemGOBaseSO : ItemBaseSO
     {
         [field: SerializeField]
-        public ItemBase Prefab  { get; private set; }
+        public GameObject Prefab  { get; private set; }
     }
 }

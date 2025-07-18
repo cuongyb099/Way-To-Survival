@@ -1,6 +1,6 @@
 using BehaviorDesigner.Runtime.Tasks;
 
-[TaskCategory("AI")]
+[TaskCategory("NavMesh")]
 public class DotsStopDestination : BaseEnemyBehavior
 {
     public override TaskStatus OnUpdate()

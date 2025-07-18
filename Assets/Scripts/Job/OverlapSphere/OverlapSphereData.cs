@@ -1,9 +1,13 @@
+using System.Collections.Generic;
+using BehaviorDesigner.Runtime;
+using BTreeNode.SharedType;
 using UnityEngine;
 
 public class OverlapSphereData : JobData
 {
-    [HideInInspector] public float Radius;
+    public SharedFloat Radius;
     [HideInInspector] public Transform Point;
-    [HideInInspector] public Vector3 Offset;
-    [HideInInspector] public Transform Target;
+    public SharedVector3 Offset;
+    public SharedHashsetTransform HitTargets;
+    public SharedLayerMask Layer;
 }
