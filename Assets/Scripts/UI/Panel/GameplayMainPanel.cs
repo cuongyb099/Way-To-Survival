@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,6 +19,11 @@ public class GameplayMainPanel : PanelToggleByCanvas
     protected override void OnAwake()
     {
         LoadComponents();
+        
+    }
+
+    private void Start()
+    {
         Show();
     }
 

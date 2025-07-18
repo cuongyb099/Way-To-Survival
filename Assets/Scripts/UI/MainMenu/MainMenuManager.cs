@@ -11,5 +11,6 @@ public class MainMenuManager : MonoBehaviour
             Destroy(gameObject);
         }
         Instance = this;
+        
     }
 }

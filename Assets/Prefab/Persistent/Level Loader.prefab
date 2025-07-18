@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 4845192598365783435}
   - component: {fileID: 883275710176574262}
   m_Layer: 5
-  m_Name: Shop Panel (1)
+  m_Name: LoadingScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2002,7 +2002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.39215687}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.88235295}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2259,7 +2259,7 @@ GameObject:
   - component: {fileID: 7404060746973752124}
   - component: {fileID: 9018594663837705992}
   m_Layer: 0
-  m_Name: Loading
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2358,7 +2358,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7882529111794829906}
-  - component: {fileID: 6529109690175047694}
   m_Layer: 0
   m_Name: Level Loader
   m_TagString: Untagged
@@ -2382,23 +2381,6 @@ Transform:
   - {fileID: 5585067592434558308}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6529109690175047694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7998860670759111722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c9c1d02c2c0c784c93883367aa6d216, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeHelper: {fileID: 883275710176574262}
-  loadingScreen: {fileID: 7613798446579942501}
-  loadingRotating: {fileID: 4010721314091162243}
-  loadingSlider: {fileID: 690073156564952955}
-  loadingText: {fileID: 4341050300216941243}
 --- !u!1 &8342894013009919545
 GameObject:
   m_ObjectHideFlags: 0

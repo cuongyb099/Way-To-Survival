@@ -99,7 +99,6 @@ public class Bullet : MonoBehaviour,IPoolable
 	}
 	public void Free()
 	{
-		Debug.Log(countDMG+"___");
 		rb.velocity = Vector3.zero;
 		collider.enabled = false;
 		trailRenderer.Clear();

@@ -34,7 +34,6 @@ public class GameManager : StateMachine<EGameState>
         }
         Instance = this;
         InitializeUIAsync().Forget();
-
         Player = FindAnyObjectByType<PlayerController>();
         WaveManager = FindAnyObjectByType<WaveManager>();
         EnemyManager = FindAnyObjectByType<EnemyManager>();
@@ -55,6 +54,7 @@ public class GameManager : StateMachine<EGameState>
         CurrentState = States[EGameState.Shopping];
         TransitionToState(EGameState.Shopping);
         AudioManager.Instance.PlaySound(heliSound);
+
     }
 
 

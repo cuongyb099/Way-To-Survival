@@ -6,7 +6,7 @@ using Tech.Singleton;
 using TMPro;
 using UnityEngine;
 
-public class MessagePopup : Singleton<MessagePopup>
+public class MessagePopup : SingletonPersistent<MessagePopup>
 {
     [field:SerializeField] public float TransitionDuration { get; set; }
     [field:SerializeField] public float MessageDuration { get; set; }
@@ -16,7 +16,7 @@ public class MessagePopup : Singleton<MessagePopup>
     protected override void Awake()
     {
         base.Awake();
-        canvasGroup = GetComponent<CanvasGroup>();
+        canvasGroup = GetComponentInChildren<CanvasGroup>();
     }
 
     public void ShowMessage(string message)

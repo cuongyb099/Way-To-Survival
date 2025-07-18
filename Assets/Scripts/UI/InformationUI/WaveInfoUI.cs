@@ -23,13 +23,13 @@ public class WaveInfoUI : MonoBehaviour
     [SerializeField] private AudioClip[] buffClips;
     private void Awake()
     {
-        GameEvent.OnInitializedUI += ShowWaveInfo;
+        LoadingScreen.Instance.OnDone.AddListener(ShowWaveInfo);  
         GameEvent.OnStartCombatState += PlaySoundSupense;
         GameEvent.OnStartShoppingState += ShowWaveInfo;
     }
     private void OnDestroy()
     {
-        GameEvent.OnInitializedUI -= ShowWaveInfo;
+        LoadingScreen.Instance.OnDone.RemoveListener(ShowWaveInfo);  
         GameEvent.OnStartCombatState -= PlaySoundSupense;
         GameEvent.OnStartShoppingState -= ShowWaveInfo;
     }
