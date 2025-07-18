@@ -14,7 +14,7 @@ public class PlayerDataPersistent : SingletonPersistent<PlayerDataPersistent>,IS
         get => _playerData;
         set => _playerData = value;
     }
-    [SerializeField]private PlayerSaveData _playerData = new PlayerSaveData();
+    [SerializeField] private PlayerSaveData _playerData;
     [SerializeField] private InventorySO _beginningInventory;
     [field:SerializeField] public int StartingResin { get;private set; }
     //
@@ -38,7 +38,6 @@ public class PlayerDataPersistent : SingletonPersistent<PlayerDataPersistent>,IS
     public void Save()
     {
         OnSavePlayerData?.Invoke();
-        Inventory.Instance.Save(_playerData);
         PlayerData.SaveJson(SavePath);
     }
     [ContextMenu("Load")]
@@ -46,11 +45,10 @@ public class PlayerDataPersistent : SingletonPersistent<PlayerDataPersistent>,IS
     {
         if (!File.Exists(SavePath))
         {
-            _playerData = new PlayerSaveData("0","defaultUser",0f,_beginningInventory.ItemDataList);
+            _playerData = new PlayerSaveData("0","defaultUser",0f,_beginningInventory);
         }
         else
             Json.LoadJson(SavePath, out _playerData);
-        Inventory.Instance.Load(_playerData);
         OnLoadPlayerData?.Invoke();
     }
     

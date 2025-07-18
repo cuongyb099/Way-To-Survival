@@ -2,6 +2,7 @@ using DG.Tweening;
 using ResilientCore;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using KatInventory;
 using Tech.Pooling;
 using UnityEditor.Rendering;
@@ -9,6 +10,16 @@ using UnityEngine;
 
 public class GunBase : WeaponBase
 {
+	public static Dictionary<WeaponType, int> bulletMultiplier = new Dictionary<WeaponType, int>() {
+		{ WeaponType.Knife ,0},
+		{ WeaponType.SpecialWeapon ,0},
+		{ WeaponType.Pistol ,0},
+		{ WeaponType.Rifle ,3},
+		{ WeaponType.Shotgun ,5},
+		{ WeaponType.Sniper ,10},
+		{ WeaponType.SMG ,1},
+	};
+
 	public GunData GunData => (GunData)Data;
 	[field: SerializeField] public Transform ShootPoint { get; private set; }
 	[field: SerializeField] public Transform ShellDropPoint { get; private set; }
@@ -113,7 +124,7 @@ public class GunBase : WeaponBase
 	}
 	public void ReloadGun()
 	{
-		if (!gunReloadable || IsFullCap || (GunData.GunSO.WeaponType != WeaponType.Pistol && playerController.Stats.GetAttribute(AttributeType.HoldingBullets).Value == 0)) return;
+		if (!gunReloadable || IsFullCap || (GunData.GunSO.WeaponType != WeaponType.Pistol && playerController.Stats.GetAttribute(AttributeType.HoldingBullets).Value < bulletMultiplier[GunData.GunSO.WeaponType])) return;
 		playerController.DisableLineRenderer();
 		ShootAble = false;
 		playerController.Animator.SetBool("ReloadGun", true);
@@ -159,16 +170,18 @@ public class GunBase : WeaponBase
 		if(GunData.GunSO.WeaponType != WeaponType.Pistol)
 		{
 			bulletSource = playerController.Stats.GetAttribute(AttributeType.HoldingBullets);
-			
-			if (bulletSource.Value >= att.MaxValue- att.Value)
+
+			int realBulletValue = (int)(att.MaxValue - att.Value) * bulletMultiplier[GunData.GunSO.WeaponType];
+			if (bulletSource.Value >= realBulletValue)
 			{
-				bulletSource.Value -= (att.MaxValue- att.Value);
+				bulletSource.Value -= realBulletValue;
 				att.SetValueToMax();
 			}
 			else
 			{
-				att.Value += bulletSource.Value;
-				bulletSource.Value = 0;
+				realBulletValue = (int)(bulletSource.Value/bulletMultiplier[GunData.GunSO.WeaponType]);
+				att.Value += realBulletValue;
+				bulletSource.Value -= realBulletValue*bulletMultiplier[GunData.GunSO.WeaponType];
 			}
 		}
 		else

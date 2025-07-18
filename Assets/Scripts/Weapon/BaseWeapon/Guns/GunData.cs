@@ -23,8 +23,9 @@ public class GunData : WeaponData
     {
         if(WeaponLevel>=15) return;
         ++WeaponLevel;
-        ShootingSpeed.UpgradeNegative();
-        Damage.Upgrade();
-        Recoil.UpgradeNegative();
+        ShootingSpeed.UpgradeNegative(WeaponLevel);
+        Recoil.UpgradeNegative(WeaponLevel);
+        Damage.Upgrade(WeaponLevel);
+        Aim.Upgrade(WeaponLevel);
     }
 }

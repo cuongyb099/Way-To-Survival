@@ -7,13 +7,13 @@ public class TestInventory : MonoBehaviour
     [ContextMenu("Test Add Gold")]
     public void AddGold()
     {
-        Inventory.Instance.AddItem("Gold", 100);
+        PlayerDataPersistent.Instance.PlayerData.Inventory.AddItem("Gold", 100);
     }
     
     [ContextMenu("Test Add Sword Prefab")]
     public void AddSwordPrefab()
     {
-        if(Inventory.Instance.AddItem("Sword") is not SwordData data) return;
+        if(PlayerDataPersistent.Instance.PlayerData.Inventory.AddItem("Sword") is not SwordData data) return;
         
         Debug.Log("I Do Something With " + data.GoReference.name);
     }
@@ -21,13 +21,13 @@ public class TestInventory : MonoBehaviour
     [ContextMenu("Test Remove Gold")]
     public void RemoveGold()
     {
-        Inventory.Instance.RemoveItem("Gold", 100);
+        PlayerDataPersistent.Instance.PlayerData.Inventory.RemoveItem("Gold", 100);
     }
     
     [ContextMenu("Test Remove Sword")]
     public void RemoveSword()
     {
-        if (Inventory.Instance.AddItem("Sword") is SwordData data) 
+        if (PlayerDataPersistent.Instance.PlayerData.Inventory.AddItem("Sword") is SwordData data) 
             data.GoReference.gameObject.SetActive(true);
     }
 

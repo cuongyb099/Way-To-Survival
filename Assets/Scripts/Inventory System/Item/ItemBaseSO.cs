@@ -29,7 +29,7 @@ namespace KatInventory
 
         public virtual void Use(GameObject user)
         {
-            Inventory.Instance.RemoveItem(this);
+            PlayerDataPersistent.Instance.PlayerData.Inventory.RemoveItem(this);
         }
         public abstract ItemType GetItemType();
         
