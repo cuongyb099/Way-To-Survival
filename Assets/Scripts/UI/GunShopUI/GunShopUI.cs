@@ -18,7 +18,7 @@ public class GunShopUI : FadeBlurPanel
 
     [Header("UI Elements")]
     [SerializeField] private GameObject GunsPanel ;
-    [SerializeField] private  GunShopDataUI GunDataUI;
+    [SerializeField] private  WeaponShopDataUI GunDataUI;
     [SerializeField] private  Button BuyButton;
     [SerializeField] private  TextMeshProUGUI BuyButtonText;
     [SerializeField] private  TextMeshProUGUI CashText;

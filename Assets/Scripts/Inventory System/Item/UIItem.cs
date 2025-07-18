@@ -32,7 +32,6 @@ public class UIItem : MonoBehaviour,IBeginDragHandler, IDragHandler,IEndDragHand
     public void ChangeItem(ItemData item)
     {
         if(item == null) return;
-        if(ItemData != null) ItemData.OnChangeQuantity -= UpdateItemQuantity;
         ItemData = item;
         ItemImage.sprite = item.StaticData.Icon;
         if (item.Quantity <= 1)
@@ -41,27 +40,27 @@ public class UIItem : MonoBehaviour,IBeginDragHandler, IDragHandler,IEndDragHand
             ItemCount.text = item.Quantity.ToString();
         BackgroundImage.sprite = GameDataManager.Instance.ItemRarityBackground[item.StaticData.Rarity];
         ItemImage.gameObject.SetActive(true);
-        ItemData.OnChangeQuantity += UpdateItemQuantity;
     }
     public void ChangeItemDisplay(ItemData data, Sprite image, int quantity)
     {
-        if(ItemData != null) ItemData.OnChangeQuantity -= UpdateItemQuantity;
         ItemData = data;
         ItemImage.sprite = image;
-        if (quantity <= 1)
-            ItemCount.text = "";
-        else
-            ItemCount.text = quantity.ToString();
+        UpdateItemQuantity(quantity, data.StaticData.Unique);
         BackgroundImage.sprite = GameDataManager.Instance.ItemRarityBackground[data.StaticData.Rarity];
         ItemImage.gameObject.SetActive(true);
     }
 
-    private void UpdateItemQuantity(int quantity)
+    private void UpdateItemQuantity(int quantity, bool unique)
     {
-        if (quantity <= 1)
+        if(unique)
             ItemCount.text = "";
         else
             ItemCount.text = quantity.ToString();
+    }
+    public void ForceUpdateItemQuantity(int ammount)
+    { 
+        var x = int.Parse(ItemCount.text) + ammount;
+        ItemCount.text = x.ToString();
     }
     public void Select()
     {
@@ -78,7 +77,7 @@ public class UIItem : MonoBehaviour,IBeginDragHandler, IDragHandler,IEndDragHand
     }
     public void OnDrag(PointerEventData eventData)
     {
-        throw new NotImplementedException();
+        
     }
 
     public void OnEndDrag(PointerEventData eventData)

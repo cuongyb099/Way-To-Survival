@@ -465,7 +465,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a147a6224609b3418a8e9ba072cab56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BuffCanvas: {fileID: 0}
   SelectedUI: {fileID: 1721263465577062531}
   SpeakingText: {fileID: 6126646704368410104}
   buyPrice: 5000

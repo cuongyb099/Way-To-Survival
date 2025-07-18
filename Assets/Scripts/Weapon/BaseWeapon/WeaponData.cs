@@ -31,10 +31,9 @@ public class WeaponData : ItemGOData
 
     public virtual void UpgradeWeapon()
     {
-        if(WeaponLevel>=15) return;
         ++WeaponLevel;
-        ShootingSpeed.UpgradeNegative();
-        Damage.Upgrade();
+        ShootingSpeed.UpgradeNegative(WeaponLevel);
+        Damage.Upgrade(WeaponLevel);
     }
     public virtual void OnEquip(PlayerController playerController)
     {
@@ -49,8 +48,6 @@ public class WeaponData : ItemGOData
     [Serializable]
     public class UpgradableFloat
     {
-        [JsonIgnore]
-        protected static float UpgradeValue = 0.02f;
         [JsonIgnore]
         public float Value
         {
@@ -86,17 +83,19 @@ public class WeaponData : ItemGOData
             BaseValue = baseValue;
         }
 
-        public float GetUpgradableValue()
+        public float GetUpgradableValue(int level)
         {
-            return BaseValue * (1f+ UpgradeValue) + AddOnValue;
+            return BaseValue * (1f+ GameDataManager.Instance.UpgradeCurve.Evaluate(level)) + AddOnValue;
         }
-        public void Upgrade()
+        public void Upgrade(int level)
         {
-            AddOnValue += BaseValue * UpgradeValue;
+            AddOnValue += BaseValue * GameDataManager.Instance.UpgradeCurve.Evaluate(level);
+            isDirty = true;
         }
-        public void UpgradeNegative()
+        public void UpgradeNegative(int level)
         {
-            AddOnValue -= BaseValue * UpgradeValue;
+            AddOnValue -= BaseValue * GameDataManager.Instance.UpgradeCurve.Evaluate(level);
+            isDirty = true;
         }
     }
 }

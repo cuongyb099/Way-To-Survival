@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 215825485}
-  m_IndirectSpecularColor: {r: 0.13798943, g: 0.15669489, b: 0.18432444, a: 0.1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 0.1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6061,7 +6061,8 @@ MonoBehaviour:
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 60fd41a3bf93aff47a41998cdb0d981a, type: 2}
   m_sharedMaterial: {fileID: -8614866120661173765, guid: 60fd41a3bf93aff47a41998cdb0d981a, type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: -8614866120661173765, guid: 60fd41a3bf93aff47a41998cdb0d981a, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -7111,16 +7112,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6ccf0751bd0bd241a4e3569c515484b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rayPos: {fileID: 1554734155}
-  _maskObject:
+  UpdatePerSecond: 8
+  FadeDuration: 0.25
+  Offset: {x: 0, y: 0, z: 0}
+  Layer:
     serializedVersion: 2
-    m_Bits: 4294967295
-  _playerOffset: {x: 0, y: 0.78, z: -0.39}
-  _fadeMaterial: {fileID: 2100000, guid: 7779dc656b28a7e40a1c77f921c0bb58, type: 2}
-  _maxMaterialToFade: 100
-  _fadeTime: 0.3
-  _alphaValue: 0.1
-  DebugMode: 1
+    m_Bits: 0
 --- !u!114 &596796114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11517,7 +11514,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _DeepObscurance: 1
+    - _DeepObscurance: 1.2
     - _Density: 1.3
     - _DetailOffset: -0.5
     - _LightDiffusionIntensity: 0.4
@@ -14794,6 +14791,7 @@ GameObject:
   - component: {fileID: 1993803299}
   - component: {fileID: 1993803298}
   - component: {fileID: 1993803301}
+  - component: {fileID: 1993803302}
   m_Layer: 0
   m_Name: MainCanvas
   m_TagString: Untagged
@@ -14896,6 +14894,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5793f1400ee4db1807d3381383a3b78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _panelsHistory: []
+--- !u!225 &1993803302
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993803296}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1996848196
 GameObject:
   m_ObjectHideFlags: 0

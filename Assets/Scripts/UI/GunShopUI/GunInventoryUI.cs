@@ -16,7 +16,7 @@ public class GunInventoryUI : FadeBlurPanel
 
     [Header("UI Elements")] 
     public GameObject GunsPanel;
-    public GunShopDataUI GunDataUI;
+    public WeaponShopDataUI GunDataUI;
     public Button BackButton;
     [Header("Data")]
     public AssetReferenceGameObject GunMiniPrefab;

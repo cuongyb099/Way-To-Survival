@@ -333,6 +333,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bae619193893de042a5a3ac5f2687c7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <IsVisible>k__BackingField: 0
+  OnPanelHide:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPanelShow:
+    m_PersistentCalls:
+      m_Calls: []
   StopTime: 0
   BlurBackground: 1
   TransitionDuration: 0.2

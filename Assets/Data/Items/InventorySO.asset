@@ -21,15 +21,23 @@ MonoBehaviour:
     Quantity: 1
   - Item: {fileID: 11400000, guid: c5135a2d58fb8e94daaeabc0c76506d6, type: 2}
     Quantity: 1
+  - Item: {fileID: 11400000, guid: 2d9e70142b52e9f43a5d7419fe4a3062, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: 78b62b38da4c12546aa12ae558e59521, type: 2}
+    Quantity: 1
+  - Item: {fileID: 11400000, guid: ff4de889927fa304fb8578c265c6cae9, type: 2}
+    Quantity: 1
   - Item: {fileID: 11400000, guid: c74faa70357a645489223741c269384f, type: 2}
     Quantity: 1
   - Item: {fileID: 11400000, guid: 1d41d42934d3a4b4089fe23949c7d4ca, type: 2}
     Quantity: 1
   - Item: {fileID: 11400000, guid: ad59c0a3a2e9bdb468e0f181c56729f8, type: 2}
-    Quantity: 1
+    Quantity: 999
   - Item: {fileID: 11400000, guid: 1f3a0e6e992683e46a87310910fefbf0, type: 2}
     Quantity: 1
   - Item: {fileID: 11400000, guid: ca76ed308b96d58488b5befd18e85905, type: 2}
     Quantity: 1
   - Item: {fileID: 11400000, guid: 8a445b63b1648334e8533834a3bcdff5, type: 2}
     Quantity: 1
+  - Item: {fileID: 11400000, guid: 3bad2dcdf4f83e84e95e06b97cf7b202, type: 2}
+    Quantity: 100

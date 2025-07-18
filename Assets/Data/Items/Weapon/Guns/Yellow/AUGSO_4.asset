@@ -39,10 +39,13 @@ MonoBehaviour:
   <Rarity>k__BackingField: 3
   <Prefab>k__BackingField: {fileID: -7086552029489029334, guid: 14b9068ff59c7a740a80c60276b4a17d, type: 3}
   <WeaponType>k__BackingField: 1
-  <ShootingSpeed>k__BackingField: 0.2
-  <Damage>k__BackingField: 2.3
+  <ShootingSpeed>k__BackingField: 0.3
+  <Damage>k__BackingField: 2
   <Weight>k__BackingField: 1
   <ReleaseToShoot>k__BackingField: 0
+  <BuffUnlockByLevel>k__BackingField:
+    _buffLevels:
+      _serializedList: []
   <AttackSounds>k__BackingField:
   - {fileID: 8300000, guid: 64345d71f073f8a47b4cb438ef699eb1, type: 3}
   - {fileID: 8300000, guid: ad49d29a83416c5489c79ca2975e050f, type: 3}
@@ -52,7 +55,7 @@ MonoBehaviour:
   <BulletPrefab>k__BackingField: {fileID: 984755602444092648, guid: bff9cb15c026277498f4541bb37853a4, type: 3}
   <ShellPrefab>k__BackingField: {fileID: 6182647827399181740, guid: a1e78c6635fd42541975b5cdc3cfdfab, type: 3}
   <MagPrefab>k__BackingField: {fileID: 6182647827399181740, guid: be822d7afbb24b64f825343c49bb66bb, type: 3}
-  <Aim>k__BackingField: 10
+  <Aim>k__BackingField: 7
   <SpreadMax>k__BackingField: 9
   <Recoil>k__BackingField: 0.04
   <RecoilResetTime>k__BackingField: 3

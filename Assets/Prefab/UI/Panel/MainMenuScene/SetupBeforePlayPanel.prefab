@@ -1910,6 +1910,18 @@ MonoBehaviour:
   - {fileID: 8212089633485345336}
   - {fileID: 7311052967202741329}
   - {fileID: 8784057363609729492}
+  FailToStartGameText:
+    m_TableReference:
+      m_TableCollectionName: GUID:a31c0d2977ad7184bbcf72d4a5440587
+    m_TableEntryReference:
+      m_KeyId: 59056337453555712
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &8499699803955072281
 GameObject:
   m_ObjectHideFlags: 0

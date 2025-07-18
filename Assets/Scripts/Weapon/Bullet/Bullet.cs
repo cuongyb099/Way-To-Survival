@@ -10,13 +10,18 @@ public class Bullet : MonoBehaviour,IPoolable
 	public float LiveTime = 3f;
 	public float Force = 10f;
 	public GameObject HitEffectWall;
+	
 	private DamageInfo damageInfo;
 	private Rigidbody rb;
 	private TrailRenderer trailRenderer;
 	private Tween seq;
 	private int countDMG = 0;
+	private bool isDealable = true;
+	private Collider collider;
+	private Vector3 spawnVelocity ;
 	private void Awake()
 	{
+		collider = GetComponent<Collider>();
 		rb = GetComponent<Rigidbody>();
 		trailRenderer = GetComponent<TrailRenderer>();
 	}
@@ -27,6 +32,7 @@ public class Bullet : MonoBehaviour,IPoolable
 	
 	private void OnCollisionEnter(Collision other)
 	{
+		if(!isDealable) return;
 		ObjectPool.Instance.SpawnObject(HitEffectWall, other.contacts[0].point, Quaternion.identity, PoolType.ParticleSystem);
 		seq.Kill();
 		Collider otherCollider = other.collider;
@@ -35,7 +41,7 @@ public class Bullet : MonoBehaviour,IPoolable
 			if (otherCollider.TryGetComponent(out IDamagable damagable))
 			{
 				DamageHandler.Damage(damagable, damageInfo);
-				
+				isDealable = false;
 				countDMG--;
 				damageInfo = new DamageInfo(damageInfo.Dealer,damageInfo.Damage*DamageReduction,damageInfo.IsCrit);
 				HandleBulletPenetration(other,countDMG);
@@ -52,7 +58,7 @@ public class Bullet : MonoBehaviour,IPoolable
 		{
 			Vector3 direction = spawnVelocity.normalized;
 			ContactPoint contact = collision.GetContact(0);
-			Vector3 backCastOrigin = contact.point + direction * 1f;
+			Vector3 backCastOrigin = contact.point + direction;
 
 			if (Physics.Raycast(
 				    backCastOrigin,
@@ -63,9 +69,8 @@ public class Bullet : MonoBehaviour,IPoolable
 			    ))
 			{
 				rb.position = hit.point + direction * 0.01f;
-
 				rb.velocity = spawnVelocity - direction;
-
+				isDealable = true;
 			}
 			else
 			{
@@ -77,14 +82,15 @@ public class Bullet : MonoBehaviour,IPoolable
 			Free();
 		}
 	}
-	private Vector3 spawnVelocity ;
 	public void InitBullet(Vector3 point, float accuracy, DamageInfo info)
 	{
 		damageInfo = info;
 		rb.position = point;
 		countDMG = DamageTime;
+		isDealable = true;
 		Vector3 angle = info.Dealer.gameObject.transform.rotation.eulerAngles;
-
+		collider.enabled = true;
+		
 		Quaternion temp = Quaternion.Euler(angle.x, angle.y + Mathf.Clamp(Random.Range(-accuracy, accuracy), 
 			-GameValues.RecoilMaxValue, GameValues.RecoilMaxValue), angle.z);
 		trailRenderer.Clear();
@@ -93,8 +99,9 @@ public class Bullet : MonoBehaviour,IPoolable
 	}
 	public void Free()
 	{
+		Debug.Log(countDMG+"___");
 		rb.velocity = Vector3.zero;
-		
+		collider.enabled = false;
 		trailRenderer.Clear();
 		ObjectPool.Instance.ReturnObjectToPool(gameObject);
 	}
