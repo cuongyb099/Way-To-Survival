@@ -72,7 +72,6 @@ public class WeaponUpgradePanel : FadeBlurPanel
         if(obj.ItemData == null) return;
         
         Inventory.Instance.AddItem(obj.ItemData.StaticData);
-        Debug.Log("xxx");
         obj.ResetData();
     }
     

@@ -1779,7 +1779,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 8112290404730549522}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1797,6 +1797,7 @@ GameObject:
   - component: {fileID: 8160532634415772991}
   - component: {fileID: 4569555394773382388}
   - component: {fileID: 8816095484348964603}
+  - component: {fileID: 3534803575459482579}
   m_Layer: 5
   m_Name: SetupBeforePlayPanel
   m_TagString: Untagged
@@ -1893,15 +1894,9 @@ MonoBehaviour:
   OnPanelShow:
     m_PersistentCalls:
       m_Calls: []
-  StopTime: 0
+  StopTime: 1
   BlurBackground: 0
   TransitionDuration: 0.2
-  OnShowDo:
-    m_PersistentCalls:
-      m_Calls: []
-  OnHideDo:
-    m_PersistentCalls:
-      m_Calls: []
   StartGameButton: {fileID: 2322939515466008159}
   BackButton: {fileID: 7036322289655352370}
   ListContent: {fileID: 407075423699031964}
@@ -1910,6 +1905,39 @@ MonoBehaviour:
   - {fileID: 8212089633485345336}
   - {fileID: 7311052967202741329}
   - {fileID: 8784057363609729492}
+  OnEnterGame:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3534803575459482579}
+        m_TargetAssemblyTypeName: LoadingRequest, Assembly-CSharp
+        m_MethodName: StartLoading
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3534803575459482579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8186582481246348753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3a101d080d470abadaeb2a8c878097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scenes:
+  - Map 1
+  - Endless Mode
+  OnBeforeLoading:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &8499699803955072281
 GameObject:
   m_ObjectHideFlags: 0

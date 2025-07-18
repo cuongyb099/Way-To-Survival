@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f08d2ae4cba14087c1ed36193d82b, type: 3}
+  m_Name: Range Attack
+  m_EditorClassIdentifier: 
+  mBehaviorSource:
+    behaviorName: Behavior
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(5.25529861,15.6523743)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(0.460412979,107.301041)"},"ID":1,"Name":"Sequence","Instant":true,"AbortTypeabortType":"LowerPriority","Children":[{"Type":"IsTargetInRangeJob","NodeData":{"Offset":"(-318.9614,146.157349)"},"ID":2,"Name":"Is
+        Target In Range Job","Instant":true,"OverlapSphereDataReceiver":{"SingleRadius":0,"Vector3Offset":"(0,0,0)","EntitiesJobSOEntitiesJob":0},"SharedTransformResultTarget":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Target","IsShared":true},"SharedFloatRange":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Radius
+        Range Attack","IsShared":true,"SinglemValue":4},"SharedVector3Offset":{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":null,"Vector3mValue":"(0,0.5,0)"}},{"Type":"RotateToTarget","NodeData":{"Offset":"(-158.153748,145.159927)"},"ID":3,"Name":"Rotate
+        To Target","Instant":true,"SharedTransformTarget":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Player","IsShared":true,"IsGlobal":true}},{"Type":"DotsStopDestination","NodeData":{"Offset":"(-9.593182,152.318954)"},"ID":4,"Name":"Dots
+        Stop Destination","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.UnityAnimator.SetTrigger","NodeData":{"Offset":"(126.467361,152.318939)"},"ID":5,"Name":"Set
+        Trigger","Instant":true,"SharedGameObjecttargetGameObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":null},"SharedStringparamaterName":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Scream"}},{"Type":"ThrowObjectAttack","NodeData":{"Offset":"(268.910522,152.792419)"},"ID":6,"Name":"Throw
+        Object Attack","Instant":true,"SharedTransformTarget":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Target","IsShared":true},"SharedGameObjectPrefab":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":null,"GameObjectmValue":1},"SharedFloatThrowAngle":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":30},"SharedFloatCooldown":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":2},"SharedFloatAtk":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Atk","IsShared":true,"SinglemValue":0},"SharedFloatForce":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":20},"SharedBoolIsCooldown":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.UnityAnimator.SetBoolParameter","NodeData":{"Offset":"(422.125061,152.815063)"},"ID":7,"Name":"Set
+        Bool Parameter","Instant":true,"SharedGameObjecttargetGameObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":null},"SharedStringparamaterName":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Move","IsShared":true,"IsGlobal":true,"Tooltip":"Move","StringmValue":"Move"},"SharedBoolboolValue":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"BooleansetOnce":false}]},"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"Offset
+        Check","IsShared":true,"Vector3mValue":"(0,0.73,0)"},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Attack
+        State Count","IsShared":true,"SinglemValue":2},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Hit
+        State Count","IsShared":true,"SinglemValue":1},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Dead
+        State Count","IsShared":true,"SinglemValue":3},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"Random
+        All Part Skin","IsShared":true,"BooleanmValue":true},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Range
+        Weak Attack","IsShared":true,"SinglemValue":1},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Atk","IsShared":true,"SinglemValue":0},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"Interrupted
+        Sprint Attack","IsShared":true,"BooleanmValue":false},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"Is
+        Sprint","IsShared":true,"BooleanmValue":false},{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Target","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Radius
+        Range Attack","IsShared":true,"SinglemValue":4}]}'
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 11400000, guid: 4d6007ecbaafbc540a33cd74ac5f336b, type: 2}
+        - {fileID: 1876691254634280451, guid: 1ac7bcba6a914a4448d212b0f50c4395, type: 3}
+        byteData: 
+        byteDataArray: 
+      Version: 1.7.8

@@ -37,7 +37,7 @@ MonoBehaviour:
   <MaxStack>k__BackingField: 1
   <Modifiers>k__BackingField: 
   <Rarity>k__BackingField: 3
-  <Prefab>k__BackingField: {fileID: -7086552029489029334, guid: 7143da844342c4246b9739697957abb4, type: 3}
+  <Prefab>k__BackingField: {fileID: 4180766260500403244, guid: 7143da844342c4246b9739697957abb4, type: 3}
   <WeaponType>k__BackingField: 1
   <ShootingSpeed>k__BackingField: 0.15
   <Damage>k__BackingField: 3

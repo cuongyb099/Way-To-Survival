@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Tech.Singleton;
 using UnityEngine;
 
-public class FadeObjectBlockPlayer : MonoBehaviour
+public class FadeObjectBlockPlayer : Singleton<FadeObjectBlockPlayer>
 {
     public int UpdatePerSecond = 8;
     public float FadeDuration = 0.25f;
@@ -14,6 +15,7 @@ public class FadeObjectBlockPlayer : MonoBehaviour
     protected List<FadingObject> fadeObjects = new List<FadingObject>();
     protected HashSet<FadingObject> fadeObjectInFrame = new HashSet<FadingObject>();
     protected float distanceBack = 30f;
+    
     public void SetFadeObjet(Transform target)
     {
         if(!target) return;

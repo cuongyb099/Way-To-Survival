@@ -17,10 +17,10 @@ MonoBehaviour:
     - Key: 0
       Value:
         _baseValue: 6
-    - Key: 12
+    - Key: 3
       Value:
         _baseValue: 1
-    - Key: 3
+    - Key: 7
       Value:
         _baseValue: 1
     - Key: 1
@@ -28,7 +28,7 @@ MonoBehaviour:
         _baseValue: 1
     - Key: 2
       Value:
-        _baseValue: 20
+        _baseValue: 30
   _attributeItems:
     _serializedList:
     - Key: 0

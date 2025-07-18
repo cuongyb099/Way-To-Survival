@@ -754,39 +754,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b906d0a6a9438c4e86601276c5b7b13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <IsVisible>k__BackingField: 1
+  OnPanelHide:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPanelShow:
+    m_PersistentCalls:
+      m_Calls: []
   StopTime: 1
   BlurBackground: 0
   TransitionDuration: 0.2
-  OnShowDo:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4282772377548630075}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-        m_MethodName: Select
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4282772377548630075}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
-        m_MethodName: set_isOn
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  OnHideDo:
-    m_PersistentCalls:
-      m_Calls: []
   _backBtn: {fileID: 7001420963713668234}
   _mainVolumeSlider: {fileID: 7454129188197534652}
   _musicVolumeSlider: {fileID: 2211590444425498187}
@@ -9415,10 +9392,10 @@ RectTransform:
   - {fileID: 5574554065010762504}
   m_Father: {fileID: 6262683175052893158}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1210.3575, y: 948.83}
+  m_SizeDelta: {x: 0, y: 948.83}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &139921914272759794
 CanvasRenderer:

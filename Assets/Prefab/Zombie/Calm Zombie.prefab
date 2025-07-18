@@ -1045,7 +1045,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5310542100974299064}
-  - {fileID: 8691269558775292597}
+  - {fileID: 3733094109677644451}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &8457643331591673021
@@ -1187,13 +1187,13 @@ MonoBehaviour:
       parentIndex: 
       startIndex: 
       variableStartIndex: 
-      JSONSerialization: '{"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"Offset
-        Check","IsShared":true,"Vector3mValue":"(0,1,0)"},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Attack
+      JSONSerialization: '{"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"Attack
+        Radius Offset","IsShared":true,"Vector3mValue":"(0,0.73,0)"},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Attack
         State Count","IsShared":true,"SinglemValue":2},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Hit
         State Count","IsShared":true,"SinglemValue":1},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Dead
         State Count","IsShared":true,"SinglemValue":3},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"Random
         All Part Skin","IsShared":true,"BooleanmValue":true},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Range
-        Weak Attack","IsShared":true,"SinglemValue":1}]}'
+        Weak Attack","IsShared":true,"SinglemValue":1},{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Target","IsShared":true}]}'
       fieldSerializationData:
         typeName: []
         fieldNameHash: 
@@ -8350,118 +8350,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.9632315, y: 0.08552067, z: 0.0000010579824}
     m_Extent: {x: 0.21825737, y: 0.21950252, z: 0.14783938}
   m_DirtyAABB: 0
---- !u!1 &8380081895593743228
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8691269558775292597}
-  - component: {fileID: 2156977099326875660}
-  m_Layer: 0
-  m_Name: Collider Detection Ctrl
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8691269558775292597
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8380081895593743228}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2852939493077247532}
-  m_Father: {fileID: 8931919482995203352}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2156977099326875660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8380081895593743228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd37ea723a3c461da64a18335048f2a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &8553103902078422215
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2852939493077247532}
-  - component: {fileID: 1840217538595369371}
-  - component: {fileID: 7137130711703722202}
-  m_Layer: 0
-  m_Name: Small Attack Hit Box
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2852939493077247532
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8553103902078422215}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.327, z: 0.447}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8691269558775292597}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1840217538595369371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8553103902078422215}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29177c537c9d4001b93a5bf9eb065df6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DetectionName: Small Attack Hitbox
---- !u!65 &7137130711703722202
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8553103902078422215}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8843832481052250801
 GameObject:
   m_ObjectHideFlags: 0
@@ -8942,3 +8830,65 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.44713473, y: -0.0048761144, z: 0.00000059604645}
     m_Extent: {x: 0.47765517, y: 0.24697271, z: 1.3739346}
   m_DirtyAABB: 0
+--- !u!1001 &3397287074672698306
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8931919482995203352}
+    m_Modifications:
+    - target: {fileID: 2083772206840809825, guid: 8e274775dc1dc8043a2d199b4c4ae375, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2083772206840809825, guid: 8e274775dc1dc8043a2d199b4c4ae375, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2083772206840809825, guid: 8e274775dc1dc8043a2d199b4c4ae375, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2083772206840809825, guid: 8e274775dc1dc8043a2d199b4c4ae375, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2083772206840809825, guid: 8e274775dc1dc8043a2d199b4c4ae375, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2083772206840809825, guid: 8e274775dc1dc8043a2d199b4c4ae375, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2083772206840809825, guid: 8e274775dc1dc8043a2d199b4c4ae375, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2083772206840809825, guid: 8e274775dc1dc8043a2d199b4c4ae375, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2083772206840809825, guid: 8e274775dc1dc8043a2d199b4c4ae375, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2083772206840809825, guid: 8e274775dc1dc8043a2d199b4c4ae375, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407041184192056337, guid: 8e274775dc1dc8043a2d199b4c4ae375, type: 3}
+      propertyPath: m_Name
+      value: Collider Detection Ctrl
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8e274775dc1dc8043a2d199b4c4ae375, type: 3}
+--- !u!4 &3733094109677644451 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2083772206840809825, guid: 8e274775dc1dc8043a2d199b4c4ae375, type: 3}
+  m_PrefabInstance: {fileID: 3397287074672698306}
+  m_PrefabAsset: {fileID: 0}

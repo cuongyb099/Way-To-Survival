@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
@@ -12,6 +11,5 @@ public class MainMenuManager : MonoBehaviour
             Destroy(gameObject);
         }
         Instance = this;
-        SceneManager.LoadSceneAsync(gameObject.scene.name + " UI", LoadSceneMode.Additive);
     }
 }

@@ -47,8 +47,6 @@ public class GameManager : StateMachine<EGameState>
 
     private async UniTaskVoid InitializeUIAsync()
     {
-        var ophandle = SceneManager.LoadSceneAsync("Endless Mode UI", LoadSceneMode.Additive);
-        await UniTask.WaitUntilValueChanged(ophandle , x => x.isDone);
         GameEvent.OnInitializedUI?.Invoke();
     }
 

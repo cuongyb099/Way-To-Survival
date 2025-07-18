@@ -1,26 +1,37 @@
 using System;
+using KatLib.Serialized_Type;
 using UnityEngine;
 
 public class ColliderDetection : MonoBehaviour
 {
-    public string DetectionName;
+    public StringSO DetectionName;
     public Action<Collider> CallbackTriggerEnter;
-    private Collider _collider;
+    protected Collider m_collider;
     
-    private void Awake()
+    protected virtual void Awake()
     {
-        _collider = GetComponent<Collider>();
-        _collider.isTrigger = true;
-        _collider.enabled = false;
+        m_collider = GetComponent<Collider>();
+        m_collider.isTrigger = true;
+        m_collider.enabled = false;
     }
 
-    public void SetActiveDetect(bool active)
+    public virtual void SetActiveDetect(bool active)
     {
-        _collider.enabled = active;
+        m_collider.enabled = active;
     }
     
-    private void OnTriggerEnter(Collider other)
+    protected virtual void OnTriggerEnter(Collider other)
     {
         CallbackTriggerEnter?.Invoke(other);
+    }
+
+    public virtual void SetIncludeLayer(LayerMask layer)
+    {
+        m_collider.includeLayers = layer;
+    }
+
+    public virtual void SetExcludeLayer(LayerMask layer)
+    {
+        m_collider.excludeLayers = layer;
     }
 }

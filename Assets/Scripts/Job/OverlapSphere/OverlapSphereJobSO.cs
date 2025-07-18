@@ -7,9 +7,6 @@ using UnityEngine;
 public class OverlapSphereJobSO : EntitiesJobSO
 {
     [field: SerializeField] public int MaxHits { get; private set; }
-    [field: SerializeField] public LayerMask Mask { get; private set; }
-    [field: SerializeField] public string TagCheck { get; private set; }
-    
     
     public override void DoJob(List<JobData> jobData)
     {
@@ -25,10 +22,10 @@ public class OverlapSphereJobSO : EntitiesJobSO
             {
                 queryParameters = new QueryParameters()
                 {
-                    layerMask = Mask
+                    layerMask = data[i].Layer.Value,
                 },
-                radius = data[i].Radius,
-                point = data[i].Point.position + data[i].Offset,
+                radius = data[i].Radius.Value,
+                point = data[i].Point.position + data[i].Offset.Value,
             };
         }
         
@@ -36,17 +33,23 @@ public class OverlapSphereJobSO : EntitiesJobSO
         
         for (int i = 0; i < jobData.Count; i++)
         {
+            var hitTargets = data[i].HitTargets.Value;
+            
+            if (hitTargets == null)
+            {
+                hitTargets = new HashSet<Transform>();
+                data[i].HitTargets.Value = hitTargets;
+            }
+            
+            hitTargets.Clear();
             for (int j = 0; j < MaxHits; j++)
             {
                 var index = i * MaxHits + j;
 
-                if (!hits[index].collider || !hits[index].collider.CompareTag(TagCheck))
-                {
-                    data[i].Target = null;
-                    continue;
-                }
+                var hitCollider = hits[index].collider;
+                if (!hits[index].collider) continue;
                 
-                data[i].Target = hits[index].collider.transform;
+                hitTargets.Add(hitCollider.transform);
                 break;
             }
         }

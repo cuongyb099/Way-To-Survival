@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 7743219217815948456}
   - component: {fileID: 5085854432808924236}
   - component: {fileID: 4034191217942353858}
-  m_Layer: 0
+  - component: {fileID: 7860990538248169433}
+  m_Layer: 3
   m_Name: Range Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,8 +109,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 2.3927555, z: 1}
+  m_Center: {x: 0, y: 0.69637775, z: 0}
 --- !u!114 &7743219217815948456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,7 +158,7 @@ MonoBehaviour:
   logTaskChanges: 0
   group: 0
   resetValuesOnRestart: 0
-  externalBehavior: {fileID: 0}
+  externalBehavior: {fileID: 11400000, guid: e33eb9d4946fa474ca80b929c9b93e46, type: 2}
   mBehaviorSource:
     behaviorName: Behavior
     behaviorDescription: 
@@ -166,20 +167,22 @@ MonoBehaviour:
       parentIndex: 
       startIndex: 
       variableStartIndex: 
-      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(165.781952,4.535797)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Repeater","NodeData":{"Offset":"(-4.218047,120.72628)"},"ID":1,"Name":"Repeater","Instant":true,"SharedIntcount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":0},"SharedBoolrepeatForever":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"SharedBoolendOnFailure":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(0,130)"},"ID":2,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"IsTargetInRangeJob","NodeData":{"Offset":"(-198.595825,120)"},"ID":3,"Name":"Is
-        Target In Range Job","Instant":true,"OverlapSphereDataReceiver":{"SingleRadius":0,"Vector3Offset":"(0,0,0)","EntitiesJobSOEntitiesJob":0},"SharedTransformResultTarget":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Target","IsShared":true},"SharedFloatRange":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":8},"SharedVector3Offset":{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":null,"Vector3mValue":"(0,0,0)"}},{"Type":"RotateTargetTowardTarget","NodeData":{"Offset":"(4.70130444,124.229858)"},"ID":4,"Name":"Rotate
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(165.781952,4.535797)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Repeater","NodeData":{"Offset":"(-4.218047,120.72628)"},"ID":1,"Name":"Repeater","Instant":true,"SharedIntcount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":0},"SharedBoolrepeatForever":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"SharedBoolendOnFailure":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(0,130)"},"ID":2,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.UnknownTask","NodeData":{"Offset":"(-198.595825,120)","Comment":"Unknown
+        Task. Right click and Replace to locate new task."},"ID":3,"Name":"Unknown
+        Is Target In Range Job","Instant":true,"StringJSONSerialization":"{\"Type\":\"IsTargetInRangeJob\",\"NodeData\":{\"Offset\":\"(-198.595825,120)\"},\"ID\":3,\"Name\":\"Is
+        Target In Range Job\",\"Instant\":true,\"OverlapSphereDataReceiver\":{\"SingleRadius\":0,\"Vector3Offset\":\"(0,0,0)\",\"EntitiesJobSOEntitiesJob\":0},\"SharedTransformResultTarget\":{\"Type\":\"BehaviorDesigner.Runtime.SharedTransform\",\"Name\":\"Target\",\"IsShared\":true},\"SharedFloatRange\":{\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\"Name\":null,\"SinglemValue\":8},\"SharedVector3Offset\":{\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\"Name\":null,\"Vector3mValue\":\"(0,0,0)\"}}","List`1fieldNameHash":[],"List`1startIndex":[],"List`1dataPosition":[],"List`1unityObjects":[],"List`1byteData":[]},{"Type":"RotateTargetTowardTarget","NodeData":{"Offset":"(4.70130444,124.229858)"},"ID":4,"Name":"Rotate
         Target Toward Target","Instant":true,"SharedTransformTargetRotate":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Gun
-        Transform","IsShared":true,"TransformmValue":1},"SharedTransformTarget":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Target","IsShared":true},"SharedFloatDuration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":0.5}},{"Type":"TurretShoot","NodeData":{"Offset":"(186.258026,116.44043)"},"ID":5,"Name":"Turret
+        Transform","IsShared":true,"TransformmValue":0},"SharedTransformTarget":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Target","IsShared":true},"SharedFloatDuration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":0.5}},{"Type":"TurretShoot","NodeData":{"Offset":"(186.258026,116.44043)"},"ID":5,"Name":"Turret
         Shoot","Instant":true,"SharedTransformGunTransform":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Gun
-        Transform","IsShared":true,"TransformmValue":2},"GameObjectBullet":3,"SharedFloatCoolDownTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SingleGunRecoilStrength":0.7,"SingleRecoilTime":0.1}]}]},"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Target","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Gun
-        Transform","IsShared":true,"TransformmValue":4}]}'
+        Transform","IsShared":true,"TransformmValue":1},"GameObjectBullet":2,"SharedFloatCoolDownTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SingleGunRecoilStrength":0.7,"SingleRecoilTime":0.1}]}]},"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Target","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Gun
+        Transform","IsShared":true,"TransformmValue":3},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Attack
+        Radius","IsShared":true,"SinglemValue":3},{"Type":"BTreeNode.SharedType.SharedHashsetTransform","Name":"HitTargets","IsShared":true,"HashSet`1mValue":{}}]}'
       fieldSerializationData:
         typeName: []
         fieldNameHash: 
         startIndex: 
         dataPosition: 
         unityObjects:
-        - {fileID: 11400000, guid: 93fc66372913b5e428e8ef9c9abcc23c, type: 2}
         - {fileID: 2498447427710977626}
         - {fileID: 2498447427710977626}
         - {fileID: 984755602444092648, guid: bff9cb15c026277498f4541bb37853a4, type: 3}
@@ -189,6 +192,19 @@ MonoBehaviour:
       Version: 1.7.8
   gizmoViewMode: 2
   showBehaviorDesignerGizmo: 1
+--- !u!114 &7860990538248169433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57737691637219872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 430a0c91cf831ae42bc0e66f5da519ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _statsHolder: {fileID: 11400000, guid: 4b5498ab6c8af0f459b3c1cce6a5b32b, type: 2}
 --- !u!1 &268243542192031082
 GameObject:
   m_ObjectHideFlags: 0

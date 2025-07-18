@@ -33,16 +33,10 @@ public class PausePanel : FadeBlurPanel
         _restartBtn.onClick.AddListener(() =>
         {
             //Unload
-            SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
-            Resources.UnloadUnusedAssets();
-            LevelAsyncManager.Instance.SwitchToMap1();
         });
         _quitBtn.onClick.AddListener(() =>
         {
             //Unload
-            SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
-            Resources.UnloadUnusedAssets();
-            LevelAsyncManager.Instance.SwitchToMainMenu();
         });
     }
 

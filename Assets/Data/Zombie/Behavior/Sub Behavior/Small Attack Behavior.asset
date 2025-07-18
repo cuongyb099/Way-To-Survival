@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f08d2ae4cba14087c1ed36193d82b, type: 3}
+  m_Name: Small Attack Behavior
+  m_EditorClassIdentifier: 
+  mBehaviorSource:
+    behaviorName: Behavior
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(134,-16)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(2.857132,117.95916)","Comment":"Small
+        Attack"},"ID":1,"Name":"Sequence","Instant":true,"AbortTypeabortType":"LowerPriority","Children":[{"Type":"OverlapSphereJob","NodeData":{"Offset":"(-586.491455,136.400909)"},"ID":2,"Name":"Overlap
+        Sphere Job","Instant":true,"OverlapSphereDataReceiver":{"SharedFloatRadius":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Range
+        Weak Attack","IsShared":true,"SinglemValue":0},"SharedVector3Offset":{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"Attack
+        Radius Offset","IsShared":true,"Vector3mValue":"(0,0,0)"},"SharedHashsetTransformHitTargets":{"Type":"BTreeNode.SharedType.SharedHashsetTransform","Name":"Overlap
+        Hits","IsShared":true,"HashSet`1mValue":{}},"SharedLayerMaskLayer":{"Type":"BehaviorDesigner.Runtime.SharedLayerMask","Name":"TargetMask","IsShared":true,"IsGlobal":true,"LayerMaskmValue":8},"EntitiesJobSOEntitiesJob":0}},{"Type":"Entity.Enemy.Behavior.OverlapHitGetIDamageble","NodeData":{"Offset":"(-412.099457,142.5217)"},"ID":3,"Name":"Overlap
+        Hit Get I Damageble","Instant":true,"SharedHashsetTransformHashsetTransform":{"Type":"BTreeNode.SharedType.SharedHashsetTransform","Name":"Overlap
+        Hits","IsShared":true,"HashSet`1mValue":{}},"SharedTransformTargetResult":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Target","IsShared":true}},{"Type":"BTreeNode.RegisterAnimEventNoParam","NodeData":{"Offset":"(-223.900909,138.716339)","Comment":"Attack
+        Done"},"ID":4,"Name":"Register Callback Attack","Instant":true,"AnimEventNoParamSOEvt":1,"SharedBoolIsEventRaised":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"Is
+        Attack Done","IsShared":true,"BooleanmValue":false}},{"Type":"DotsStopDestination","NodeData":{"Offset":"(-52.57583,137.967163)"},"ID":5,"Name":"Dots
+        Stop Destination","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(91.4286346,135.7143)"},"ID":6,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.ReturnSuccess","NodeData":{"Offset":"(1.77783012,115.111061)"},"ID":7,"Name":"Return
+        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(4.55561256,106.222061)"},"ID":8,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.Math.BoolComparison","NodeData":{"Offset":"(-136.423965,124.208488)"},"ID":9,"Name":"Bool
+        Comparison","Instant":true,"SharedBoolbool1":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"Use
+        Random Small Attack  Feature","IsShared":true,"BooleanmValue":true},"SharedBoolbool2":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.Math.RandomFloat","NodeData":{"Offset":"(6.7584,119.999992)"},"ID":10,"Name":"Random
+        Attack State","Instant":true,"SharedFloatmin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":0},"SharedFloatmax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Attack
+        State Count","IsShared":true,"SinglemValue":0},"Booleaninclusive":false,"SharedFloatstoreResult":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Attack
+        State","IsShared":true,"SinglemValue":0}},{"Type":"FloatRound","NodeData":{"Offset":"(146.758392,119.999992)"},"ID":11,"Name":"Float
+        Round","Instant":true,"SharedFloatValue":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Attack
+        State","IsShared":true,"SinglemValue":0},"SharedFloatStoredValue":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Attack
+        State","IsShared":true,"SinglemValue":0}},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.UnityAnimator.SetFloatParameter","NodeData":{"Offset":"(268.3964,119.999992)"},"ID":12,"Name":"Set
+        Attack State","Instant":true,"SharedGameObjecttargetGameObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":null},"SharedStringparamaterName":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Anim
+        Para Attack State","IsShared":true,"IsGlobal":true,"StringmValue":"Attack
+        State"},"SharedFloatfloatValue":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Attack
+        State","IsShared":true,"SinglemValue":0},"BooleansetOnce":false}]}]},{"Type":"RotateToTarget","NodeData":{"Offset":"(130.930939,123.043518)"},"ID":13,"Name":"Rotate
+        To Target","Instant":true,"SharedTransformTarget":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Target","IsShared":true}},{"Type":"PlaySound","NodeData":{"Offset":"(253.142609,123.473633)"},"ID":14,"Name":"Play
+        Sound","Instant":true,"SharedAudioClipArrayAudioClips":{"Type":"SharedAudioClipArray","Name":"Small
+        Attack Sound","IsShared":true,"AudioClip[]mValue":[null,null,null,null,null]},"SharedSoundSettingSetting":{"Type":"SharedSoundSetting","Name":"Sound
+        Setting","IsShared":true,"IsGlobal":true,"SoundSettingmValue":{"SingleVolume":1,"SinglePitch":1,"SingleStereoPan":0,"SingleSpatialBlend":1,"SingleMinDistance":1,"SingleMaxDistance":30,"BooleanLoop":false,"AudioRolloffModeRolloffMode":"Linear","SoundVolumeTypeVolumeType":"MASTER_VOLUME"}},"SharedBoolUseDelayTime":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatDelayTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":0.25}},{"Type":"BTreeNode.DamageSenderSetDamage","NodeData":{"Offset":"(360.5711,119.300171)"},"ID":15,"Name":"Set
+        Damage","Instant":true,"SharedFloatDamageScaling":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1.3},"StringSODetectionName":2},{"Type":"BTreeNode.AnimatorCrossFade","NodeData":{"Offset":"(465.858154,116.419128)"},"ID":16,"Name":"Attack
+        Anim","Instant":true,"SharedStringLastPlayAnim":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Last
+        Play Anim","IsShared":true},"SharedStringAnimName":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Anim
+        Name Normal Attack","IsShared":true,"IsGlobal":true,"StringmValue":"Normal
+        Attack"},"SharedFloatTransition":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":0.25},"SharedIntLayer":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":0}},{"Type":"BTreeNode.WaitUntil","NodeData":{"Offset":"(582.2827,116.183563)"},"ID":17,"Name":"Wait
+        Until","Instant":true,"SharedBoolTarget":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"Is
+        Attack Done","IsShared":true,"BooleanmValue":false}},{"Type":"BTreeNode.AnimatorCrossFade","NodeData":{"Offset":"(686.428,124.72522)"},"ID":18,"Name":"Idle
+        Anim","Instant":true,"SharedStringLastPlayAnim":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Last
+        Play Anim","IsShared":true},"SharedStringAnimName":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Anim
+        Name Idle","IsShared":true,"IsGlobal":true,"StringmValue":"Idle"},"SharedFloatTransition":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":0.03},"SharedIntLayer":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":0}},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(799.3323,118.8309)"},"ID":19,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":0.1},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}}]}]},"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Range
+        Weak Attack","IsShared":true,"SinglemValue":0},{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"Attack
+        Radius Offset","IsShared":true,"Vector3mValue":"(0,0,0)"},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Attack
+        State","IsShared":true,"SinglemValue":0},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"Use
+        Random Small Attack  Feature","IsShared":true,"BooleanmValue":true},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Attack
+        State Count","IsShared":true,"SinglemValue":0},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Angular
+        Speed","IsShared":true,"SinglemValue":360},{"Type":"SharedAudioClipArray","Name":"Small
+        Attack Sound","IsShared":true,"AudioClip[]mValue":[null,null,null,null,null]},{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Target","IsShared":true},{"Type":"BTreeNode.SharedType.SharedHashsetTransform","Name":"Overlap
+        Hits","IsShared":true,"HashSet`1mValue":{}},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Atk","IsShared":true,"SinglemValue":10},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"Is
+        Attack Done","IsShared":true,"BooleanmValue":false},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Last
+        Play Anim","IsShared":true}]}'
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 11400000, guid: 4d6007ecbaafbc540a33cd74ac5f336b, type: 2}
+        - {fileID: 11400000, guid: b3e4f7084513f0e40b407276225d95b3, type: 2}
+        - {fileID: 11400000, guid: 63b2a85022cbf544cb9149de055c8862, type: 2}
+        byteData: 
+        byteDataArray: 
+      Version: 1.7.8

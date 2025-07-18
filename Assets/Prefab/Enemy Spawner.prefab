@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7198632505985489554}
   m_Layer: 0
-  m_Name: Spawn Point (2)
+  m_Name: Spawn Point 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 2990739184270976130}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 43.2, y: -43.4, z: -99.7}
+  m_LocalPosition: {x: 136.81999, y: -43.4, z: -59.679993}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 1635570823526540706}
   - component: {fileID: 5094406945883278456}
   - component: {fileID: 4427077635276287322}
+  - component: {fileID: 3432832221780507650}
   m_Layer: 0
   m_Name: Enemy Spawner
   m_TagString: Untagged
@@ -100,7 +101,12 @@ MonoBehaviour:
   - Start: 1
     End: 9
     MainWave:
-    - {fileID: 11400000, guid: 8f43372e0bc1d7b4ba974e77244fcc51, type: 2}
+    - {fileID: 11400000, guid: 06b83428e791582488d65342f6736a96, type: 2}
+    WaveChild: []
+  - Start: 2
+    End: 2
+    MainWave:
+    - {fileID: 11400000, guid: 2aeba58d8395aa34d912ce2b3f50e1e6, type: 2}
     WaveChild: []
 --- !u!114 &5094406945883278456
 MonoBehaviour:
@@ -146,10 +152,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: febff64090ffe194a88b2667ce276852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _overlapCheckPerSecond: 6
+  _overlapCheckPerSecond: 10
   _jobRuntime:
   - JobLogic: {fileID: 11400000, guid: 4d6007ecbaafbc540a33cd74ac5f336b, type: 2}
   - JobLogic: {fileID: 11400000, guid: a72399f4b85f4f742a887082e47a4703, type: 2}
+  - JobLogic: {fileID: 11400000, guid: 93fc66372913b5e428e8ef9c9abcc23c, type: 2}
+--- !u!114 &3432832221780507650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3480709107210823817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -638047543, guid: da41a8dd3b5ec434a802d9b5a2a0a777, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateInterval: 0
+  updateIntervalSeconds: 0
+  executionsPerTick: 0
+  maxTaskExecutionsPerTick: 100
 --- !u!1 &4404942774726821358
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,7 +198,7 @@ Transform:
   m_GameObject: {fileID: 4404942774726821358}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -77.52, y: -44.068, z: -75.62}
+  m_LocalPosition: {x: 16.1, y: -44.068, z: -35.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -191,7 +214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8854362896996814112}
   m_Layer: 0
-  m_Name: Spawn Point (1)
+  m_Name: Spawn Point 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -206,7 +229,7 @@ Transform:
   m_GameObject: {fileID: 7751429626485916137}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 54.6, y: -40.4, z: -54.6}
+  m_LocalPosition: {x: 148.21999, y: -40.4, z: -14.579994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -237,7 +260,7 @@ Transform:
   m_GameObject: {fileID: 8440616799426751398}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.46, y: -43.4, z: -142.08}
+  m_LocalPosition: {x: 87.159996, y: -43.4, z: -102.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -268,7 +291,7 @@ Transform:
   m_GameObject: {fileID: 8978786087418384881}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 57.08, y: -43.33, z: -61.84}
+  m_LocalPosition: {x: 150.7, y: -43.33, z: -21.819996}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

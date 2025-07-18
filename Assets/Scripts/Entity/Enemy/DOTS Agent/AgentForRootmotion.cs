@@ -107,7 +107,7 @@ public class AgentForRootmotion : MonoBehaviour
       }
    }
    
-   public Entity Entity { get; private set; }
+   public Unity.Entities.Entity Entity { get; private set; }
    
    public AgentRootmotion DefaultRootmotion => new()
    {

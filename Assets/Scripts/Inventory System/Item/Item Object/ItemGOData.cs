@@ -22,7 +22,7 @@ namespace KatInventory
                 if (goReference) return goReference;
                 var data = this.StaticData as ItemGOBaseSO;
                 goReference = Object.Instantiate(data.Prefab).gameObject;
-                goReference.GetComponent<ItemBase>().SetData(this);
+                goReference.GetComponent<IItemInstance>().SetData(this);
                 return goReference;
             }
         }

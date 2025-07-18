@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mVariableData:
     variableStartIndex: 
-    JSONSerialization: '{"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Move","IsShared":true,"IsGlobal":true,"Tooltip":"Move","StringmValue":"Move"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Player
+    JSONSerialization: '{"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Anim
+      Name Move","IsShared":true,"IsGlobal":true,"Tooltip":"Move","StringmValue":"Move"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Player
       Tag","IsShared":true,"IsGlobal":true,"Tooltip":"Player","StringmValue":"Player"},{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"Offset
       Check","IsShared":true,"IsGlobal":true,"Vector3mValue":"(0,1.5,0)"},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Standing
       Range Weak Attack","IsShared":true,"IsGlobal":true,"SinglemValue":1.5},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Crawl
@@ -40,7 +41,13 @@ MonoBehaviour:
       Para Dead","IsShared":true,"IsGlobal":true,"StringmValue":"Dead"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Is
       Dead End","IsShared":true,"IsGlobal":true,"StringmValue":"Is Dead End"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Dead
       State","IsShared":true,"IsGlobal":true,"StringmValue":"Dead State"},{"Type":"SharedSoundSetting","Name":"Sound
-      Setting","IsShared":true,"IsGlobal":true,"SoundSettingmValue":{"SingleVolume":1,"SinglePitch":1,"SingleStereoPan":0,"SingleSpatialBlend":1,"SingleMinDistance":1,"SingleMaxDistance":30,"BooleanLoop":false,"AudioRolloffModeRolloffMode":"Linear","SoundVolumeTypeVolumeType":"MASTER_VOLUME"}}]}'
+      Setting","IsShared":true,"IsGlobal":true,"SoundSettingmValue":{"SingleVolume":1,"SinglePitch":1,"SingleStereoPan":0,"SingleSpatialBlend":1,"SingleMinDistance":1,"SingleMaxDistance":30,"BooleanLoop":false,"AudioRolloffModeRolloffMode":"Linear","SoundVolumeTypeVolumeType":"MASTER_VOLUME"}},{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Military
+      Base","IsShared":true,"IsGlobal":true},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Anim
+      Name Normal Attack","IsShared":true,"IsGlobal":true,"StringmValue":"Normal
+      Attack"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Anim Name
+      Idle","IsShared":true,"IsGlobal":true,"StringmValue":"Idle"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Empty","IsShared":true,"IsGlobal":true,"StringmValue":"\"\""},{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"Turret
+      Radius Attack Offset ","IsShared":true,"IsGlobal":true,"Vector3mValue":"(0,0,0)"},{"Type":"BehaviorDesigner.Runtime.SharedLayerMask","Name":"Turret
+      LayerMask","IsShared":true,"IsGlobal":true,"LayerMaskmValue":4096}]}'
     fieldSerializationData:
       typeName: []
       fieldNameHash: 
