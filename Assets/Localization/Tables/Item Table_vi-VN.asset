@@ -42,6 +42,46 @@ MonoBehaviour:
     m_Localized: "H\u1ED9p \u0111\u1EA1n"
     m_Metadata:
       m_Items: []
+  - m_Id: 83929674626424832
+    m_Localized: "B\xFAa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2805922366742528
+    m_Localized: AUG
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84033890128814080
+    m_Localized: M4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84705105763950592
+    m_Localized: Small Health Pack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84705237116968960
+    m_Localized: Small Health Packsss
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84712833093787648
+    m_Localized: Small Ammo Pack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84712891868569600
+    m_Localized: Small Ammo Packss
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84713585379958784
+    m_Localized: Medium Health Pack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84713630200291328
+    m_Localized: Medium Health Pack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84713804976939008
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

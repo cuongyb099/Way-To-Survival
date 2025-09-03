@@ -30,7 +30,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  <Icon>k__BackingField: {fileID: 1529970334, guid: 7d14fe165a6225e499757a3668bbe881, type: 3}
+  <Icon>k__BackingField: {fileID: 1078230669, guid: 7d14fe165a6225e499757a3668bbe881, type: 3}
   <Unique>k__BackingField: 1
   <BuyPrice>k__BackingField: 3300
   <SellPrice>k__BackingField: 0
@@ -40,12 +40,9 @@ MonoBehaviour:
   <Prefab>k__BackingField: {fileID: 4180766260500403244, guid: 14b9068ff59c7a740a80c60276b4a17d, type: 3}
   <WeaponType>k__BackingField: 1
   <ShootingSpeed>k__BackingField: 0.3
-  <Damage>k__BackingField: 2
+  <Damage>k__BackingField: 3
   <Weight>k__BackingField: 1
   <ReleaseToShoot>k__BackingField: 0
-  <BuffUnlockByLevel>k__BackingField:
-    _buffLevels:
-      _serializedList: []
   <AttackSounds>k__BackingField:
   - {fileID: 8300000, guid: 64345d71f073f8a47b4cb438ef699eb1, type: 3}
   - {fileID: 8300000, guid: ad49d29a83416c5489c79ca2975e050f, type: 3}
@@ -54,11 +51,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1a0f2636aeebc254cae77ab6506531a1, type: 3}
   <BulletPrefab>k__BackingField: {fileID: 984755602444092648, guid: bff9cb15c026277498f4541bb37853a4, type: 3}
   <ShellPrefab>k__BackingField: {fileID: 6182647827399181740, guid: a1e78c6635fd42541975b5cdc3cfdfab, type: 3}
-  <MagPrefab>k__BackingField: {fileID: 6182647827399181740, guid: be822d7afbb24b64f825343c49bb66bb, type: 3}
-  <Aim>k__BackingField: 7
+  <MagPrefab>k__BackingField: {fileID: 5252373503525323967, guid: 2b4502e9dfb24894e9d599d2f3a85606, type: 3}
+  <Aim>k__BackingField: 8
   <SpreadMax>k__BackingField: 9
   <Recoil>k__BackingField: 0.04
-  <RecoilResetTime>k__BackingField: 3
+  <RecoilResetTime>k__BackingField: 2.5
   <MaxCapacity>k__BackingField: 30
   <GunReloadType>k__BackingField: 0
   <TailSound>k__BackingField: {fileID: 8300000, guid: 73e01a3d24896ab46bab8ca52b69fa7e, type: 3}

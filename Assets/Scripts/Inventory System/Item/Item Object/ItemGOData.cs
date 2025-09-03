@@ -6,6 +6,12 @@ namespace KatInventory
     [System.Serializable]
     public class ItemGOData : ItemData
     {
+        [JsonConstructor]
+        public ItemGOData(string ID, int quantity)  : base(ID, quantity)
+        {
+            
+        }
+        
         public ItemGOData(ItemBaseSO staticData, int quantity) : base(staticData, quantity)
         {
             

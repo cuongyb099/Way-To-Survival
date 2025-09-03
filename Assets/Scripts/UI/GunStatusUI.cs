@@ -22,8 +22,9 @@ public class GunStatusUI : MonoBehaviour
 	{
         PlayerEvent.OnEquipWeapon += ChangeGun;
         PlayerEvent.OnAttack += UpdateGunAmmo;
-		PlayerEvent.OnReload += UpdateGunAmmo;
+		PlayerEvent.OnReloaded += UpdateGunAmmo;
 		PlayerEvent.OnChangeCap += UpdateGunAmmo;
+		PlayerEvent.OnAmmoPointsChange += UpdateGunAmmo;
 		LocalizationSettings.SelectedLocaleChanged += UpdateGunName;
 	}
 
@@ -36,8 +37,9 @@ public class GunStatusUI : MonoBehaviour
 	{
 		PlayerEvent.OnEquipWeapon -= ChangeGun;
 		PlayerEvent.OnAttack -= UpdateGunAmmo;
-		PlayerEvent.OnReload -= UpdateGunAmmo;
+		PlayerEvent.OnReloaded -= UpdateGunAmmo;
 		PlayerEvent.OnChangeCap -= UpdateGunAmmo;
+		PlayerEvent.OnAmmoPointsChange -= UpdateGunAmmo;
 		LocalizationSettings.SelectedLocaleChanged -= UpdateGunName;
 	}
 	public void UpdateGunAmmo()

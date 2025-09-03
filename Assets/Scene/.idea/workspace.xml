@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="73b9cde6-a6b3-48c9-8ac4-88fac421f1ea" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../AddressableAssetsData/link.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AddressableAssetsData/link.xml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Data/Items/Upgrade Mat/Myth Book.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Data/Items/Upgrade Mat/Myth Book.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Data/Items/Weapon/Class weapon/AmmoSO.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Data/Items/Weapon/Class weapon/AmmoSO.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Data/Items/Weapon/Class weapon/WrenchSO.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Data/Items/Weapon/Class weapon/WrenchSO.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Data/Turrets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Data/Turrets/TurretsStats.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Data/Turrets/TurretsStats.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Prefab/Weapons/ClassWeapon/AmmoBag.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Prefab/Weapons/ClassWeapon/AmmoBag.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Prefab/Weapons/ClassWeapon/Wrench.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Prefab/Weapons/ClassWeapon/Wrench.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Scripts/UI/GunShopUI/WeaponShopDataUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Scripts/UI/GunShopUI/WeaponSliderStats.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Scripts/UI/GunShopUI/WeaponSliderStats.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Scripts/UI/InformationUI/MessagePopup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Scripts/UI/InformationUI/MessagePopup.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Scripts/Weapon/BaseWeapon/ClassWeapons/AmmoBagBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Scripts/Weapon/BaseWeapon/ClassWeapons/AmmoBagBase.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Scripts/Weapon/BaseWeapon/ClassWeapons/WrenchBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Scripts/Weapon/BaseWeapon/ClassWeapons/WrenchBase.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Shader/HalfCircle_lods.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Shader/HalfCircle_lods.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Shader/OmniShade/Samples/Dropship Baked/Models/Dropship_lods.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Shader/OmniShade/Samples/Dropship Baked/Models/Dropship_lods.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Shader/OmniShade/Samples/Plants Sway/Models/VegetationMedium01_lods.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Shader/OmniShade/Samples/Plants Sway/Models/VegetationMedium01_lods.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Shader/OmniShade/Samples/Plants Sway/Models/VegetationMedium03_02_lods.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Shader/OmniShade/Samples/Plants Sway/Models/VegetationMedium03_02_lods.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/Art/Font/ChakraPetch-BoldItalic SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Data/Art/Font/ChakraPetch-BoldItalic SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/Art/Font/ChakraPetch-Italic SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Data/Art/Font/ChakraPetch-Italic SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/Art/Font/ChakraPetch-Light SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Data/Art/Font/ChakraPetch-Light SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/Art/Font/ChakraPetch-LightItalic SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Data/Art/Font/ChakraPetch-LightItalic SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/Art/Font/ChakraPetch-MediumItalic SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Data/Art/Font/ChakraPetch-MediumItalic SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/Art/Font/ChakraPetch-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Data/Art/Font/ChakraPetch-Regular SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/Art/Font/Prompt-Italic SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Data/Art/Font/Prompt-Italic SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/Items/InventorySO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Data/Items/InventorySO.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/Items/Weapon/Guns/Yellow/AK12SO_4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Data/Items/Weapon/Guns/Yellow/AK12SO_4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/Items/Weapon/Guns/Yellow/AUGSO_4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Data/Items/Weapon/Guns/Yellow/AUGSO_4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/Items/Weapon/Guns/Yellow/AWMSO_4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Data/Items/Weapon/Guns/Yellow/AWMSO_4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/Items/Weapon/Guns/Yellow/MP5SO_4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Data/Items/Weapon/Guns/Yellow/MP5SO_4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/Items/Weapon/Guns/Yellow/RevolverSO_4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Data/Items/Weapon/Guns/Yellow/RevolverSO_4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/Items/Weapon/Guns/Yellow/USPSO_4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Data/Items/Weapon/Guns/Yellow/USPSO_4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/Items/Weapon/Guns/Yellow/XM1014SO_4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Data/Items/Weapon/Guns/Yellow/XM1014SO_4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/Items/Weapon/Melee/BayonetSO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Data/Items/Weapon/Melee/BayonetSO.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/MainObjects/Player/PlayerStatsData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Data/MainObjects/Player/PlayerStatsData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Localization/Tables/Item Table Shared Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Localization/Tables/Item Table Shared Data.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Localization/Tables/Item Table_en.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Localization/Tables/Item Table_en.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Localization/Tables/Item Table_vi-VN.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Localization/Tables/Item Table_vi-VN.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Localization/Tables/UI/UI Language Table Shared Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Localization/Tables/UI/UI Language Table Shared Data.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Localization/Tables/UI/UI Language Table_en.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Localization/Tables/UI/UI Language Table_en.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Localization/Tables/UI/UI Language Table_vi-VN.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Localization/Tables/UI/UI Language Table_vi-VN.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Plugins/IngameDebugConsole/IngameDebugConsole.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Plugins/IngameDebugConsole/IngameDebugConsole.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Plugins/IngameDebugConsole/Prefabs/CommandSuggestion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Plugins/IngameDebugConsole/Prefabs/CommandSuggestion.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Plugins/IngameDebugConsole/Prefabs/DebugLogItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Plugins/IngameDebugConsole/Prefabs/DebugLogItem.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefab/NPC/Doctor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefab/NPC/Doctor.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefab/Persistent/GameDataPersistent.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefab/Persistent/GameDataPersistent.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefab/Persistent/Level Loader.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefab/Persistent/Level Loader.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefab/Player/Player Confind.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefab/Player/Player Confind.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefab/Turret/Range Turret.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefab/Turret/Range Turret.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefab/UI/Item Shop/Item Panel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefab/UI/Item Shop/Item Panel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefab/UI/Panel/BuffPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefab/UI/Panel/BuffPanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefab/UI/Panel/InventoryGunCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefab/UI/Panel/InventoryGunCanvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefab/UI/Panel/MainMenuScene/SetupBeforePlayPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefab/UI/Panel/MainMenuScene/SetupBeforePlayPanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefab/UI/Panel/MainMenuScene/WeaponUpgradePanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefab/UI/Panel/MainMenuScene/WeaponUpgradePanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefab/UI/Panel/SettingsPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefab/UI/Panel/SettingsPanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefab/UI/Panel/ShopPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefab/UI/Panel/ShopPanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefab/UI/Panel/WeaponWheelPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefab/UI/Panel/WeaponWheelPanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefab/Weapons/Gun/Bullets/AWP Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefab/Weapons/Gun/Bullets/AWP Bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Endless Mode UI.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Endless Mode UI.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loading.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Loading.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainMenu UI.unity" beforeDir="false" afterPath="$PROJECT_DIR$/MainMenu UI.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Map1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map1/NavMesh-NavMesh Surface 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Map1/NavMesh-NavMesh Surface 2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map22.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Map22.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Test.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scripts/Buliding/BuildingManagerUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Scripts/Buliding/BuildingManagerUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scripts/Buliding/Structure.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Scripts/Buliding/Structure.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scripts/Entity/Player/AnimationEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Scripts/Entity/Player/AnimationEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scripts/Entity/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Scripts/Entity/Player/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scripts/Entity/Player/PlayerDataPersistent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Scripts/Entity/Player/PlayerDataPersistent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scripts/Entity/Player/PlayerSaveData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Scripts/Entity/Player/PlayerSaveData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scripts/GameManager/GameDataManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Scripts/GameManager/GameDataManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scripts/Inventory System/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Scripts/Inventory System/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scripts/Inventory System/Item/ItemBaseSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Scripts/Inventory System/Item/ItemBaseSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scripts/Inventory System/Item/UIItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Scripts/Inventory System/Item/UIItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scripts/Inventory System/Sample/Test Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Scripts/Inventory System/Sample/Test Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scripts/UI/GunShopUI/GunInventoryUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Scripts/UI/GunShopUI/GunInventoryUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scripts/UI/GunShopUI/GunShopDataUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scripts/UI/GunShopUI/GunShopDataUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Scripts/UI/GunShopUI/WeaponShopDataUI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scripts/UI/GunShopUI/GunShopUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Scripts/UI/GunShopUI/GunShopUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scripts/UI/GunStatusUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Scripts/UI/GunStatusUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scripts/UI/MainMenu/StartingSetupPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Scripts/UI/MainMenu/StartingSetupPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scripts/UI/MainMenu/WeaponUpgradePanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Scripts/UI/MainMenu/WeaponUpgradePanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scripts/Weapon/BaseWeapon/ClassWeapons/MedkitBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Scripts/Weapon/BaseWeapon/ClassWeapons/MedkitBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scripts/Weapon/BaseWeapon/Guns/GunBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Scripts/Weapon/BaseWeapon/Guns/GunBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scripts/Weapon/BaseWeapon/Guns/GunData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Scripts/Weapon/BaseWeapon/Guns/GunData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scripts/Weapon/BaseWeapon/Melee/MeleeBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Scripts/Weapon/BaseWeapon/Melee/MeleeBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scripts/Weapon/BaseWeapon/WeaponData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Scripts/Weapon/BaseWeapon/WeaponData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scripts/Weapon/Bullet/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Scripts/Weapon/Bullet/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Shader/HalfCircle.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Shader/HalfCircle.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Shader/OmniShade/Samples/Dropship Baked/Models/Dropship.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Shader/OmniShade/Samples/Dropship Baked/Models/Dropship.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Shader/OmniShade/Samples/Plants Sway/Models/VegetationMedium01.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Shader/OmniShade/Samples/Plants Sway/Models/VegetationMedium01.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Shader/OmniShade/Samples/Plants Sway/Models/VegetationMedium03_02.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Shader/OmniShade/Samples/Plants Sway/Models/VegetationMedium03_02.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VolumetricFog2/Demo/DemoScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../VolumetricFog2/Demo/DemoScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VolumetricFog2/Demo/FogOfWarDemoScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../VolumetricFog2/Demo/FogOfWarDemoScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="301y0mDg5eXedb1EKnHVtRx6gZi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "Merging VersionDevelop",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73b9cde6-a6b3-48c9-8ac4-88fac421f1ea" name="Changes" comment="" />
+      <created>1752809154351</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752809154351</updated>
+      <workItem from="1752809155627" duration="320000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

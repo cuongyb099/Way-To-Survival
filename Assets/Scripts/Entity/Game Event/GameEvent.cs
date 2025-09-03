@@ -24,4 +24,8 @@ public static class GameEvent
     public static Action OnStartCombatState;
     public static Action OnStopCombatState;
     public static Action<TimeOfTheDay> OnChangeTimeOfDay;
+    
+    //Main menu event
+    public static Action OnAuthSuccess;
+    public static Action OnSignOut;
 }

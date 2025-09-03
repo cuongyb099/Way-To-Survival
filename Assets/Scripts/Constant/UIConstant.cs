@@ -13,11 +13,11 @@ public static class UIConstant
     public static readonly string PausePanel = "PausePanel";
     public static readonly string GameplayPanel = "GameplayPanel";
     public static readonly string BuffPanel = "BuffPanel";
-    public static readonly string ShopPanel = "ShopPanel";
+    public static readonly string InGameShopPanel = "InGameShopPanel";
     public static readonly string LosePanel = "LosePanel";
     public static readonly string WeaponWheelPanel = "WeaponWheelPanel";
     // Menu Panel
-    public static readonly string StartMenuPanel = "StartMenuPanel";
+    public static readonly string LoginMenuPanel = "LoginMenuPanel";
     public static readonly string MainMenuPanel = "MainMenuPanel";
     public static readonly string SetupBeforePlayPanel = "SetupBeforePlayPanel";
     public static readonly string SettingsMenuPanel = "SettingsMenuPanel";

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 36501b28dd45b9f429653efe39624c8d
+<<<<<<<< Updated upstream:Assets/Scripts/General/LevelAsyncManager.cs.meta
+guid: 0c9c1d02c2c0c784c93883367aa6d216
+========
+guid: d103db19125c70c4aac2e118abfc3fc4
+>>>>>>>> Stashed changes:Assets/Scripts/Shop/SO/ShopBuyItemSO.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

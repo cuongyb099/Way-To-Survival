@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Entities.UniversalDelegates;
+using Unity.VisualScripting;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
@@ -21,6 +22,20 @@ public class BasicBuffSO : BaseBuffSO
 
 	public override object[] GetValues()
 	{
-		return new object[]{Mathf.Abs(Value)};
+		if(StatType is StatType.CritDamage 
+		   or StatType.CritRate)
+			return new object[]
+			{
+				Mathf.Abs(Value).ToString("P0")
+			};
+		if(ModifierType is StatModType.Percentage)
+			return new object[]
+			{
+				Mathf.Abs((int)Value)+"%"
+			};
+		return new object[]
+		{
+			Mathf.Abs(Value).ToString("F0")
+		};
 	}
 }

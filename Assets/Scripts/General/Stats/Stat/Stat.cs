@@ -80,12 +80,14 @@ public class Stat
 		return false;
 	}
 
+	public float _baseFlatSum { get; private set; } = 0f;
+	public float _percentageSum { get; private set; }= 0f;
+	public float _flatSum { get; private set; }= 0f;
 	protected virtual float CalculateFinalValue()
 	{
-        float _baseFlatSum = 0f;
-        float _percentageSum = 0f;
-        float _flatSum = 0f;
-
+		_baseFlatSum = 0f;
+		_percentageSum = 0f;
+		_flatSum = 0f;
         foreach (StatModifier modifier in StatModifiers)
         {
             if (modifier.Type == StatModType.BaseFlat)

@@ -1,9 +1,13 @@
 using System;
+using System.Runtime.Serialization;
+using JsonSubTypes;
 using Newtonsoft.Json;
 using UnityEngine;
 
 namespace KatInventory
 {
+    // [JsonConverter(typeof(JsonSubtypes))]
+    // [JsonSubtypes.KnownSubTypeWithProperty(typeof(WeaponData), "WeaponLevel")]
     [Serializable]
     public class ItemData
     {
@@ -45,10 +49,23 @@ namespace KatInventory
         [SerializeField] 
         protected int quantity;
         
+        [JsonConstructor]
+        public ItemData(string ID, int quantity)
+        {
+            StaticData = ItemDataBase.Instance.SearchItem(ID);
+            Quantity = quantity;
+        }
         public ItemData(ItemBaseSO staticData, int quantity)
         {
             StaticData = staticData;
             Quantity = quantity;
         }
+    }
+    public enum SerializeItemType
+    {
+        DefaultItem = 1,
+        Weapon = 2,
+        Gun = 3,
+        Turret = 4,
     }
 }

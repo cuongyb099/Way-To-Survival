@@ -28,13 +28,13 @@ MonoBehaviour:
         _baseValue: 4
     - Key: 4
       Value:
-        _baseValue: 10
+        _baseValue: 0.1
     - Key: 5
       Value:
-        _baseValue: 50
+        _baseValue: 0.5
     - Key: 6
       Value:
-        _baseValue: 1
+        _baseValue: 0
     - Key: 7
       Value:
         _baseValue: 1
@@ -59,6 +59,6 @@ MonoBehaviour:
         _maxValue: 2
     - Key: 4
       Value:
-        _startPercent: 0.2
+        _startPercent: 1
         _minValue: 0
         _maxValue: 9

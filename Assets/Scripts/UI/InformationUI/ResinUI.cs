@@ -3,28 +3,29 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
-public class ResinUI : MonoBehaviour
+public class MoneyUI : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI textResin;
+    [FormerlySerializedAs("textResin")] [SerializeField] private TextMeshProUGUI textMoney;
 
     private void Awake()
     {
-        PlayerEvent.OnCashChange += UpdateTextResin;
+        PlayerEvent.OnCashChange += UpdateTextMoney;
     }
 
     private void Start()
     {
-        UpdateTextResin(GameManager.Instance.Player.Resin);
+        UpdateTextMoney(GameManager.Instance.Player.Money);
     }
 
     private void OnDestroy()
     {
-        PlayerEvent.OnCashChange -= UpdateTextResin;
+        PlayerEvent.OnCashChange -= UpdateTextMoney;
     }
 
-    private void UpdateTextResin(int value)
+    private void UpdateTextMoney(float value)
     {
-        textResin.text = value.ToString();
+        textMoney.text = value.ToString();
     }
 }

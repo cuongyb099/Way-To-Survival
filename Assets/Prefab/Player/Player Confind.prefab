@@ -1685,7 +1685,7 @@ MonoBehaviour:
   <GroundLayer>k__BackingField:
     serializedVersion: 2
     m_Bits: 257
-  <StartingWeapon>k__BackingField: {fileID: 11400000, guid: b8afe054103a8d24198c3d6fbdc6615f, type: 2}
+  <StartingWeapon>k__BackingField: {fileID: 11400000, guid: d79104e7aada3b741b1f6fd7213f47ff, type: 2}
   RightHandHoldPoint: {fileID: 3795303615481606199}
   LeftHandHoldPoint: {fileID: 1350556748537550407}
   LineRendererL: {fileID: 4835556103140554942}
@@ -1806,7 +1806,7 @@ MonoBehaviour:
   CanNotBuildColor: {r: 1, g: 0.25, b: 0.25, a: 1}
   ObstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 3081
 --- !u!1 &6450202602350647660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1818,7 +1818,7 @@ GameObject:
   - component: {fileID: 1096484456800799798}
   - component: {fileID: 1285246130269373860}
   - component: {fileID: 8634255954721161275}
-  m_Layer: 3
+  m_Layer: 1
   m_Name: Interactor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2258,7 +2258,7 @@ Light:
     serializedVersion: 2
     m_Bits: 887
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1

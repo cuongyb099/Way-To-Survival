@@ -1,6 +1,8 @@
 using DG.Tweening;
 using System;
+using BehaviorDesigner.Runtime.Tasks.Unity.UnityGameObject;
 using KatInventory;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public enum WeaponType
@@ -25,10 +27,11 @@ public abstract class WeaponBase : ItemBase, IEquatable<WeaponBase>
 	{
 		playerController = GameManager.Instance.Player;
 	}
-	public virtual void Initialize()
+	public virtual void OnInit()
 	{
 		
 	}
+
 	protected virtual void OnEnable()
 	{
 		InputEvent.OnShootStickCanceled += Rotate_canceled;
@@ -38,6 +41,7 @@ public abstract class WeaponBase : ItemBase, IEquatable<WeaponBase>
 	{
 		InputEvent.OnShootStickCanceled -= Rotate_canceled;
 	}
+	
 
 	public virtual void OnSwitchOut()
 	{

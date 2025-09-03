@@ -10,13 +10,23 @@ public class BuffUnlockByLevel
     [SerializedDictionary("Active Level", "Data")]
     [SerializeField] private SerializedDictionary<int, BaseBuffSO> _buffLevels = new();
 
-    public void ApplyBuffToLevel(int level, StatsController stats)
+    public void ApplyBuffToLevel(int level, PlayerController player, WeaponData weapon)
     {
         for (int i =1; i<=level; ++i)
         {
-            if (_buffLevels.TryGetValue(i, out BaseBuffSO statusEffect))
+            if (_buffLevels.TryGetValue(i, out BaseBuffSO buff))
             {
-                statusEffect.AddStatusEffect(stats);
+                buff.AddStatusEffect(player.Stats);
+            }
+        }
+    }
+    public void RemoveBuffToLevel(int level, PlayerController player, WeaponData weapon)
+    {
+        for (int i =1; i<=level; ++i)
+        {
+            if (_buffLevels.TryGetValue(i, out BaseBuffSO buff))
+            {
+                player.Stats.RemoveEffect(buff);
             }
         }
     }

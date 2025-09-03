@@ -7,9 +7,11 @@ using UnityEngine;
 namespace KatInventory
 {
     [RequireComponent(typeof(ItemDataBase))]
+    [Serializable]
     public class Inventory
     {
-        [field: SerializeField, Range(1, 1000), JsonIgnore]
+        [field: SerializeField, Range(1, 1000)]
+        [JsonIgnore]
         public int Capacity { get; private set;} = 99;
 
         [SerializeField, JsonProperty("InventoryData")]private List<ItemData> _inventory = new ();
@@ -18,7 +20,12 @@ namespace KatInventory
 
         public static Action OnInventoryChange;
         public static Action OnAddItem;
-
+        
+        [JsonConstructor]
+        public Inventory(List<ItemData> inventory)
+        {
+            _inventory = inventory;
+        }
         public Inventory(InventorySO inventorySO)
         {
             AddStartItem(inventorySO);

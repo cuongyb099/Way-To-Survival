@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: en
   m_SharedData: {fileID: 11400000, guid: a31c0d2977ad7184bbcf72d4a5440587, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 2338622016558465031
   m_TableData:
   - m_Id: 8957435904
     m_Localized: Graphics
@@ -95,7 +96,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 35632660900261888
-    m_Localized: Tap To Start
+    m_Localized: Sign In With Play
     m_Metadata:
       m_Items: []
   - m_Id: 59056337453555712
@@ -114,6 +115,92 @@ MonoBehaviour:
     m_Localized: Upgrade Weapon Failed
     m_Metadata:
       m_Items: []
+  - m_Id: 67770592764944384
+    m_Localized: Build
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68852347437637632
+    m_Localized: Sponsored by M.E.D Corp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68852462227349504
+    m_Localized: Military & Medical Enhancer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68852514219941888
+    m_Localized: Customer Information Panel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69582904173256704
+    m_Localized: Sorry, M.E.D Corp doesn't serve the poor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69881147025252352
+    m_Localized: Buy <color=#eb911c>{name}</color> for <color=green>{price}$</color>
+      ?
+    m_Metadata:
+      m_Items:
+      - rid: 2338622016558465031
+  - m_Id: 70662298904616960
+    m_Localized: Max Health
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70663034954637312
+    m_Localized: Defence
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70663104013852672
+    m_Localized: Attack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70663176839553024
+    m_Localized: Speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70663233399742464
+    m_Localized: Crit Rate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70663645049708544
+    m_Localized: Crit Damage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70672158031405056
+    m_Localized: Gun Spread
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70672211206791168
+    m_Localized: Gun Recoil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70672334494162944
+    m_Localized: Max Bullet Points
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70672480195895296
+    m_Localized: Mag Capacity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70672644918796288
+    m_Localized: Attack Speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70673224013766656
+    m_Localized: Bonus Damage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70710430803746816
+    m_Localized: Basic Stats
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70710491981864960
+    m_Localized: Gun Related Stats
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 2338622016558465031
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00e0ef708844f800

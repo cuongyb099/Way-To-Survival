@@ -24,7 +24,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5300449959936
-    m_Localized: Increase <color=#FFB600>ATK</color> by <color=#3ECDFF>{0}%</color>
+    m_Localized: Increase <color=#FFB600>Attack</color> by <color=#3ECDFF>{0}</color>
     m_Metadata:
       m_Items:
       - rid: 6179708859773091850
@@ -44,7 +44,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5749127241728
     m_Localized: After <color=#3ECDFF>{1}</color> shots/slashes Increase <color=#FFB600>ATK
-      Speed</color> by <color=#3ECDFF>{0}%</color> for <color=#3ECDFF>{2}</color>
+      Speed</color> by <color=#3ECDFF>{0}</color> for <color=#3ECDFF>{2}</color>
       seconds, each stack is time independent
     m_Metadata:
       m_Items:
@@ -56,7 +56,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5375829991424
-    m_Localized: "Increase <color=#FFB600>ATK Speed</color> by <color=#3ECDFF>{0}%</color>\r"
+    m_Localized: "Increase <color=#FFB600>ATK Speed</color> by <color=#3ECDFF>{0}</color>\r"
     m_Metadata:
       m_Items:
       - rid: 6179708859773091850
@@ -140,22 +140,22 @@ MonoBehaviour:
       m_Items:
       - rid: 6179708859773091850
   - m_Id: 5746979758080
-    m_Localized: Increase <color=#FFB600>Mag Capacity</color> by <color=#3ECDFF>{0}%</color>
+    m_Localized: Increase <color=#FFB600>Mag Capacity</color> by <color=#3ECDFF>{0}</color>
     m_Metadata:
       m_Items:
       - rid: 6179708859773091850
   - m_Id: 5750758825984
-    m_Localized: Increase <color=#FFB600>Crit Rate</color> by <color=#3ECDFF>{0}%</color>
+    m_Localized: Increase <color=#FFB600>Crit Rate</color> by <color=#3ECDFF>{0}</color>
     m_Metadata:
       m_Items:
       - rid: 6179708859773091850
   - m_Id: 5974411698176
-    m_Localized: Increase <color=#FFB600>Crit Damage</color> by <color=#3ECDFF>{0}%</color>
+    m_Localized: Increase <color=#FFB600>Crit Damage</color> by <color=#3ECDFF>{0}</color>
     m_Metadata:
       m_Items:
       - rid: 6179708859773091850
   - m_Id: 6087200727040
-    m_Localized: Increase <color=#FFB600>DEF</color> by <color=#3ECDFF>{0}%</color>
+    m_Localized: Increase <color=#FFB600>DEF</color> by <color=#3ECDFF>{0}</color>
     m_Metadata:
       m_Items:
       - rid: 6179708859773091850
@@ -166,22 +166,22 @@ MonoBehaviour:
       m_Items:
       - rid: 6179708859773091850
   - m_Id: 6281048875008
-    m_Localized: Increase <color=#FFB600>HP</color> by <color=#3ECDFF>{0}%</color>
+    m_Localized: Increase <color=#FFB600>HP</color> by <color=#3ECDFF>{0}</color>
     m_Metadata:
       m_Items:
       - rid: 6179708859773091850
   - m_Id: 6365195001856
-    m_Localized: 'Reduce <color=#FFB600>Gun Recoil</color> by <color=#3ECDFF>{0}%</color>  '
+    m_Localized: 'Reduce <color=#FFB600>Gun Recoil</color> by <color=#3ECDFF>{0}</color>  '
     m_Metadata:
       m_Items:
       - rid: 6179708859773091850
   - m_Id: 6387655499776
-    m_Localized: 'Reduce <color=#FFB600>Gun Spread</color> by <color=#3ECDFF>{0}%</color>  '
+    m_Localized: 'Reduce <color=#FFB600>Gun Spread</color> by <color=#3ECDFF>{0}</color>  '
     m_Metadata:
       m_Items:
       - rid: 6179708859773091850
   - m_Id: 6409713344512
-    m_Localized: Increase <color=#FFB600>Movement Speed</color> by <color=#3ECDFF>{0}%</color>
+    m_Localized: Increase <color=#FFB600>Movement Speed</color> by <color=#3ECDFF>{0}</color>
     m_Metadata:
       m_Items:
       - rid: 6179708859773091850

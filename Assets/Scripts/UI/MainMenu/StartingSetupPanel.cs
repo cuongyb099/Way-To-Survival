@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using KatInventory;
 using UnityEngine;
@@ -86,4 +87,6 @@ public class StartingSetupPanel : FadeBlurPanel
         }
         return true;
     }
+
+
 }

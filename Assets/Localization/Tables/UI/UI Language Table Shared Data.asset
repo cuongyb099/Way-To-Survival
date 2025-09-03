@@ -92,7 +92,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 35632660900261888
-    m_Key: Tap To Start
+    m_Key: Sign In With Play
     m_Metadata:
       m_Items: []
   - m_Id: 59056337453555712
@@ -109,6 +109,86 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 59064633233219584
     m_Key: Upgrade Weapon Failed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67770592764944384
+    m_Key: Build
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68852347437637632
+    m_Key: Sponsored by M.E.D Corp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68852462227349504
+    m_Key: Military & Medical Enhancer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68852514219941888
+    m_Key: Customer Information Panel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69582904173256704
+    m_Key: Sorry, M.E.D Corp doesn't serve the poor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69881147025252352
+    m_Key: On Buy Item Confirm Header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70662298904616960
+    m_Key: Max Health
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70663034954637312
+    m_Key: Defence
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70663104013852672
+    m_Key: Attack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70663176839553024
+    m_Key: Speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70663233399742464
+    m_Key: Crit Rate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70663645049708544
+    m_Key: Crit Damage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70672158031405056
+    m_Key: Gun Spread
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70672211206791168
+    m_Key: Gun Recoil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70672334494162944
+    m_Key: Max Bullet Points
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70672480195895296
+    m_Key: Mag Capacity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70672644918796288
+    m_Key: Attack Speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70673224013766656
+    m_Key: Bonus Damage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70710430803746816
+    m_Key: Basic Stats
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70710491981864960
+    m_Key: Gun Related Stats
     m_Metadata:
       m_Items: []
   m_Metadata:

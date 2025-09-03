@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class ShotgunBase : GunBase
 {
-    public float BulletsPerShot = 5f;
+    [field: SerializeField] public int BulletsPerShot { get; set; } = 5;
+
     void Start()
     {
         GunRecoil = 1f;

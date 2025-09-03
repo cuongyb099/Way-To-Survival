@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6ef8fc291148e7b4b56f1beb7124a2, type: 3}
+  m_Name: BigAmmoSO
+  m_EditorClassIdentifier: 
+  <ItemName>k__BackingField:
+    m_TableReference:
+      m_TableCollectionName: GUID:fd6713aa530e7a244b6d797fbc2425fb
+    m_TableEntryReference:
+      m_KeyId: 84714163514433536
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  <ItemDescription>k__BackingField:
+    m_TableReference:
+      m_TableCollectionName: GUID:fd6713aa530e7a244b6d797fbc2425fb
+    m_TableEntryReference:
+      m_KeyId: 84714187283554304
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  <ItemIcon>k__BackingField: {fileID: 21300000, guid: 513aab2bbbbaa413c9b5aa232ab4eb56, type: 3}
+  <Price>k__BackingField: 1000
+  <AmmoPercentageAmount>k__BackingField: 1
+  <GiveAmmoAmount>k__BackingField: 20
+  references:
+    version: 2
+    RefIds: []

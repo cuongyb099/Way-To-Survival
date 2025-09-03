@@ -80,11 +80,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2805886224424960
-    m_Key: Item_Weapon_Gun_SCARSO_Description
+    m_Key: Item_Weapon_Gun_AUG_Description
     m_Metadata:
       m_Items: []
   - m_Id: 2805922366742528
-    m_Key: Item_Weapon_Gun_SCARSO_Name
+    m_Key: Item_Weapon_Gun_AUG_Name
     m_Metadata:
       m_Items: []
   - m_Id: 58675206979104768
@@ -101,6 +101,106 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 68346409993940992
     m_Key: Item_Weapon_AmmoBag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83929674626424832
+    m_Key: Hammer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84033890128814080
+    m_Key: M4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84034018109612032
+    m_Key: M4_Des
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84705105763950592
+    m_Key: Small Health Pack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84705237116968960
+    m_Key: Small Health Pack Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84712833093787648
+    m_Key: Small Ammo Pack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84712891868569600
+    m_Key: Small Ammo Pack Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84713585379958784
+    m_Key: Medium Health Pack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84713630200291328
+    m_Key: Medium Health Pack Des
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84713804976939008
+    m_Key: Full Health Pack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84713851802148864
+    m_Key: Full Health Pack Des
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84714046040367104
+    m_Key: Medium Ammo Pack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84714072233795584
+    m_Key: Medium Ammo Pack Des
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84714163514433536
+    m_Key: Full Ammo Pack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84714187283554304
+    m_Key: Full Ammo Pack Des
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85417181909606400
+    m_Key: Random Enhancer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85417239170244608
+    m_Key: Random Enhancer Des
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85418098188869632
+    m_Key: Basic Enhancer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85418192866893824
+    m_Key: Basic Enhancer Des
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85418292007657472
+    m_Key: Advance Enhancer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85418344461623296
+    m_Key: Advance Enhancer Des
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85418753737613312
+    m_Key: High-End Enhancer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85418802177630208
+    m_Key: High-End Enhancer Des
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85419183796379648
+    m_Key: Top Secret Enhancer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85419215564038144
+    m_Key: Top Secret Enhancer Des
     m_Metadata:
       m_Items: []
   m_Metadata:

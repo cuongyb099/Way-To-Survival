@@ -1,12 +1,14 @@
 
 using System;
 using System.Collections.Generic;
+using JsonSubTypes;
 using KatInventory;
 using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Rendering;
 using Random = UnityEngine.Random;
-
+// [JsonConverter(typeof(JsonSubtypes))]
+// [JsonSubtypes.KnownSubTypeWithProperty(typeof(GunData), "GunAim")]
 public class WeaponData : ItemGOData
 {
     [JsonIgnore]
@@ -20,7 +22,15 @@ public class WeaponData : ItemGOData
     public UpgradableFloat Damage{ get; private set; }
     [JsonProperty("WeaponWeight", Order = 5)] 
     public UpgradableFloat Weight{ get; private set; }
-    
+    [JsonConstructor]
+    public WeaponData(string ID, int quantity, int weaponLevel, UpgradableFloat shootingSpeed, 
+        UpgradableFloat damage, UpgradableFloat weight)  : base(ID, quantity)
+    {
+        WeaponLevel = weaponLevel;
+        ShootingSpeed = shootingSpeed;
+        Damage = damage;
+        Weight = weight;
+    }
     public WeaponData(WeaponBaseSO staticData, int quantity) : base(staticData, quantity)
     {
         WeaponLevel = 0;
@@ -35,16 +45,6 @@ public class WeaponData : ItemGOData
         ShootingSpeed.UpgradeNegative(WeaponLevel);
         Damage.Upgrade(WeaponLevel);
     }
-    public virtual void OnEquip(PlayerController playerController)
-    {
-        WeaponSO.BuffUnlockByLevel.ApplyBuffToLevel(WeaponLevel,playerController.Stats);
-    }
-
-    public virtual void OnUnequip(PlayerController playerController)
-    {
-        
-    }
-
     [Serializable]
     public class UpgradableFloat
     {

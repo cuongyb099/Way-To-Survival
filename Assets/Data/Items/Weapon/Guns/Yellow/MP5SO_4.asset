@@ -43,9 +43,6 @@ MonoBehaviour:
   <Damage>k__BackingField: 1
   <Weight>k__BackingField: 0.6
   <ReleaseToShoot>k__BackingField: 0
-  <BuffUnlockByLevel>k__BackingField:
-    _buffLevels:
-      _serializedList: []
   <AttackSounds>k__BackingField:
   - {fileID: 8300000, guid: 618e755a714544d4eb99877dcbf899b3, type: 3}
   - {fileID: 8300000, guid: 740bd702a8e862948ab403c7060e3008, type: 3}
@@ -60,7 +57,7 @@ MonoBehaviour:
   <Recoil>k__BackingField: 0.1
   <RecoilResetTime>k__BackingField: 2
   <MaxCapacity>k__BackingField: 25
-  <GunReloadType>k__BackingField: 0
+  <GunReloadType>k__BackingField: 4
   <TailSound>k__BackingField: {fileID: 8300000, guid: 08d9bd76fb5bb2242adf0b347bc24e90, type: 3}
   <CockingSound>k__BackingField: {fileID: 8300000, guid: 487d9cf01e17e0448a56cd385cb81f3f, type: 3}
   <MagSoundIn>k__BackingField: {fileID: 8300000, guid: 7a59dde985bdfcf458a8dcae0e299541, type: 3}

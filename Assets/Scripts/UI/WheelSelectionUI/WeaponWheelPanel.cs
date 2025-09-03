@@ -73,6 +73,11 @@ public class WeaponWheelPanel : FadeBlurPanel
             Hide();
             UIManager.Instance.ShowPanel(UIConstant.GameplayPanel);
         });
+        Items[3].ItemButton.onClick.AddListener(()=>
+        {
+            Hide();
+            UIManager.Instance.ShowPanel(UIConstant.GameplayPanel);
+        });
     }
     private void OnDestroy()
     {

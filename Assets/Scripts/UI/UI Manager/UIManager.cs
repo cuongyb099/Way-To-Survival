@@ -19,6 +19,7 @@ public class UIManager : Tech.Singleton.Singleton<UIManager>
         _panelsHistory.Clear();
         foreach (var panel in GetComponentsInChildren<PanelBase>())
         {
+            
             _panelDictionary.Add(panel.name, panel);
          
             if (!panel.IsVisible) continue;
@@ -96,9 +97,8 @@ public class UIManager : Tech.Singleton.Singleton<UIManager>
     
     public void ShowPanel(string panelName)
     {
-        if (!_panelDictionary.TryGetValue(panelName, out var panel) 
-            || _panelsHistory.Contains(panel)) return;
-        
+        if (!_panelDictionary.TryGetValue(panelName, out var panel)) return;
+            //l)) return;
         panel.Show();
     }
 

@@ -2,6 +2,7 @@ using BehaviorDesigner.Runtime.Tasks.Unity.UnityTransform;
 using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using KatInventory;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -27,6 +28,7 @@ public class BuffSelector : MonoBehaviour
 	}
 	public void InitializeAll()
 	{
+		DestroyAll();
 		List<BaseBuffSO> buffs = BuffsData.ChoseRandomBuffAmmount(CardCount);
 		for (int i = 0; i < buffs.Count; i++)
 		{
@@ -36,9 +38,20 @@ public class BuffSelector : MonoBehaviour
 			card.Button.onClick.AddListener(DeactivateParent);
 		}
 	}
+	public void InitializeAllWithRarity(Rarity rarity)
+	{
+		DestroyAll();
+		for (int i = 0; i < CardCount; i++)
+		{
+			BaseBuffSO buff = BuffsData.ChoseRarityBuff(rarity);
+			BuffCardUI card = Instantiate(BuffsData.BuffRarityCard[buff.RareType],transform);
+			card.Initialize(buff);
+			Cards.Add(card);
+			card.Button.onClick.AddListener(DeactivateParent);
+		}
+	}
 	private void DeactivateParent()
 	{
 		UIManager.Instance.HidePanel(UIConstant.BuffPanel);
-		UIManager.Instance.ShowPanel(UIConstant.GameplayPanel);
 	}
 }
