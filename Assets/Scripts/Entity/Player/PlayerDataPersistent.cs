@@ -54,36 +54,36 @@ public class PlayerDataPersistent : SingletonPersistent<PlayerDataPersistent>
     [ContextMenu("Save")]
     public void Save()
     {
-        if(UserID == null) return;
+        // if(UserID == null) return;
+        // OnSavePlayerData?.Invoke();
+        // string json = JsonConvert.SerializeObject(_playerData,Formatting.None,settings);
+        // dbReference.Child("users").Child(UserID).SetRawJsonValueAsync(json); 
+#if UNITY_EDITOR
         OnSavePlayerData?.Invoke();
-        string json = JsonConvert.SerializeObject(_playerData,Formatting.None,settings);
-        dbReference.Child("users").Child(UserID).SetRawJsonValueAsync(json); 
-// #if UNITY_EDITOR
-//         OnSavePlayerData?.Invoke();
-//         string json = JsonConvert.SerializeObject(_playerData, Formatting.None, settings);
-//         Json.WriteAllText(path,json);
-//         AssetDatabase.Refresh();
-// #endif
+        string json = JsonConvert.SerializeObject(_playerData, Formatting.None, settings);
+        Json.WriteAllText(path,json);
+        AssetDatabase.Refresh();
+#endif
     }
     [ContextMenu("Load")]
     public void Load()
     {
-        if(UserID == null) return;
-        StartCoroutine(LoadDataEnum());
-// #if UNITY_EDITOR
-//         if (!File.Exists(path))
-//             _playerData = new PlayerSaveData("AuthHandle.Instance.User.DisplayName", 1000f, 10, _beginningInventory);
-//         else
-//         {
-//             string json = File.ReadAllText(path);
-//             PlayerSaveData data = JsonConvert.DeserializeObject<PlayerSaveData>(json, settings);
-//             _playerData = data;
-//             return;
-//         }
-//         
-//         AssetDatabase.Refresh();
-//         OnLoadPlayerData?.Invoke();
-// #endif
+        // if(UserID == null) return;
+        // StartCoroutine(LoadDataEnum());
+#if UNITY_EDITOR
+        if (!File.Exists(path))
+            _playerData = new PlayerSaveData("AuthHandle.Instance.User.DisplayName", 1000f, 10, _beginningInventory);
+        else
+        {
+            string json = File.ReadAllText(path);
+            PlayerSaveData data = JsonConvert.DeserializeObject<PlayerSaveData>(json, settings);
+            _playerData = data;
+            return;
+        }
+        
+        AssetDatabase.Refresh();
+        OnLoadPlayerData?.Invoke();
+#endif
     }
 
     private IEnumerator LoadDataEnum()
