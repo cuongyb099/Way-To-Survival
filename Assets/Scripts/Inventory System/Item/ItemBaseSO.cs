@@ -29,7 +29,7 @@ namespace KatInventory
 
         public virtual void Use(GameObject user)
         {
-            PlayerDataPersistent.Instance.PlayerData.Inventory.RemoveItem(this);
+            
         }
         public abstract ItemType GetItemType();
         
@@ -54,6 +54,7 @@ namespace KatInventory
         Rare,
         ExtremelyRare,
         Myth,
+        All,
     }
     public enum Manipulator
     {

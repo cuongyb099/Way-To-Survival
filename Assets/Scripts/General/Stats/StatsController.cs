@@ -66,7 +66,7 @@ public class StatsController : MonoBehaviour
 		
 		InitStats();
 		
-		_attributes = new Dictionary<AttributeType, Attribute>();
+		 _attributes = new Dictionary<AttributeType, Attribute>();
 		foreach (AttributeType key in _statsHolder.AttributeItems.Keys)
 		{
 			AttributeItem attributeItem = _statsHolder.GetAttribute(key);

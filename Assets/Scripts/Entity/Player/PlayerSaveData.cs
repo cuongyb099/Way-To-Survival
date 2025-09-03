@@ -2,20 +2,30 @@
 using System;
 using System.Collections.Generic;
 using KatInventory;
+using Newtonsoft.Json;
+using UnityEngine;
 
 [Serializable]
 public class PlayerSaveData
 {
-    public string UID;
     public string Username;
     public float Money;
+    public int Diamonds;
     public Inventory Inventory;
     
-    public PlayerSaveData(string uid, string username, float money, InventorySO inventorySO)
+    public PlayerSaveData( string username, float money, int diamonds, InventorySO inventorySO)
     {
-        UID = uid;
         Username = username;
         Money = money;
+        Diamonds = diamonds;
         Inventory = new Inventory(inventorySO);
+    }
+    [JsonConstructor]
+    public PlayerSaveData( string username, float money, int diamonds, Inventory inventory)
+    {
+        Username = username;
+        Money = money;
+        Diamonds = diamonds;
+        Inventory = inventory;
     }
 }

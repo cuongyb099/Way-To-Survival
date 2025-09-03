@@ -39,6 +39,7 @@ public class BuildingEventUI : MonoBehaviour
     }
 
     public void Build() => BuildingSystem.Instance.Build();
+    public void Cancel() => BuildingSystem.Instance.Cancel();
     public void ChangeToBuildingMode() => BuildingSystem.Instance.SetMode(BuildingMode.BUILDING);
     public void ChangeToIdleMode() => BuildingSystem.Instance.SetMode(BuildingMode.IDLE);
 }

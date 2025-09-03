@@ -30,8 +30,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5525363729012094382}
   - {fileID: 4453657758614918688}
+  - {fileID: 5525363729012094382}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -47,9 +47,9 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162760403843552180}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 1
 --- !u!114 &4302602119468185565
 MonoBehaviour:
@@ -63,7 +63,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43ebea473d266c34c97f2f6aac6d66ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <IsVisible>k__BackingField: 1
+  <IsVisible>k__BackingField: 0
   OnPanelHide:
     m_PersistentCalls:
       m_Calls: []
@@ -73,12 +73,6 @@ MonoBehaviour:
   StopTime: 0
   BlurBackground: 0
   TransitionDuration: 0.2
-  OnShowDo:
-    m_PersistentCalls:
-      m_Calls: []
-  OnHideDo:
-    m_PersistentCalls:
-      m_Calls: []
   _waveText: {fileID: 1099088664506353700}
   _rewardText: {fileID: 5737254375035358886}
   _quitBtn: {fileID: 7889996622806519871}

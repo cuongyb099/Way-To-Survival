@@ -8,6 +8,6 @@ public class GunShopController : InteractableController
     {
         base.Interact(source);
         UIManager.Instance.HidePanel(UIConstant.GameplayPanel);
-        UIManager.Instance.ShowPanel(UIConstant.ShopPanel);
+        UIManager.Instance.ShowPanel(UIConstant.InGameShopPanel);
     }
 }

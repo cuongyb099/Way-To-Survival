@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1023234686500",
+    "firebase_url": "https://wtos-4492c-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "wtos-4492c",
+    "storage_bucket": "wtos-4492c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023234686500:android:f1c2974515e076783162b1",
+        "android_client_info": {
+          "package_name": "com.REStudio.WTS"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1023234686500-bs4df3v9k0lbanuvmp79e0hu9femjdtc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.REStudio.WTS",
+            "certificate_hash": "6942bf513a6277958bacbfe74539dacce287650e"
+          }
+        },
+        {
+          "client_id": "1023234686500-lo10ur7p0950dh15ob4ab2g5e4ii6mtf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.REStudio.WTS",
+            "certificate_hash": "0c45fb1c021077d8e36eb7af3a2479f7200bb7d6"
+          }
+        },
+        {
+          "client_id": "1023234686500-h59gbrfnhfrcu5jjbjenrprfogg1as3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDATFE1nh68OK6HZpL-AkchjjLF4yOn3ds"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1023234686500-h59gbrfnhfrcu5jjbjenrprfogg1as3h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

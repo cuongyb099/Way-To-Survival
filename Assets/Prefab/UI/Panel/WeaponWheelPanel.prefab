@@ -408,7 +408,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 048bfaf8db0617744a5e9a422c166036, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6bb65d0ca36424e51b56d8573fa84de3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -922,7 +922,7 @@ GameObject:
   - component: {fileID: 2872838189331235355}
   - component: {fileID: 3409542663509936848}
   m_Layer: 5
-  m_Name: Inventory Panel (3)
+  m_Name: Building Panel (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1043,6 +1043,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: AudioHelper, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &2872838189331235355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1084,6 +1096,7 @@ GameObject:
   - component: {fileID: 6422873240316808112}
   - component: {fileID: 7278604880190200376}
   - component: {fileID: 7227896705999900016}
+  - component: {fileID: 6809500035063994928}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1138,10 +1151,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Inventory
+  m_text: Build
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2c4d224912f3ea9499ab940355575838, type: 2}
-  m_sharedMaterial: {fileID: 3929106527769597331, guid: 2c4d224912f3ea9499ab940355575838, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8bbf59fe724fec94a93b8774c33baa0e, type: 2}
+  m_sharedMaterial: {fileID: -6674237870428231828, guid: 8bbf59fe724fec94a93b8774c33baa0e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1207,6 +1220,46 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &6809500035063994928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6877990649220912231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:a31c0d2977ad7184bbcf72d4a5440587
+    m_TableEntryReference:
+      m_KeyId: 67770592764944384
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7227896705999900016}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &7456366391519729581
 GameObject:
   m_ObjectHideFlags: 0
@@ -1613,12 +1666,6 @@ MonoBehaviour:
   StopTime: 0
   BlurBackground: 1
   TransitionDuration: 0.5
-  OnShowDo:
-    m_PersistentCalls:
-      m_Calls: []
-  OnHideDo:
-    m_PersistentCalls:
-      m_Calls: []
   Items:
   - {fileID: 4337075821095190296}
   - {fileID: 2806587610567143604}

@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -5,7 +6,11 @@ using UnityEngine.UI;
 public class MainMenuPanel : FadeBlurPanel
 {
     [FormerlySerializedAs("_startBtn")]
+    [Header("PlayerInfo")] 
+    [SerializeField] private TextMeshProUGUI _playerNameText;
+    [SerializeField] private Image _playerImage;
     [Header("Button")] 
+    [SerializeField] private Button _logOutBtn;
     [SerializeField] private Button _beginBtn;
     [SerializeField] private Button _tutorialBtn;
     [SerializeField] private Button _settingsBtn;
@@ -16,10 +21,25 @@ public class MainMenuPanel : FadeBlurPanel
     {
         base.OnAwake();
         LoadButton();
+        
+    }
+
+    public override void Show()
+    {
+        base.Show();
+        _playerNameText.text = PlayerDataPersistent.Instance.PlayerData.Username;
     }
 
     private void LoadButton()
     {
+        _logOutBtn.onClick.AddListener(() =>
+        {
+            PlayerDataPersistent.Instance.Save();
+            AuthHandle.Instance.LogOutGoogle();
+            Hide();
+            MessagePopup.Instance.ShowMessage($"Signed out");
+            UIManager.Instance.ShowPanel(UIConstant.LoginMenuPanel);
+        });
         _beginBtn.onClick.AddListener(() =>
         {
             Hide();

@@ -53,7 +53,7 @@ MonoBehaviour:
   <BulletPrefab>k__BackingField: {fileID: 984755602444092648, guid: bff9cb15c026277498f4541bb37853a4, type: 3}
   <ShellPrefab>k__BackingField: {fileID: 6182647827399181740, guid: a1e78c6635fd42541975b5cdc3cfdfab, type: 3}
   <MagPrefab>k__BackingField: {fileID: 6182647827399181740, guid: f66f9dfcd2d782b4dbb6c221dfb18b48, type: 3}
-  <Aim>k__BackingField: 4
+  <Aim>k__BackingField: 7
   <SpreadMax>k__BackingField: 5
   <Recoil>k__BackingField: 0.03
   <RecoilResetTime>k__BackingField: 2

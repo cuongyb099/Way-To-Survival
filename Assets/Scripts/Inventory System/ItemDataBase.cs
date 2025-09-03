@@ -34,7 +34,10 @@ namespace KatInventory
         
         public ItemBaseSO SearchItem(string id)
         {
-            return _itemDictionary.GetValueOrDefault(id);
+            ItemBaseSO result = _itemDictionary.GetValueOrDefault(id);
+            var type= result.GetType();
+            
+            return result;
         }
 
         public List<ItemBaseSO> GetItemsWithType(ItemType itemType)

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assets/Scene/Map1/Lightmap-0_comp_light.exr.meta
 guid: 4b2e1877e462e9d4a91aaf04718322cb
+========
+guid: c8e0c3e70c2056545b7b6a57fdf16fdc
+>>>>>>>> Stashed changes:Assets/Data/Art/Logo/Facebook_Logo_(2019).png.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

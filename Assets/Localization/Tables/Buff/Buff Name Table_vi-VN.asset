@@ -54,7 +54,7 @@ MonoBehaviour:
       m_Items:
       - rid: 6179708872693645314
   - m_Id: 5750758825984
-    m_Localized: 
+    m_Localized: Increase <color=#FFB600>Crit Damage</color> by <color=#3ECDFF>{0}</color>
     m_Metadata:
       m_Items:
       - rid: 6179708872693645314

@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Tech.Pooling;
 using Tech.Singleton;
 using UnityEngine;
 
@@ -29,9 +30,11 @@ public class BuildingSystem : Singleton<BuildingSystem>
         {
             case BuildingMode.IDLE:
                 OnIdleMode?.Invoke();
+                GameManager.Instance.Player.SwitchToLastWeapon();
                 break;
             case BuildingMode.BUILDING:
                 checkingInput = StartCoroutine(CheckingInput());
+                GameManager.Instance.Player.SwitchWeapon(3);
                 break;
         }
         currentMode = mode;
@@ -81,6 +84,14 @@ public class BuildingSystem : Singleton<BuildingSystem>
         PlayerInput.Instance.EnableAttack = true;
         StopCoroutine(checkingInput);
         OnBuildSuccess?.Invoke();
+        SetMode(BuildingMode.IDLE);
+    }
+    public void Cancel()
+    {
+        if(CurrentBuilding) ObjectPool.Instance.ReturnObjectToPool(CurrentBuilding.gameObject);
+        
+        PlayerInput.Instance.EnableAttack = true;
+        StopCoroutine(checkingInput);
         SetMode(BuildingMode.IDLE);
     }
 }

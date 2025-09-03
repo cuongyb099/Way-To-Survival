@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7ac518aea867e6469f14fe449ab3e2f, type: 3}
+  m_Name: BasicEnhancerShopItemSO
+  m_EditorClassIdentifier: 
+  <ItemName>k__BackingField:
+    m_TableReference:
+      m_TableCollectionName: GUID:fd6713aa530e7a244b6d797fbc2425fb
+    m_TableEntryReference:
+      m_KeyId: 85418098188869632
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  <ItemDescription>k__BackingField:
+    m_TableReference:
+      m_TableCollectionName: GUID:fd6713aa530e7a244b6d797fbc2425fb
+    m_TableEntryReference:
+      m_KeyId: 85418192866893824
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  <ItemIcon>k__BackingField: {fileID: 21300000, guid: 18323ad80af55463fade46a7c266e366, type: 3}
+  <Price>k__BackingField: 300
+  <Rarity>k__BackingField: 0
+  references:
+    version: 2
+    RefIds: []

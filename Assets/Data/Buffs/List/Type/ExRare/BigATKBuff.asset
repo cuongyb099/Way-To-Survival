@@ -39,7 +39,7 @@ MonoBehaviour:
   <UseAdvanceUpdate>k__BackingField: 1
   RareType: 3
   StatType: 0
-  ModifierType: 0
+  ModifierType: 2
   Value: 20
   references:
     version: 2

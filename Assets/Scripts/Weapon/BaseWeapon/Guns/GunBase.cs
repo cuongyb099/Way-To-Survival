@@ -24,7 +24,7 @@ public class GunBase : WeaponBase
 	[field: SerializeField] public Transform ShootPoint { get; private set; }
 	[field: SerializeField] public Transform ShellDropPoint { get; private set; }
 	[field: SerializeField] public GameObject MagObject { get; private set; }
-	public bool IsFullCap { get { return Stats.GetAttribute(AttributeType.Bullets).Value == Stats.GetStat(StatType.MaxBulletCap).Value; } }
+	public bool IsFullCap { get { return Stats.GetAttribute(AttributeType.Bullets).Value == Stats.GetStat(StatType.MaxMagCapacity).Value; } }
 	public bool IsEmpty { get { return Stats.GetAttribute(AttributeType.Bullets).Value == 0; } }
 	public float GunAccuracy
 	{
@@ -32,16 +32,18 @@ public class GunBase : WeaponBase
 	}
 	public float GunRecoil { get; protected set; } = 0f;
 	public StatsController Stats { get; protected set; }
-	
+	public GameObject GunBulletPrefab { get; set; } = null;
 	private TriggerHandler triggerHandler;
 	protected bool gunReloadable = true;
 	protected override void Awake()
 	{
 		base.Awake();
 		Stats = GetComponent<StatsController>();
-		triggerHandler = GetComponent<TriggerHandler>();
+		triggerHandler = GetComponent<TriggerHandler>(); 
+		
 	}
-	public override void Initialize()
+	
+	public override void OnInit()
 	{
 		SetBulletCap();
 		Stats.GetAttribute(AttributeType.Bullets).SetValueToMax();
@@ -153,14 +155,14 @@ public class GunBase : WeaponBase
 	}
 	public virtual void BulletInstantiate()
 	{
-		GameObject a = ObjectPool.Instance.SpawnObject(GunData.GunSO.BulletPrefab, ShootPoint.position, transform.rotation, PoolType.GameObject);
+		GameObject a = ObjectPool.Instance.SpawnObject(GunBulletPrefab?GunBulletPrefab:GunData.GunSO.BulletPrefab, ShootPoint.position, transform.rotation, PoolType.GameObject);
 		Bullet bullet = a.GetComponent<Bullet>();
 
 		bullet.InitBullet(ShootPoint.position, GunAccuracy, DamageInfo.GetDamageInfo(GunData.Damage.Value,playerController.Stats, DamageType.Bullet));
 	}
 	public void SetBulletCap(float mul=1)
 	{
-		Stats.GetStat(StatType.MaxBulletCap).BaseValue = (int)(GunData.GunSO.MaxCapacity * mul);
+		Stats.GetStat(StatType.MaxMagCapacity).BaseValue = (int)(GunData.GunSO.MaxCapacity * mul);
 	}
 
 	private Attribute bulletSource,att;
@@ -212,7 +214,7 @@ public class GunBase : WeaponBase
 		GameObject shell = ObjectPool.Instance.SpawnObject(GunData.GunSO.ShellPrefab,ShellDropPoint.transform.position,transform.rotation* Quaternion.Euler(UnityEngine.Random.Range(0,60),10,0), PoolType.GameObject);
 		Rigidbody rb = shell.GetComponent<Rigidbody>();
 		rb.velocity = playerController.Rigidbody.velocity;
-		rb.AddForce(Quaternion.Euler(0,-90,0)*shell.transform.forward*2f, ForceMode.VelocityChange);
+		rb.AddForce(Quaternion.Euler(0,90,0)*shell.transform.forward*2f, ForceMode.VelocityChange);
 	}
 
 	public void TakeMagazine()

@@ -10,11 +10,11 @@ public enum StatType
 	BonusDMG,
 	ATKSpeed,
 	//Multiplier for maxBulletCap
-	MagCapacity,
+	GunMagMultiplier,
 	//Max bullet player can carry
-	MaxBulletsCarry,
+	MaxBulletPoints,
 	//Left bullets
-	MaxBulletCap,
+	MaxMagCapacity,
 	RecoilReduce,
 	MaxSpreadReduce,
 }

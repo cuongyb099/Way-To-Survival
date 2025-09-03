@@ -12,13 +12,15 @@ public struct DamageInfo
 {
     public GameObject Dealer;
     public float Damage;
+    public float IgnoreDEF;
 	public bool IsCrit;
     public DamageType DamageType;
 
-    public DamageInfo(GameObject dealer = null, float damage = 0, bool isCrit = false, DamageType dmgType = DamageType.Bullet)
+    public DamageInfo(GameObject dealer = null, float damage = 0, float ignoreDef =0, bool isCrit = false, DamageType dmgType = DamageType.Bullet)
     {
         Dealer = dealer;
         Damage = damage;
+        IgnoreDEF = ignoreDef;
         IsCrit = isCrit;
         DamageType = dmgType;
     }
@@ -37,8 +39,8 @@ public struct DamageInfo
             damageType == DamageType.FollowUp)
             return new DamageInfo(dealer, finalDamage,dmgType: damageType);
         
-        bool doesCrit = Random.value < (critRate.Value/100f);
-        finalDamage *= (1f + (doesCrit ? (critDmg.Value/100f) : 0f));
-        return new DamageInfo(dealer, finalDamage, doesCrit, damageType);
+        bool doesCrit = Random.value < critRate.Value;
+        finalDamage *= (1f + (doesCrit ? critDmg.Value : 0f));
+        return new DamageInfo(dealer, finalDamage, 0f,doesCrit, damageType);
     }
 }

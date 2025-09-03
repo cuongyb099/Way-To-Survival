@@ -13,7 +13,7 @@ public class WeaponBaseSO : ItemGOBaseSO
     [field: SerializeField] public float Damage{ get; private set; }
     [field: SerializeField] public float Weight{ get; private set; }
     [field: SerializeField] public bool ReleaseToShoot{ get; private set; }
-    [field: SerializeField] public BuffUnlockByLevel BuffUnlockByLevel{ get; private set; }
+
     [field:Header("Attack Sounds")]
     [field: SerializeField] public List<AudioClip> AttackSounds{ get; private set; }
     public override ItemType GetItemType() => ItemType.Weapon;

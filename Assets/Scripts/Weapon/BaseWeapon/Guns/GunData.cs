@@ -12,6 +12,16 @@ public class GunData : WeaponData
     [JsonProperty("GunRecoil", Order = 8)] 
     public UpgradableFloat Recoil{ get; private set; }
     
+    [JsonConstructor]
+    public GunData(string ID, int quantity, 
+        int weaponLevel, UpgradableFloat shootingSpeed, UpgradableFloat damage, UpgradableFloat weight,
+        UpgradableFloat aim,UpgradableFloat spreadMax, UpgradableFloat recoil )  : base(ID, quantity, weaponLevel, shootingSpeed, damage, weight)
+    {
+        Aim = aim;
+        SpreadMax = spreadMax;
+        Recoil = recoil;
+    }
+    
     public GunData(GunBaseSO staticData, int quantity) : base(staticData, quantity)
     {
         Aim = new UpgradableFloat(Random.Range(staticData.Aim*0.8f,staticData.Aim*1.1f));

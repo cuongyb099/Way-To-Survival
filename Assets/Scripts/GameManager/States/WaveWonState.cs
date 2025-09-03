@@ -34,8 +34,7 @@ public class WaveWonState : BaseState<EGameState>
     {
         GameEvent.OnStartWinState?.Invoke();
         Timer = gameManager.WaveWonTime;
-        UIManager.Instance.HidePanel(UIConstant.GameplayPanel);
-        UIManager.Instance.ShowPanel(UIConstant.BuffPanel);
+        BuffPanel.Instance.InitializeAllRandom();
         TimeManager.Instance.AdvanceTimeOfDay();
     }
 

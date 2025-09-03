@@ -49,7 +49,7 @@ public class ZombieExplosion : Action
             {
                 if (go.TryGetComponent(out IDamagable damagable))
                 {
-                    damagable.Damage(new DamageInfo(null, ATK.Value * 2f, false, DamageType.Melee));
+                    damagable.Damage(new DamageInfo(null, ATK.Value * 2f, isCrit: false, dmgType: DamageType.Melee));
                 }
                 return;
             }

@@ -6,9 +6,9 @@ public class MedkitBase : MeleeBase
 {
     private Attribute hp;
 
-    public override void Initialize()
+    public override void OnInit()
     {
-        base.Initialize();
+        base.OnInit();
         playerController.Stats.TryGetAttribute(AttributeType.Hp, out hp);
     }
     public override void MeleeLogic()

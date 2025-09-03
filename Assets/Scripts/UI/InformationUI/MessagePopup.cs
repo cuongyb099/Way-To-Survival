@@ -23,10 +23,18 @@ public class MessagePopup : Singleton<MessagePopup>
     {
         messageText.text = message;
         if(sequence != null) sequence.Kill();
-        sequence = DOTween.Sequence();
+        sequence = DOTween.Sequence().SetUpdate(true);
         sequence.Append( DOVirtual.Float(0, 1, TransitionDuration, x => canvasGroup.alpha = x));
         sequence.AppendInterval(MessageDuration);
         sequence.Append( DOVirtual.Float(1, 0, TransitionDuration, x => canvasGroup.alpha = x));
     }
-
+    public void ShowMessage(object obj)
+    {
+        messageText.text = obj.ToString();
+        if(sequence != null) sequence.Kill();
+        sequence = DOTween.Sequence().SetUpdate(true);
+        sequence.Append( DOVirtual.Float(0, 1, TransitionDuration, x => canvasGroup.alpha = x));
+        sequence.AppendInterval(MessageDuration);
+        sequence.Append( DOVirtual.Float(1, 0, TransitionDuration, x => canvasGroup.alpha = x));
+    }
 }

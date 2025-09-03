@@ -7,9 +7,9 @@ public class AmmoBagBase : MeleeBase
     [SerializeField]private int bulletsPerRound = 300;
     private bool giveBullets = false;
     private Attribute holdingBullets;
-    public override void Initialize()
+    public override void OnInit()
     {
-        base.Initialize();
+        base.OnInit();
         playerController.Stats.TryGetAttribute(AttributeType.HoldingBullets, out holdingBullets);
         GameEvent.OnStartShoppingState += CanGiveBullets;
     }

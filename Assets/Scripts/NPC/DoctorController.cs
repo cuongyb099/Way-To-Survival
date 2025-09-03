@@ -8,15 +8,15 @@ public class DoctorController : InteractableController
     
     public override void Interact(PlayerController source)
     {
-        if (source.Resin < buyPrice)
-        {
-            DamagePopUpGenerator.Instance.CreateDamagePopUp(source.transform.position, $"Không đủ tiền!!!");
-            return;
-        }
-        source.Resin -= buyPrice;
+        // if (source.Resin < buyPrice)
+        // {
+        //     DamagePopUpGenerator.Instance.CreateDamagePopUp(source.transform.position, $"Không đủ tiền!!!");
+        //     return;
+        // }
+        // source.Resin -= buyPrice;
         
         UIManager.Instance.HidePanel(UIConstant.GameplayPanel);
-        UIManager.Instance.ShowPanel(UIConstant.BuffPanel);
+        UIManager.Instance.ShowPanel(UIConstant.InGameShopPanel);
         base.Interact(source);
     }
 }

@@ -1,23 +1,34 @@
 using System;
+using System.Collections;
 using System.IO;
+using AYellowpaper.SerializedCollections;
+using Firebase.Database;
+using JsonSubTypes;
 using KatInventory;
+using Newtonsoft.Json;
 using Tech.Json;
 using Tech.Singleton;
+using Unity.Entities;
+using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
-public class PlayerDataPersistent : SingletonPersistent<PlayerDataPersistent>,ISaveable
+public class PlayerDataPersistent : SingletonPersistent<PlayerDataPersistent>
 {
-    public static readonly string DefaultPath = System.IO.Path.Combine(Application.streamingAssetsPath, "SaveFile/BaseData.json");
-    public static readonly string SavePath = "Assets/Save/PlayerData.json";
+    public static readonly string path = "Assets/Save/PlayerData.json";
+    private static readonly JsonSerializerSettings settings = new() {TypeNameHandling = TypeNameHandling.None };
+    public string UserID { get; set; } = null;
+    
     public PlayerSaveData PlayerData
     {
         get => _playerData;
-        set => _playerData = value;
+        private set => _playerData = value;
     }
     [SerializeField] private PlayerSaveData _playerData;
+    private DatabaseReference dbReference;
     [SerializeField] private InventorySO _beginningInventory;
-    [field:SerializeField] public int StartingResin { get;private set; }
     //
+    [field:SerializeField] public int StartingResin { get;private set; }
     [field:SerializeField] public WeaponData[] StartingWeapons { get;private set; }
     [field:SerializeField] public BaseBuffSO[] StartingBuffs{ get;private set; }
     public Action OnSavePlayerData,OnLoadPlayerData;
@@ -26,33 +37,72 @@ public class PlayerDataPersistent : SingletonPersistent<PlayerDataPersistent>,IS
         base.Awake();
         StartingWeapons = new WeaponData[3]{null, null, null};
         StartingBuffs = new BaseBuffSO[4];
-        ItemDataBase.OnLoadDone += Load;
+        
+        dbReference = FirebaseDatabase.DefaultInstance.RootReference;
+        //setup json
+        
+        settings.Converters.Add(JsonSubtypesConverterBuilder
+            .Of<ItemData>("Type")
+            .RegisterSubtype<ItemData>(SerializeItemType.DefaultItem)
+            .RegisterSubtype<WeaponData>(SerializeItemType.Weapon)
+            .RegisterSubtype<GunData>(SerializeItemType.Gun)
+            .RegisterSubtype<TurretData>(SerializeItemType.Turret) 
+            .SerializeDiscriminatorProperty()
+            .Build());            
     }
-
-    private void OnDestroy()
-    {
-        ItemDataBase.OnLoadDone -= Load;
-    }
-
+    
     [ContextMenu("Save")]
     public void Save()
     {
+        if(UserID == null) return;
         OnSavePlayerData?.Invoke();
-        PlayerData.SaveJson(SavePath);
+        string json = JsonConvert.SerializeObject(_playerData,Formatting.None,settings);
+        dbReference.Child("users").Child(UserID).SetRawJsonValueAsync(json); 
+// #if UNITY_EDITOR
+//         OnSavePlayerData?.Invoke();
+//         string json = JsonConvert.SerializeObject(_playerData, Formatting.None, settings);
+//         Json.WriteAllText(path,json);
+//         AssetDatabase.Refresh();
+// #endif
     }
     [ContextMenu("Load")]
     public void Load()
     {
-        Debug.Log("Load");
-        if (!File.Exists(SavePath))
+        if(UserID == null) return;
+        StartCoroutine(LoadDataEnum());
+// #if UNITY_EDITOR
+//         if (!File.Exists(path))
+//             _playerData = new PlayerSaveData("AuthHandle.Instance.User.DisplayName", 1000f, 10, _beginningInventory);
+//         else
+//         {
+//             string json = File.ReadAllText(path);
+//             PlayerSaveData data = JsonConvert.DeserializeObject<PlayerSaveData>(json, settings);
+//             _playerData = data;
+//             return;
+//         }
+//         
+//         AssetDatabase.Refresh();
+//         OnLoadPlayerData?.Invoke();
+// #endif
+    }
+
+    private IEnumerator LoadDataEnum()
+    {
+        var data = dbReference.Child("users").Child(UserID).GetValueAsync(); 
+        yield return new WaitUntil(() => data.IsCompleted);
+        DataSnapshot snapshot = data.Result;
+        string jsonData = snapshot.GetRawJsonValue();
+        if (jsonData != null)
         {
-            _playerData = new PlayerSaveData("0","defaultUser",0f,_beginningInventory);
+            _playerData = JsonConvert.DeserializeObject<PlayerSaveData>(jsonData,settings);
         }
         else
-            Json.LoadJson(SavePath, out _playerData);
+        {
+            _playerData = new PlayerSaveData(AuthHandle.Instance.User.DisplayName, 1000f, 10, _beginningInventory);
+        }
         OnLoadPlayerData?.Invoke();
     }
-    
+
     public void ChangeStartingWeapons(WeaponData[] weaponDatas)
     {
         StartingWeapons = weaponDatas;
@@ -83,6 +133,18 @@ public class PlayerDataPersistent : SingletonPersistent<PlayerDataPersistent>,IS
                 StartingBuffs[i].AddStatusEffect(playerController.Stats);
         }
 
-        playerController.Resin = StartingResin;
+        playerController.Money = StartingResin;
     }
+    //Auto save
+    // private void OnApplicationPause(bool pauseStatus)
+    // {
+    //     if(pauseStatus)
+    //         Save();
+    // }
+    //
+    // protected override void OnApplicationQuit()
+    // {
+    //     Save();
+    //     base.OnApplicationQuit();
+    // }
 }

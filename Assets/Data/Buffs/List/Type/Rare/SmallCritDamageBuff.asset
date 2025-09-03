@@ -40,7 +40,7 @@ MonoBehaviour:
   RareType: 2
   StatType: 5
   ModifierType: 0
-  Value: 10
+  Value: 0.1
   references:
     version: 2
     RefIds: []

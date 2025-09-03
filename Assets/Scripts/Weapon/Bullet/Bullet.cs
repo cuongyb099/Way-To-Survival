@@ -43,7 +43,7 @@ public class Bullet : MonoBehaviour,IPoolable
 				DamageHandler.Damage(damagable, damageInfo);
 				isDealable = false;
 				countDMG--;
-				damageInfo = new DamageInfo(damageInfo.Dealer,damageInfo.Damage*DamageReduction,damageInfo.IsCrit);
+				damageInfo = new DamageInfo(damageInfo.Dealer,damageInfo.Damage*DamageReduction,isCrit:damageInfo.IsCrit);
 				HandleBulletPenetration(other,countDMG);
 				return;
 			}

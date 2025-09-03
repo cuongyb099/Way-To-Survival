@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assets/Data/Building.meta
 guid: f9fa70206b0c20e4da0ff39f3ae84d9e
+========
+guid: b2c401872a7df594b96d7f7418dd1d8e
+>>>>>>>> Stashed changes:Assets/Data/Shop.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

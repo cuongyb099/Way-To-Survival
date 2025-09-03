@@ -12,7 +12,7 @@ namespace Tech.Json
     {
         private static readonly string _key = "gCjK+DZ/GCYbKIGiAt1qCA==";
         private static readonly string _iv = "47l5QsSe1POo31adQ/u7nQ==";
-        private static readonly JsonSerializerSettings settings = new() { TypeNameHandling = TypeNameHandling.All };
+        private static readonly JsonSerializerSettings settings = new() { TypeNameHandling = TypeNameHandling.None };
         
         //Kat Note : If You Want To See Raw File Just Command = new AES(_key, _iv)
         private static IEncryption _encryption /* = new AES(_key, _iv);*/;
@@ -53,7 +53,7 @@ namespace Tech.Json
             value = default;
         }
 
-        private static void WriteAllText(string path, string text)
+        public static void WriteAllText(string path, string text)
         {
             if (_encryption != null)
             {
@@ -74,5 +74,12 @@ namespace Tech.Json
 
             return File.ReadAllText(path);
         }
+
+        public static string GetJsonFromClass<T>(this T data)
+        {
+            return JsonConvert.SerializeObject(data,Formatting.None,settings);
+            
+        }
+
     }
 }

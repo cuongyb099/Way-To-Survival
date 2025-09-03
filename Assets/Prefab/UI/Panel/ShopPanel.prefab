@@ -5368,12 +5368,6 @@ MonoBehaviour:
   StopTime: 0
   BlurBackground: 1
   TransitionDuration: 0.2
-  OnShowDo:
-    m_PersistentCalls:
-      m_Calls: []
-  OnHideDo:
-    m_PersistentCalls:
-      m_Calls: []
   GunsPanel: {fileID: 3575344957912843086}
   GunDataUI: {fileID: 2992469904418903578}
   BuyButton: {fileID: 2033206308838842198}

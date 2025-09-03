@@ -28,6 +28,10 @@ public class BuffListSO : ScriptableObject
 		}
         return null;
     }
+	public BaseBuffSO ChoseRarityBuff(Rarity rarity)
+	{
+		return Buffs[rarity].ChooseRandomBuff();
+	}
     private float calSumNumber()
     {
         float sum = 0;
@@ -53,5 +57,22 @@ public class BuffListSO : ScriptableObject
         }
 
         return l;
+	}
+	public List<BaseBuffSO> ChoseRandomBuffAmmountWithRarity(int n,Rarity rarity)
+	{
+		List<BaseBuffSO> l = new List<BaseBuffSO>();
+		int count = 0;
+		while (l.Count < n && count <999)
+		{
+			count++;
+			BaseBuffSO t = ChoseRarityBuff(rarity);
+			if (!l.Contains(t))
+			{
+				if (!t.Stackable && GameManager.Instance.Player.Stats.HasEffect(t)) continue;
+				l.Add(t);
+			}
+		}
+
+		return l;
 	}
 }
