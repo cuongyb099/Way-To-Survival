@@ -39,7 +39,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 584516608000
-    m_Localized: UI
+    m_Localized: Audio UI
     m_Metadata:
       m_Items: []
   - m_Id: 543311765504
@@ -96,6 +96,22 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 35632660900261888
     m_Localized: Tap To Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59056337453555712
+    m_Localized: You must select 3 weapons
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59060818807332864
+    m_Localized: Select a weapon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59064213186256896
+    m_Localized: Max Weapon Level achieved
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59064633233219584
+    m_Localized: Upgrade Weapon Failed
     m_Metadata:
       m_Items: []
   references:

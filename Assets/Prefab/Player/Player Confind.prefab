@@ -1804,8 +1804,9 @@ MonoBehaviour:
   buildPoint: {fileID: 0}
   CanBuildColor: {r: 0.34074938, g: 0.9339623, b: 0.3216002, a: 1}
   CanNotBuildColor: {r: 1, g: 0.25, b: 0.25, a: 1}
-  Buildings: []
-  CurrentStructure: {fileID: 0}
+  ObstacleLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &6450202602350647660
 GameObject:
   m_ObjectHideFlags: 0

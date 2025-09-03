@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using KatInventory;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Localization.Settings;
 using UnityEngine.UI;
 
 public class StartingSetupPanel : FadeBlurPanel
@@ -27,7 +28,7 @@ public class StartingSetupPanel : FadeBlurPanel
     {
         base.Show();
         
-        LoadWeaponItems(Inventory.Instance.GetItems(ItemType.Weapon));
+        LoadWeaponItems(PlayerDataPersistent.Instance.PlayerData.Inventory.GetItems(ItemType.Weapon));
     }
 
     public override void Hide()
@@ -49,7 +50,8 @@ public class StartingSetupPanel : FadeBlurPanel
                 PlayerDataPersistent.Instance.ChangeStartingWeapons(WeaponSlots[0].ItemBaseSoHolder,WeaponSlots[1].ItemBaseSoHolder,WeaponSlots[2].ItemBaseSoHolder);
                 OnEnterGame?.Invoke();
             }
-            else Debug.Log("Can't Start Game");
+            else MessagePopup.Instance.ShowMessage(
+                LocalizationSettings.StringDatabase.GetLocalizedString("UI Language Table", "You must select 3 weapons"));
         });
         BackButton.onClick.AddListener(() =>
         {

@@ -23,13 +23,13 @@ public class WaveInfoUI : MonoBehaviour
     [SerializeField] private AudioClip[] buffClips;
     private void Awake()
     {
-        GameEvent.OnInitializedUI += ShowWaveInfo;
+        LoadingScreen.Instance.OnDone.AddListener(ShowWaveInfo);  
         GameEvent.OnStartCombatState += PlaySoundSupense;
         GameEvent.OnStartShoppingState += ShowWaveInfo;
     }
     private void OnDestroy()
     {
-        GameEvent.OnInitializedUI -= ShowWaveInfo;
+        LoadingScreen.Instance.OnDone.RemoveListener(ShowWaveInfo);  
         GameEvent.OnStartCombatState -= PlaySoundSupense;
         GameEvent.OnStartShoppingState -= ShowWaveInfo;
     }
@@ -72,7 +72,7 @@ public class WaveInfoUI : MonoBehaviour
         textWave.text = $"Wave {EnemyManager.Instance.GetCurrentWave()}";
         PlaySoundSupense();
         
-        waveCanvasGroup.blocksRaycasts = true;
+        /*waveCanvasGroup.blocksRaycasts = true;
         DOVirtual.Float(1, 0, showWaveUIDuration, x =>
         {
             waveCanvasGroup.alpha = x;
@@ -85,7 +85,7 @@ public class WaveInfoUI : MonoBehaviour
             }
             else
                 timerSlider.FadeIn();
-        }).SetEase(showAnimationCurve);
+        }).SetEase(showAnimationCurve);*/
     }
     private void HideWaveInfo()
     {

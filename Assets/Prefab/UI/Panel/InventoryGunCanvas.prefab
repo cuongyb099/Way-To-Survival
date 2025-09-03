@@ -1770,16 +1770,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0728e49530978384cadc1d6ce41c29ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GunName: {fileID: 5592699815489034725}
-  GunPrice: {fileID: 4582248305955079082}
+  <ShowWeaponPanel>k__BackingField: {fileID: 0}
+  <NoWeaponPanel>k__BackingField: {fileID: 0}
+  WeaponName: {fileID: 0}
+  WeaponPrice: {fileID: 0}
   Capacity: {fileID: 3803431944596298744}
-  GunImage: {fileID: 5553046486844216943}
-  DamageSlider: {fileID: 3014641623633033411}
-  RecoilSlider: {fileID: 1993583994633723330}
-  AimSlider: {fileID: 502425369824000269}
-  RPMSlider: {fileID: 3638535005714456467}
-  WeightSlider: {fileID: 8225242703713970044}
-  CapacitySlider: {fileID: 4128865404874010781}
+  WeaponLevel: {fileID: 0}
+  WeaponImage: {fileID: 0}
+  DamageSlider: {fileID: 0}
+  RecoilSlider: {fileID: 0}
+  AimSlider: {fileID: 0}
+  RPMSlider: {fileID: 0}
+  WeightSlider: {fileID: 0}
+  CapacitySlider: {fileID: 0}
   AnimTime: 0.25
 --- !u!1 &2604501352999970081
 GameObject:
@@ -5713,6 +5716,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 504763ed4a447de41ad95452f1586380, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <IsVisible>k__BackingField: 0
+  OnPanelHide:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPanelShow:
+    m_PersistentCalls:
+      m_Calls: []
   StopTime: 0
   BlurBackground: 1
   TransitionDuration: 0.2

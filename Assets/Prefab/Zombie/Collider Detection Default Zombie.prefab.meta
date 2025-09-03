@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Save In Editor/Save.json.meta
+guid: 411ab626a1c0db2419d334e15873f789
+TextScriptImporter:
+========
 guid: 8e274775dc1dc8043a2d199b4c4ae375
 PrefabImporter:
+>>>>>>>> origin/KatDevelop:Assets/Prefab/Zombie/Collider Detection Default Zombie.prefab.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

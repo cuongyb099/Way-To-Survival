@@ -8,6 +8,7 @@ public enum StatModType
 	Percentage
 }
 
+[System.Serializable]
 public struct StatModifier: IEquatable<StatModifier>
 {
 	public float Value;
@@ -28,7 +29,8 @@ public struct StatModifier: IEquatable<StatModifier>
 
     public bool Equals(StatModifier other)
     {
-        return (Mathf.Approximately(other.Value, Value) && other.Type == Type && other.Source == Source);
+        return (Mathf.Approximately(other.Value, Value) && other.Type == Type);
     }
+
 }
 

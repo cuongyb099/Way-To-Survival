@@ -39,7 +39,7 @@ MonoBehaviour:
   <Rarity>k__BackingField: 3
   <Prefab>k__BackingField: {fileID: 4180766260500403244, guid: 7009c477ea90f0a4cb32b7c2a9714fa9, type: 3}
   <WeaponType>k__BackingField: 4
-  <ShootingSpeed>k__BackingField: 0.075
+  <ShootingSpeed>k__BackingField: 0.15
   <Damage>k__BackingField: 1
   <Weight>k__BackingField: 0.6
   <ReleaseToShoot>k__BackingField: 0

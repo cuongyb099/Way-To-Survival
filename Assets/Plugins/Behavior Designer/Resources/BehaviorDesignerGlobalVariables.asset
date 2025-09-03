@@ -47,7 +47,8 @@ MonoBehaviour:
       Attack"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Anim Name
       Idle","IsShared":true,"IsGlobal":true,"StringmValue":"Idle"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Empty","IsShared":true,"IsGlobal":true,"StringmValue":"\"\""},{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"Turret
       Radius Attack Offset ","IsShared":true,"IsGlobal":true,"Vector3mValue":"(0,0,0)"},{"Type":"BehaviorDesigner.Runtime.SharedLayerMask","Name":"Turret
-      LayerMask","IsShared":true,"IsGlobal":true,"LayerMaskmValue":4096}]}'
+      LayerMask","IsShared":true,"IsGlobal":true,"LayerMaskmValue":4096},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Test
+      TR","IsShared":true,"IsGlobal":true,"StringmValue":"fsf"}]}'
     fieldSerializationData:
       typeName: []
       fieldNameHash: 

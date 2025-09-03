@@ -238,6 +238,35 @@ BlendTree:
   m_UseAutomaticThresholds: 1
   m_NormalizedBlendValues: 0
   m_BlendType: 0
+--- !u!114 &-3903341969836916537
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e919815bc104483b842ecea38d8773b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  events:
+  - rid: 7905388089551880197
+  - rid: 7905388089551880198
+  recycleOnLoop: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 7905388089551880197
+      type: {class: ZombieAnimEvent, ns: DefaultNamespace.Entity.Enemy, asm: Assembly-CSharp}
+      data:
+        time: 0.5
+        id: 0
+    - rid: 7905388089551880198
+      type: {class: ZombieAnimEvent, ns: DefaultNamespace.Entity.Enemy, asm: Assembly-CSharp}
+      data:
+        time: 1
+        id: 1
 --- !u!206 &-3888285249629871651
 BlendTree:
   m_ObjectHideFlags: 1
@@ -550,7 +579,7 @@ AnimatorState:
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours:
-  - {fileID: -9168742074408057529}
+  - {fileID: -3903341969836916537}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1

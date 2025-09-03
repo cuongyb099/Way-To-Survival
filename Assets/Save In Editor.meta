@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 93e1c64bdb47fd04993d1ae72dd310b9
+<<<<<<<< HEAD:Assets/Save In Editor.meta
+guid: 934442afb4552904cac91f3aab9da944
+========
+guid: 372d83593480ac0488e02c9c531db895
+>>>>>>>> origin/KatDevelop:Assets/Data/Animation Event Param.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

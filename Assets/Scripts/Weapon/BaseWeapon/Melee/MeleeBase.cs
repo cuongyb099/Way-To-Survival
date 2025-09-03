@@ -26,7 +26,7 @@ public class MeleeBase : WeaponBase
         WeaponSoundPlay();
     }
 
-    public void DealDamage()
+    public virtual void MeleeLogic()
     {
         Physics.OverlapBoxNonAlloc(hitBox.bounds.center, hitBox.bounds.extents, hitColliders,Quaternion.identity);
         //hitColliders = Physics.OverlapBox(hitBox.bounds.center, hitBox.bounds.extents,Quaternion.identity);

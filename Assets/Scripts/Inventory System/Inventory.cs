@@ -1,22 +1,36 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Newtonsoft.Json;
 using UnityEngine;
 
 namespace KatInventory
 {
     [RequireComponent(typeof(ItemDataBase))]
-    public class Inventory : Tech.Singleton.Singleton<Inventory>
+    public class Inventory
     {
-        [field: SerializeField, Range(1, 1000)]
+        [field: SerializeField, Range(1, 1000), JsonIgnore]
         public int Capacity { get; private set;} = 99;
 
-        [SerializeField]private List<ItemData> _inventory = new ();
+        [SerializeField, JsonProperty("InventoryData")]private List<ItemData> _inventory = new ();
+        [JsonIgnore]
         public List<ItemData> DataRuntime => _inventory;
 
         public static Action OnInventoryChange;
         public static Action OnAddItem;
 
+        public Inventory(InventorySO inventorySO)
+        {
+            AddStartItem(inventorySO);
+        }
+
+        public void AddStartItem(InventorySO inventorySO)
+        {
+            foreach (var item in inventorySO.ItemDataList)
+            {
+                AddItem(item.Item, item.Quantity);
+            }
+        }
         private ItemData FindFirstItemNotFullStack(ItemBaseSO itemBase)
         {
             for (int i = 0; i < _inventory.Count; i++)
@@ -168,17 +182,6 @@ namespace KatInventory
         {
             _inventory.Clear();
             OnInventoryChange?.Invoke();
-        }
-        public void Save(PlayerSaveData data)
-        {
-            
-        }
-        public void Load(PlayerSaveData data)
-        {
-            foreach (var item in data.Inventory)
-            {
-                AddItem(item.Item, item.Quantity);
-            }
         }
     }
 }

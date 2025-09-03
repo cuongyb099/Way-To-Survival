@@ -222,6 +222,7 @@ GameObject:
   - component: {fileID: 3060835984527718590}
   - component: {fileID: 953009721945292828}
   - component: {fileID: 8341158009940530228}
+  - component: {fileID: 2015845048080894206}
   m_Layer: 5
   m_Name: Item Panel
   m_TagString: Untagged
@@ -302,6 +303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: {fileID: 8901377964381318483}
   ItemImage: {fileID: 93680140585655635}
+  BackgroundImage: {fileID: 0}
   <ItemButton>k__BackingField: {fileID: 8341158009940530228}
 --- !u!114 &8341158009940530228
 MonoBehaviour:
@@ -347,3 +349,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2015845048080894206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5458322191218628668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292d865278314f0fa0a0d6a4c2950ad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

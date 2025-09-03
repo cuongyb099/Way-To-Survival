@@ -37,7 +37,7 @@ MonoBehaviour:
   <MaxStack>k__BackingField: 64
   <Modifiers>k__BackingField: 
   <Rarity>k__BackingField: 0
-  <Prefab>k__BackingField: {fileID: 57737691637219872, guid: fea3a8228a75744439538f176b9507e3, type: 3}
+  <Prefab>k__BackingField: {fileID: 6630186080787008080, guid: fea3a8228a75744439538f176b9507e3, type: 3}
   references:
     version: 2
     RefIds: []

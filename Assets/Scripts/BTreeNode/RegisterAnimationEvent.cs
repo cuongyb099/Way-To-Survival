@@ -1,26 +1,33 @@
-﻿using System.Threading.Tasks;
-using BehaviorDesigner.Runtime;
+﻿using BehaviorDesigner.Runtime;
 using BehaviorDesigner.Runtime.Tasks;
-using Core.AnimationEventSystem;
-using Core.AnimationEventSystem.EventData;
+using Core.Animation_Event_System;
+using KatLib.Observer;
 using UnityEngine;
 
 namespace BTreeNode
 {
     [TaskCategory("Animation Event")]
-    public class RegisterAnimEventNoParam : Action
+    public class WaitAnimEventRaise : Action
     {
-        public AnimEventNoParamSO Evt;
+        public GameObject Target;
+        public GenericEnum Event;
         protected AnimationEventReceiver receiver;
-        public SharedBool IsEventRaised;
+        protected bool isEventRaised;
         
         public override void OnAwake()
         {
-            receiver = this.transform.GetComponentInChildren<AnimationEventReceiver>();
-            receiver.RegisterEvent(Evt.Key, () =>
-            {
-                IsEventRaised.Value = true;
-            });
+            receiver = this.Target.GetComponentInChildren<AnimationEventReceiver>();
+            receiver.Subscribe(Event, () => { isEventRaised = true; });
+        }
+
+        public override TaskStatus OnUpdate()
+        {
+            return isEventRaised ? TaskStatus.Success : TaskStatus.Running;
+        }
+
+        public override void OnEnd()
+        {
+            isEventRaised = false;
         }
     }
 }

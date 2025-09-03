@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using Core.AnimationEventSystem;
-using Core.AnimationEventSystem.EventData;
+using Core.Animation_Event_System;
+using KatLib.Observer;
 using UnityEngine;
 using UnityEngine.Pool;
 
@@ -11,8 +11,8 @@ namespace Entity.Common.Collider_Detection
         protected DamageInfo damage;
         protected HashSet<Collider> damagedCollider;
         [SerializeField] protected AnimationEventReceiver receiver;
-        public AnimEventNoParamSO PerformAttackEvt;
-        public AnimEventNoParamSO DoneEvt;
+        public GenericEnum PerformAttackEvt;
+        public GenericEnum DoneEvt;
         
         protected override void Awake()
         {
@@ -22,12 +22,12 @@ namespace Entity.Common.Collider_Detection
                 receiver = GetComponentInParent<AnimationEventReceiver>();
             }
             
-            receiver.RegisterEvent(PerformAttackEvt.Key, () =>
+            receiver.Subscribe(PerformAttackEvt, () =>
             {
                 this.SetActiveDetect(true);
             });
             
-            receiver.RegisterEvent(DoneEvt.Key, () =>
+            receiver.Subscribe(DoneEvt, () =>
             {
                 this.SetActiveDetect(false);
             });
