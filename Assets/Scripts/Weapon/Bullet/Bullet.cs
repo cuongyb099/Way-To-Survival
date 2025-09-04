@@ -113,6 +113,9 @@ public class Bullet : MonoBehaviour,IPoolable, IProjectile, IDamageDealer
 	
 	public void Init(Vector3 direction, float force)
 	{
+		countDMG = DamageTime;
+		isDealable = true;
+		trailRenderer.Clear();
 		this.rb.AddForce(direction * force, ForceMode.VelocityChange);
 		this.collider.enabled = true;
 	}

@@ -14,8 +14,8 @@ public class WeaponWheelPanel : FadeBlurPanel
     {
         LoadButton();
                 
-        GameEvent.OnStartCombatState += DeactivateInventory;
-        GameEvent.OnStopCombatState += ActivateInventory;
+        // GameEvent.OnStartCombatState += DeactivateInventory;
+        // GameEvent.OnStopCombatState += ActivateInventory;
         
         InputEvent.OnInputWeaponWheel += ToggleWeaponWheelUI;
     }

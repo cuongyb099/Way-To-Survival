@@ -3,10 +3,12 @@ using ResilientCore;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace.Projectile;
 using KatInventory;
 using Tech.Pooling;
 using UnityEditor.Rendering;
 using UnityEngine;
+using Random = Unity.Mathematics.Random;
 
 public class GunBase : WeaponBase
 {
@@ -155,10 +157,27 @@ public class GunBase : WeaponBase
 	}
 	public virtual void BulletInstantiate()
 	{
-		GameObject a = ObjectPool.Instance.SpawnObject(GunBulletPrefab?GunBulletPrefab:GunData.GunSO.BulletPrefab, ShootPoint.position, transform.rotation, PoolType.GameObject);
-		Bullet bullet = a.GetComponent<Bullet>();
 
-		bullet.InitBullet(ShootPoint.position, GunAccuracy, DamageInfo.GetDamageInfo(GunData.Damage.Value,playerController.Stats, DamageType.Bullet));
+		var bulletClone = ObjectPool.Instance.SpawnObject(GunBulletPrefab?GunBulletPrefab:GunData.GunSO.BulletPrefab, ShootPoint.position, default);
+		bulletClone.transform.rotation = ShootPoint.transform.rotation;
+           
+		if (bulletClone.TryGetComponent(out IProjectile projectile))
+		{
+			Vector3 angle = playerController.gameObject.transform.rotation.eulerAngles;
+		
+			Quaternion temp = Quaternion.Euler(angle.x, angle.y + Mathf.Clamp(UnityEngine.Random.Range(-GunAccuracy, GunAccuracy), 
+				-GameValues.RecoilMaxValue, GameValues.RecoilMaxValue), angle.z);
+			projectile.Init(temp *Vector3.forward ,80);
+		}
+
+		if (bulletClone.TryGetComponent(out IDamageDealer damageDealer))
+		{
+			damageDealer.SetDamage(DamageInfo.GetDamageInfo(GunData.Damage.Value,playerController.Stats, DamageType.Bullet));
+		}
+		// GameObject a = ObjectPool.Instance.SpawnObject(GunBulletPrefab?GunBulletPrefab:GunData.GunSO.BulletPrefab, ShootPoint.position, transform.rotation, PoolType.GameObject);
+		// Bullet bullet = a.GetComponent<Bullet>();
+		// bullet.InitBullet(ShootPoint.position, GunAccuracy, DamageInfo.GetDamageInfo(GunData.Damage.Value,playerController.Stats, DamageType.Bullet));
+		
 	}
 	public void SetBulletCap(float mul=1)
 	{
