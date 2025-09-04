@@ -1,17 +1,19 @@
 using System;
 using System.Collections;
 using BehaviorDesigner.Runtime;
+using Cysharp.Threading.Tasks;
 using ProjectDawn.Navigation.Hybrid;
 using UnityEngine;
 using ObjectPool = Tech.Pooling.ObjectPool;
 
-public class EnemyCtrl : BasicController
+public class EnemyCtrl : BasicController, IKnockbackable
 {
     public AgentAuthoring Authoring { get; protected set; }
     public AgentAvoidAuthoring AvoidAuthoring { get; protected set; }
     public AgentNavMeshAuthoring NavMeshAuthoring { get; protected set; }
     public Animator Anim { get; protected set; }
     public BehaviorTree BTree { get; protected set; }
+    public Rigidbody MainBodyRB;
     private EnemyBehaviorStatsLinking behaviorStatsLinking;
     public RagdollAnimationBase RagdollAnimation { get; protected set; }
     [HideInInspector] public bool IsTakingDamage;
@@ -93,5 +95,18 @@ public class EnemyCtrl : BasicController
     public bool ReachEndOfPath()
     {
         return Authoring.EntityBody.RemainingDistance < 0.12f;
+    }
+
+    public void ApplyKnockback(Vector3 direction, float force)
+    {
+        StopDestination();
+        
+        Knockback(direction, force).Forget();
+    }
+
+    private async UniTaskVoid Knockback(Vector3 direction, float force)
+    {
+        await UniTask.Yield();
+        MainBodyRB.AddForce(direction * force, ForceMode.VelocityChange);
     }
 }

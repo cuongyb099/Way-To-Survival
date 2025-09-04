@@ -1,9 +1,10 @@
+using DefaultNamespace.Projectile;
 using DG.Tweening;
 using Tech.Pooling;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour,IPoolable
+public class Bullet : MonoBehaviour,IPoolable, IProjectile, IDamageDealer
 {
 	[field:SerializeField] public int DamageTime { get; private set; } = 1;
 	[field:SerializeField,Range(0f,1f)] public float DamageReduction { get; private set; }= 1f;
@@ -109,5 +110,15 @@ public class Bullet : MonoBehaviour,IPoolable
 	{
 		
 	}
-	
+
+	public void Init(Vector3 direction, float force)
+	{
+		this.rb.AddForce(direction * force, ForceMode.VelocityChange);
+		this.collider.enabled = true;
+	}
+
+	public void SetDamage(DamageInfo damageInfo)
+	{
+		this.damageInfo = damageInfo;
+	}
 }

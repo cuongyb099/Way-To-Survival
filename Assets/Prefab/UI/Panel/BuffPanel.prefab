@@ -399,19 +399,11 @@ MonoBehaviour:
       m_Calls: []
   OnPanelShow:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2209581113489763740}
-        m_TargetAssemblyTypeName: BuffSelector, Assembly-CSharp
-        m_MethodName: InitializeAll
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: [{m_Target: {fileID: 2209581113489763740}, m_TargetAssemblyTypeName: 'BuffSelector,
+            Assembly-CSharp', m_MethodName: InitializeAll, m_Mode: 1, m_Arguments: {
+            m_ObjectArgument: {fileID: 0}, m_ObjectArgumentAssemblyTypeName: 'UnityEngine.Object,
+              UnityEngine', m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: '',
+            m_BoolArgument: 0}, m_CallState: 2}]
   StopTime: 0
   BlurBackground: 1
   TransitionDuration: 0.2
@@ -509,7 +501,8 @@ MonoBehaviour:
   m_text: Chose your Buff
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 60fd41a3bf93aff47a41998cdb0d981a, type: 2}
-  m_sharedMaterial: {fileID: -8614866120661173765, guid: 60fd41a3bf93aff47a41998cdb0d981a, type: 2}
+  m_sharedMaterial: {fileID: -8614866120661173765, guid: 60fd41a3bf93aff47a41998cdb0d981a,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

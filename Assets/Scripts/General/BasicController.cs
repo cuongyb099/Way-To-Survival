@@ -1,4 +1,5 @@
 ﻿using System;
+using BehaviorDesigner.Runtime;
 using UnityEngine;
 
 public class BasicController : MonoBehaviour, IDamagable

@@ -21,7 +21,7 @@ TagManager:
   - Zombie Body
   - Enemy
   - FixableObject
-  - 
+  - Damageable
   - 
   - 
   - 

@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f08d2ae4cba14087c1ed36193d82b, type: 3}
+  m_Name: Turret Behavior
+  m_EditorClassIdentifier: 
+  mBehaviorSource:
+    behaviorName: Behavior 2
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(409.2615,-63.13527)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Repeater","NodeData":{"Offset":"(-0.7384949,116.864723)"},"ID":1,"Name":"Repeater","Instant":true,"SharedIntcount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":0},"SharedBoolrepeatForever":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"SharedBoolendOnFailure":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(3.06677246,125.938782)"},"ID":2,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"OverlapSphereJob","NodeData":{"Offset":"(-294.674438,154.0909)"},"ID":3,"Name":"Overlap
+        Sphere Job","Instant":true,"SharedFloatRadius":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Attack
+        Radius","IsShared":true,"SinglemValue":1.16},"SharedVector3Offset":{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":null,"Vector3mValue":"(0,0,0)"},"SharedLayerMaskLayer":{"Type":"BehaviorDesigner.Runtime.SharedLayerMask","Name":"Turret
+        LayerMask","IsShared":true,"IsGlobal":true,"LayerMaskmValue":4096},"OverlapSphereJobHandleSOJobHandle":0,"SharedListColliderHitResults":{"Type":"BTreeNode.SharedType.SharedListCollider","Name":"HitResults","IsShared":true,"IsDynamic":true}},{"Type":"Entity.Enemy.Behavior.OverlapHitGetIDamageble","NodeData":{"Offset":"(-107.424179,154.0909)"},"ID":4,"Name":"Overlap
+        Hit Get I Damageble","Instant":true,"SharedListColliderHitResults":{"Type":"BTreeNode.SharedType.SharedListCollider","Name":"HitResults","IsShared":true,"IsDynamic":true},"SharedTransformTargetResult":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Target","IsShared":true}},{"Type":"RotateTargetTowardTarget","NodeData":{"Offset":"(47.0262222,153.829056)"},"ID":5,"Name":"Rotate
+        Gun","Instant":true,"SharedTransformTargetRotate":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Gun
+        Transform","IsShared":true},"SharedTransformTarget":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Target","IsShared":true},"SharedFloatDuration":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":0.15}},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.UnityAnimator.Play","NodeData":{"Offset":"(167.074341,154.694946)"},"ID":6,"Name":"Play
+        Shoot Anim","Instant":true,"SharedGameObjecttargetGameObject":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"Gun
+        Animator","IsShared":true},"SharedStringstateName":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Shoot
+        Anim","IsShared":true,"StringmValue":"Recoil_Round"},"Int32layer":0,"SinglenormalizedTime":0},{"Type":"WaitTurretAnimEvent","NodeData":{"Offset":"(317.808533,153.6214)"},"ID":7,"Name":"Wait
+        Turret Anim Event","Instant":true,"SharedGameObjectTarget":{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"Gun
+        Animator","IsShared":true},"TurretAnimEventIDEvent":"ShotDone"},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(460.585632,145.311)"},"ID":8,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"CD
+        Time","IsShared":true,"SinglemValue":0},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}}]}]},"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Attack
+        Radius","IsShared":true,"SinglemValue":1.16},{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Target","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Gun
+        Transform","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedGameObject","Name":"Gun
+        Animator","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Shoot
+        Anim","IsShared":true,"StringmValue":"Recoil_Round"},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"CD
+        Time","IsShared":true,"SinglemValue":0}]}'
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 11400000, guid: 0ae9d9844794b894eac12d092a51566c, type: 2}
+        byteData: 
+        byteDataArray: 
+      Version: 1.7.8

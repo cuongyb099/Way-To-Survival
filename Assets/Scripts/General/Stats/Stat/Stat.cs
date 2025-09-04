@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 [Serializable]
 public class Stat
@@ -58,15 +59,21 @@ public class Stat
 
 	public virtual bool RemoveModifier(StatModifier mod)
 	{
-		if (statModifiers.Remove(mod))
+		for (var i = 0; i < statModifiers.Count; i++)
 		{
-			_isDirty = true;
+			var statModifier = statModifiers[i];
+			if (!statModifier.Equals(mod)) continue;
+			statModifiers.RemoveAt(i);
+			_value = CalculateFinalValue();
 			OnValueChange?.Invoke();
 			return true;
 		}
+
 		return false;
 	}
 
+	
+	
 	public virtual bool RemoveAllModifiersFromSource(object source)
 	{
 		int numRemovals = statModifiers.RemoveAll(mod => mod.Source == source);

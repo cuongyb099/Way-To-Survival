@@ -59,6 +59,6 @@ MonoBehaviour:
         _maxValue: 2
     - Key: 4
       Value:
-        _startPercent: 1
+        _startPercent: 0.2
         _minValue: 0
         _maxValue: 9

@@ -1,5 +1,4 @@
-﻿using System;
-using BehaviorDesigner.Runtime;
+﻿using BehaviorDesigner.Runtime;
 using BehaviorDesigner.Runtime.Tasks;
 using BTreeNode.SharedType;
 
@@ -8,15 +7,15 @@ namespace Entity.Enemy.Behavior
     [TaskCategory("Job System")]
     public class OverlapHitGetIDamageble : Conditional
     {
-        public SharedHashsetTransform HashsetTransform;
+        public SharedListCollider HitResults;
         public SharedTransform TargetResult;
         
         public override TaskStatus OnUpdate()
         {
-            foreach (var value in HashsetTransform.Value)
+            foreach (var collider in HitResults.Value)
             {
-                if (!value.TryGetComponent(out IDamagable damagable) || damagable.IsDead) continue;
-                TargetResult.Value = value;
+                if (!collider.TryGetComponent(out IDamagable damagable) || damagable.IsDead) continue;
+                TargetResult.Value = collider.transform;
                 return TaskStatus.Success;
             }
             
