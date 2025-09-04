@@ -105,12 +105,12 @@ public class Bullet : MonoBehaviour,IPoolable, IProjectile, IDamageDealer
 		trailRenderer.Clear();
 		ObjectPool.Instance.ReturnObjectToPool(gameObject);
 	}
-
+	
 	public void New()
 	{
 		
 	}
-
+	
 	public void Init(Vector3 direction, float force)
 	{
 		this.rb.AddForce(direction * force, ForceMode.VelocityChange);

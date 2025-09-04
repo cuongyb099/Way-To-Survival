@@ -15,13 +15,17 @@ public class LoginPanel : FadeBlurPanel
         base.OnAwake();
         LoadButton();
 
-        PlayerDataPersistent.Instance.OnLoadPlayerData += MoveToMainMenu;
+        //PlayerDataPersistent.Instance.OnLoadPlayerData += MoveToMainMenu;
+
     }
 
     public override void Hide()
     {
         base.Hide();
         MainMenuManager.Instance.GameTitle.SetActive(false);
+#if UNITY_EDITOR
+        PlayerDataPersistent.Instance.Load();
+#endif
     }
 
     public override void Show()

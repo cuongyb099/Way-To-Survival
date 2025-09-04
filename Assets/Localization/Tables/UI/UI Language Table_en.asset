@@ -197,22 +197,6 @@ MonoBehaviour:
     m_Localized: Gun Related Stats
     m_Metadata:
       m_Items: []
-  - m_Id: 59056337453555712
-    m_Localized: You must select 3 weapons
-    m_Metadata:
-      m_Items: []
-  - m_Id: 59060818807332864
-    m_Localized: Select a weapon
-    m_Metadata:
-      m_Items: []
-  - m_Id: 59064213186256896
-    m_Localized: Max Weapon Level achieved
-    m_Metadata:
-      m_Items: []
-  - m_Id: 59064633233219584
-    m_Localized: Upgrade Weapon Failed
-    m_Metadata:
-      m_Items: []
   references:
     version: 2
     RefIds:
