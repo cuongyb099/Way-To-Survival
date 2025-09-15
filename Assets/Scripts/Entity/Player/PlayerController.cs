@@ -1,3 +1,4 @@
+using DefaultNamespace.Constructor.Drum;
 using DG.Tweening;
 using ResilientCore;
 using UnityEngine;
@@ -15,6 +16,7 @@ public class PlayerController : BasicController
 	private static readonly int Shoot = Animator.StringToHash("Shoot");
 	private static readonly int PosX = Animator.StringToHash("PosX");
 	private static readonly int PosY = Animator.StringToHash("PosY");
+	private static readonly int PlayerDead = Animator.StringToHash("IsDead");
 	#endregion
 	public Rigidbody Rigidbody { get; private set; }
     public FloatingCapsule FloatingCapsule { get; private set; }
@@ -26,20 +28,16 @@ public class PlayerController : BasicController
 	[field: SerializeField]public float GunSwitchCooldown { get; private set; } = .1f;
     [field: SerializeField]public LayerMask GroundLayer{ get; private set; }
     [field: SerializeField] public WeaponBaseSO StartingWeapon{ get; private set; }
-    public float Money
+    public int Money
     {
 	    get => money;
 	    set
 	    {
 		    money = value;
-		    if (money < 0)
-		    {
-			    money = 0;
-		    }
-		    PlayerEvent.OnCashChange?.Invoke(money);
+		    PlayerEvent.OnCoinChange?.Invoke(money);
 	    }
     }
-    private float money;
+    private int money;
     //WeaponSystem
     public Transform RightHandHoldPoint;
     public Transform LeftHandHoldPoint;
@@ -55,6 +53,8 @@ public class PlayerController : BasicController
     
     private const int MaxWeapon = 4;
     
+    private OverlapDamageSender overlapDamageSender;
+    
 	//Unity and override methods
     protected override void Awake()
     {
@@ -65,21 +65,16 @@ public class PlayerController : BasicController
         if(!Animator) Animator = GetComponentInChildren<Animator>();
         PlayerInteractor = GetComponentInChildren<PlayerInteractor>();
         mainCamera = Camera.main;
+        overlapDamageSender = GetComponent<OverlapDamageSender>();
 
         Weapons = new WeaponBase[MaxWeapon] {null,null,null,null};
 		
 		PlayerEvent.OnAttack += SetShootAnim;
-		PlayerEvent.OnRecieveCash += AddCash;
+		PlayerEvent.OnRecieveCoin += AddCash;
 		PlayerEvent.OnRecieveGunAmmo += AddGunAmmo;
         Stats.GetStat(StatType.GunMagMultiplier).OnValueChange += CalculateMaxCap;
 		Stats.GetStat(StatType.ATKSpeed).OnValueChange += SetShootingSpeedAnim;
 		Stats.GetStat(StatType.Speed).OnValueChange += SetMovementSpeedAnim;
-		
-		OnDeath += () =>
-		{
-			UIManager.Instance.ShowPanel(UIConstant.LosePanel); 
-			PlayerInput.Instance.InputActions.Disable();
-		};
 		Stats.GetAttribute(AttributeType.HoldingBullets).OnValueChange += () => { PlayerEvent.OnAmmoPointsChange?.Invoke(); };
     }
     private void OnDestroy()
@@ -88,7 +83,7 @@ public class PlayerController : BasicController
         maxHp.OnValueChange -= HandleMaxHpChange;
 		
 		PlayerEvent.OnAttack -= SetShootAnim;
-		PlayerEvent.OnRecieveCash -= AddCash;
+		PlayerEvent.OnRecieveCoin -= AddCash;
 		PlayerEvent.OnRecieveGunAmmo -= AddGunAmmo;
 		Stats.GetStat(StatType.GunMagMultiplier).OnValueChange -= CalculateMaxCap;
 		Stats.GetStat(StatType.ATKSpeed).OnValueChange -= SetShootingSpeedAnim;
@@ -124,12 +119,30 @@ public class PlayerController : BasicController
     {
         base.Death(dealer);
         Weapons[currentWeaponIndex].gameObject.SetActive(false);
+        PlayerInput.Instance.InputActions.Disable();
+        Animator.SetBool(PlayerDead, true);
+        UIManager.Instance.ShowPanel(UIConstant.LosePanel); 
     }
-
     public override float Damage(DamageInfo info)
     {
+	    
 	    Animator.SetTrigger(PlayerHit);
 	    return base.Damage(info);
+    }
+    
+	[ContextMenu("Revive")]
+    public void Revive()
+    {
+	    isDead = false;
+	    Stats.GetAttribute(AttributeType.Hp).SetValueToMax();
+	    Weapons[currentWeaponIndex].gameObject.SetActive(true);
+	    //DealDamage
+	    overlapDamageSender.Damage = Stats.GetStat(StatType.ATK).Value * 50f;
+	    overlapDamageSender.DealDamage();
+	    
+	    PlayerInput.Instance.InputActions.Enable();
+	    Animator.SetBool(PlayerDead, false);
+	    UIManager.Instance.HidePanel(UIConstant.LosePanel);
     }
 
     // Weapon handle
@@ -407,7 +420,7 @@ public class PlayerController : BasicController
 			gun.SetBulletCap(Stats.GetStat(StatType.GunMagMultiplier).Value);
     }
     //Cash
-    public void AddCash(float amount)
+    public void AddCash(int amount)
     {
 	    DamagePopUpGenerator.Instance.CreateCashPopUp(transform.position, $"+{amount} $");
 	    Money += amount;

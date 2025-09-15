@@ -11,7 +11,7 @@ public class MoneyUI : MonoBehaviour
 
     private void Awake()
     {
-        PlayerEvent.OnCashChange += UpdateTextMoney;
+        PlayerEvent.OnCoinChange += UpdateTextMoney;
     }
 
     private void Start()
@@ -21,10 +21,10 @@ public class MoneyUI : MonoBehaviour
 
     private void OnDestroy()
     {
-        PlayerEvent.OnCashChange -= UpdateTextMoney;
+        PlayerEvent.OnCoinChange -= UpdateTextMoney;
     }
 
-    private void UpdateTextMoney(float value)
+    private void UpdateTextMoney(int value)
     {
         textMoney.text = value.ToString();
     }

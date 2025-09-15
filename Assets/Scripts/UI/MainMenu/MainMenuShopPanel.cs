@@ -4,13 +4,15 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem.HID;
+using UnityEngine.Purchasing;
 using UnityEngine.UI;
 
-public class InGameShopPanel : PanelToggleByCanvas
+public class MainMenuShopPanel : PanelToggleByCanvas
 {
     [Header("UI Elements")] 
     [SerializeField] private Button _backBtn;
-    [SerializeField] private TextMeshProUGUI _moneyText;
+    [SerializeField] private TextMeshProUGUI _coinText;
+    [SerializeField] private TextMeshProUGUI _diamondText;
     [Header("Common Panel Items")] 
     [SerializeField] private Button _smallHealButton;
     [SerializeField] private Button _mediumHealButton;
@@ -29,13 +31,15 @@ public class InGameShopPanel : PanelToggleByCanvas
     {
         base.OnAwake();
         LoadButton();
-        PlayerEvent.OnCashChange += ChangeMoneyText;
+        PlayerEvent.OnCoinChange += ChangeCoinText;
+        PlayerEvent.OnDiamondChange += ChangeDiamondText;
     }
     
     public override void Show()
     {
         base.Show();
-        _moneyText.text = $"{GameManager.Instance.Player.Money}$";
+        _coinText.text = $"{PlayerDataPersistent.Instance.PlayerData.Coins}";
+        _diamondText.text = $"{PlayerDataPersistent.Instance.PlayerData.Diamonds}";
     }
 
     private void LoadButton()
@@ -43,12 +47,18 @@ public class InGameShopPanel : PanelToggleByCanvas
         _backBtn.onClick.AddListener(() =>
         {
             Hide();
-            UIManager.Instance.ShowPanel(UIConstant.GameplayPanel);
+            UIManager.Instance.ShowPanel(UIConstant.MainMenuPanel);
+            
         });
     }
 
-    public void ChangeMoneyText(float amount)
+    public void ChangeCoinText(int amount)
     {
-        _moneyText.text = $"{amount}$";
+        _coinText.text = $"{amount}";
     }
+    public void ChangeDiamondText(int amount)
+    {
+        _diamondText.text = $"{amount}";
+    }
+    
 }

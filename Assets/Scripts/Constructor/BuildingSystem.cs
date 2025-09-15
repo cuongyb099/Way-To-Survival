@@ -84,7 +84,14 @@ public class BuildingSystem : Singleton<BuildingSystem>
         PlayerInput.Instance.EnableAttack = true;
         StopCoroutine(checkingInput);
         OnBuildSuccess?.Invoke();
-        SetMode(BuildingMode.IDLE);
+        if (CurrentData.Quantity >= 0)
+        {
+            checkingInput = StartCoroutine(CheckingInput());
+        }
+        else
+        {
+            SetMode(BuildingMode.IDLE);
+        }
     }
     public void Cancel()
     {

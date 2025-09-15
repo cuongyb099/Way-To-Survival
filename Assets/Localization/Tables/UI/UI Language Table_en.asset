@@ -197,6 +197,10 @@ MonoBehaviour:
     m_Localized: Gun Related Stats
     m_Metadata:
       m_Items: []
+  - m_Id: 80409468263718912
+    m_Localized: In-App Purchases
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

@@ -15,8 +15,10 @@ public static class PlayerEvent
 	public static Action OnAmmoPointsChange;
 	public static Action OnReloaded;
 	public static Action OnChangeCap;
-    public static Action<float> OnCashChange;
-    public static Action<float> OnRecieveCash;
+    public static Action<int> OnCoinChange;
+    public static Action<int> OnDiamondChange;
+    
+    public static Action<int> OnRecieveCoin;
     public static Action<int> OnRecieveGunAmmo;
     // Damage
     public static Action<float, IDamagable> OnDamageDealt;

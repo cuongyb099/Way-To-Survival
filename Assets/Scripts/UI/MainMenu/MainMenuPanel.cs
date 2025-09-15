@@ -37,7 +37,7 @@ public class MainMenuPanel : FadeBlurPanel
             PlayerDataPersistent.Instance.Save();
             AuthHandle.Instance.LogOutGoogle();
             Hide();
-            MessagePopup.Instance.ShowMessage($"Signed out");
+            MessagePopup.Instance.ShowMessage("Signed out");
             UIManager.Instance.ShowPanel(UIConstant.LoginMenuPanel);
         });
         _beginBtn.onClick.AddListener(() =>
@@ -47,7 +47,8 @@ public class MainMenuPanel : FadeBlurPanel
         });
         _tutorialBtn.onClick.AddListener(() =>
         {
-            //Hide();
+            Hide();
+            UIManager.Instance.ShowPanel(UIConstant.ShopMenuPanel);
         });
         _settingsBtn.onClick.AddListener(() =>
         {
@@ -62,7 +63,7 @@ public class MainMenuPanel : FadeBlurPanel
         _shopBtn.onClick.AddListener(() =>
         {
             Hide();
-            UIManager.Instance.ShowPanel(UIConstant.SetupBeforePlayPanel);
+            UIManager.Instance.ShowPanel(UIConstant.ShopMenuPanel);
         });
     }
 }

@@ -49,7 +49,7 @@ public class EnemyCtrl : BasicController, IKnockbackable
 
         if (dealer.CompareTag("Player"))
         {
-            PlayerEvent.OnRecieveCash.Invoke(cashGiveAmount);
+            PlayerEvent.OnRecieveCoin.Invoke(cashGiveAmount);
             PlayerEvent.OnRecieveGunAmmo.Invoke(bulletGiveAmount);
         }
 

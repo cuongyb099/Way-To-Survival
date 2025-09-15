@@ -45,15 +45,16 @@ public class Bullet : MonoBehaviour,IPoolable, IProjectile, IDamageDealer
 				isDealable = false;
 				countDMG--;
 				damageInfo = new DamageInfo(damageInfo.Dealer,damageInfo.Damage*DamageReduction,isCrit:damageInfo.IsCrit);
-				HandleBulletPenetration(other,countDMG);
-				return;
 			}
+			HandleBulletPenetration(other,countDMG);
+			return;
 		}
 		Free();
 	}
 
 	private void HandleBulletPenetration(Collision collision, int countPenetrate)
 	{
+
 		if (collision != null &&
 		    countPenetrate > 0)
 		{
@@ -69,6 +70,7 @@ public class Bullet : MonoBehaviour,IPoolable, IProjectile, IDamageDealer
 				    rb.includeLayers
 			    ))
 			{
+				Debug.Log("Hit");
 				rb.position = hit.point + direction * 0.01f;
 				rb.velocity = spawnVelocity - direction;
 				isDealable = true;
@@ -116,7 +118,8 @@ public class Bullet : MonoBehaviour,IPoolable, IProjectile, IDamageDealer
 		countDMG = DamageTime;
 		isDealable = true;
 		trailRenderer.Clear();
-		this.rb.AddForce(direction * force, ForceMode.VelocityChange);
+		spawnVelocity = direction * force;
+		this.rb.AddForce(spawnVelocity, ForceMode.VelocityChange);
 		this.collider.enabled = true;
 	}
 

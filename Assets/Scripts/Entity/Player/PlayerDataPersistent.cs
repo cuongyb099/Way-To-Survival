@@ -18,13 +18,9 @@ public class PlayerDataPersistent : SingletonPersistent<PlayerDataPersistent>
     public static readonly string path = "Assets/Save/PlayerData.json";
     private static readonly JsonSerializerSettings settings = new() {TypeNameHandling = TypeNameHandling.None };
     public string UserID { get; set; } = null;
-    
-    public PlayerSaveData PlayerData
-    {
-        get => _playerData;
-        private set => _playerData = value;
-    }
-    [SerializeField] private PlayerSaveData _playerData;
+
+    [field: SerializeField]
+    public PlayerSaveData PlayerData { get; private set; }
     private DatabaseReference dbReference;
     [SerializeField] private InventorySO _beginningInventory;
     //
@@ -60,7 +56,7 @@ public class PlayerDataPersistent : SingletonPersistent<PlayerDataPersistent>
         // dbReference.Child("users").Child(UserID).SetRawJsonValueAsync(json); 
 #if UNITY_EDITOR
         OnSavePlayerData?.Invoke();
-        string json = JsonConvert.SerializeObject(_playerData, Formatting.None, settings);
+        string json = JsonConvert.SerializeObject(PlayerData, Formatting.None, settings);
         Json.WriteAllText(path,json);
         AssetDatabase.Refresh();
 #endif
@@ -72,12 +68,12 @@ public class PlayerDataPersistent : SingletonPersistent<PlayerDataPersistent>
         // StartCoroutine(LoadDataEnum());
 #if UNITY_EDITOR
         if (!File.Exists(path))
-            _playerData = new PlayerSaveData("AuthHandle.Instance.User.DisplayName", 1000f, 10, _beginningInventory);
+            PlayerData = new PlayerSaveData("AuthHandle.Instance.User.DisplayName", 1000, 10, _beginningInventory);
         else
         {
             string json = File.ReadAllText(path);
             PlayerSaveData data = JsonConvert.DeserializeObject<PlayerSaveData>(json, settings);
-            _playerData = data;
+            PlayerData = data;
             return;
         }
         
@@ -94,11 +90,11 @@ public class PlayerDataPersistent : SingletonPersistent<PlayerDataPersistent>
         string jsonData = snapshot.GetRawJsonValue();
         if (jsonData != null)
         {
-            _playerData = JsonConvert.DeserializeObject<PlayerSaveData>(jsonData,settings);
+            PlayerData = JsonConvert.DeserializeObject<PlayerSaveData>(jsonData,settings);
         }
         else
         {
-            _playerData = new PlayerSaveData(AuthHandle.Instance.User.DisplayName, 1000f, 10, _beginningInventory);
+            PlayerData = new PlayerSaveData(AuthHandle.Instance.User.DisplayName, 1000, 10, _beginningInventory);
         }
         OnLoadPlayerData?.Invoke();
     }
