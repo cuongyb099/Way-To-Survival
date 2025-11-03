@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f483b6edf440034ba7aea28dbdfe9a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <DamageTime>k__BackingField: 1
+  <DamageTime>k__BackingField: 3
   <DamageReduction>k__BackingField: 1
   LiveTime: 3
   Force: 80

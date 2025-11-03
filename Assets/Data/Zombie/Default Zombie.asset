@@ -20,7 +20,7 @@ MonoBehaviour:
       parentIndex: 
       startIndex: 
       variableStartIndex: 
-      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(-1325.74109,-863.5)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(5.25529861,135.652374)"},"ID":1,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-276.1539,193.0769)"},"ID":2,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"SetActiveAgent","NodeData":{"Offset":"(-341.0337,149.790085)"},"ID":3,"Name":"Set
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(-1313.24109,-863.5)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(5.25529861,135.652374)"},"ID":1,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-276.1539,193.0769)"},"ID":2,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"SetActiveAgent","NodeData":{"Offset":"(-341.0337,149.790085)"},"ID":3,"Name":"Set
         Active Agent","Instant":true,"SharedBoolActive":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"ReinitStats","NodeData":{"Offset":"(-217.940979,154.561264)"},"ID":4,"Name":"Reinit
         Stats","Instant":true},{"Type":"SetActiveCollider","NodeData":{"Offset":"(-90.66125,149.790085)"},"ID":5,"Name":"Set
         Active Collider","Instant":true,"SharedTransformTargetObject":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":null},"SharedBoolActive":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true}},{"Type":"RandomSkinSelector","NodeData":{"Offset":"(59.96485,149.790085)"},"ID":6,"Name":"Random
@@ -28,16 +28,16 @@ MonoBehaviour:
         All Part Skin","IsShared":true,"BooleanmValue":true}},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.Math.SetFloat","NodeData":{"Offset":"(209.583969,151.269821)"},"ID":7,"Name":"Set
         Float","Instant":true,"SharedFloatfloatValue":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":0},"SharedFloatstoreResult":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":0}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Unity.SharedVariables.SetSharedTransform","NodeData":{"Offset":"(9.375,182.794113)"},"ID":8,"Name":"Set
         Target Is Base","Instant":true,"SharedTransformtargetValue":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Military
-        Base","IsShared":true,"IsGlobal":true},"SharedTransformtargetVariable":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Target","IsShared":true}},{"Type":"BehaviorDesigner.Runtime.Tasks.Repeater","NodeData":{"Offset":"(386.666718,183.126556)"},"ID":9,"Name":"Repeater","Instant":true,"SharedIntcount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":1},"SharedBoolrepeatForever":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"SharedBoolendOnFailure":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(0.268939972,124.935982)"},"ID":10,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.BehaviorTreeReference","NodeData":{"Offset":"(-224.601563,183.382263)"},"ID":11,"Name":"Dead
-        State","Instant":true,"ExternalBehavior[]externalBehaviors":[0],"SharedNamedVariable[]variables":[],"Booleancollapsed":false},{"Type":"BehaviorDesigner.Runtime.Tasks.ReturnFailure","NodeData":{"Offset":"(-93.12036,173.423065)"},"ID":12,"Name":"Return
+        Base","IsShared":true,"IsGlobal":true,"TransformmValue":0},"SharedTransformtargetVariable":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Target","IsShared":true}},{"Type":"BehaviorDesigner.Runtime.Tasks.Repeater","NodeData":{"Offset":"(386.666718,183.126556)"},"ID":9,"Name":"Repeater","Instant":true,"SharedIntcount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":1},"SharedBoolrepeatForever":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"SharedBoolendOnFailure":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(0.268939972,124.935982)"},"ID":10,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.BehaviorTreeReference","NodeData":{"Offset":"(-224.601563,183.382263)"},"ID":11,"Name":"Dead
+        State","Instant":true,"ExternalBehavior[]externalBehaviors":[1],"SharedNamedVariable[]variables":[],"Booleancollapsed":false},{"Type":"BehaviorDesigner.Runtime.Tasks.ReturnFailure","NodeData":{"Offset":"(-93.12036,183.423065)"},"ID":12,"Name":"Return
         Failure","Instant":true,"Children":[{"Type":"BTreeNode.CheckTargetDead","NodeData":{"Offset":"(-0.869564056,122.351761)"},"ID":13,"Name":"Check
         Target Dead","Instant":true,"SharedTransformTarget":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Target","IsShared":true},"SharedTransformDefaultTarget":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Military
-        Base","IsShared":true,"IsGlobal":true}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.BehaviorTreeReference","NodeData":{"Offset":"(50.202507,177.9581)"},"ID":14,"Name":"Damaged
-        State","Instant":true,"ExternalBehavior[]externalBehaviors":[1],"SharedNamedVariable[]variables":[],"Booleancollapsed":false},{"Type":"BehaviorDesigner.Runtime.Tasks.BehaviorTreeReference","NodeData":{"Offset":"(175.34729,182.962891)"},"ID":15,"Name":"Small
-        Atack","Instant":true,"ExternalBehavior[]externalBehaviors":[2],"SharedNamedVariable[]variables":[],"Booleancollapsed":false},{"Type":"BehaviorDesigner.Runtime.Tasks.BehaviorTreeReference","NodeData":{"Offset":"(300.353149,176.530121)"},"ID":16,"Name":"Chase
-        State","Instant":true,"ExternalBehavior[]externalBehaviors":[3],"SharedNamedVariable[]variables":[],"Booleancollapsed":false}]}]}]},"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"Attack
-        Radius Offset","IsShared":true,"Vector3mValue":"(0,0.73,0)"},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Attack
-        State Count","IsShared":true,"SinglemValue":2},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Hit
+        Base","IsShared":true,"IsGlobal":true,"TransformmValue":2}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.BehaviorTreeReference","NodeData":{"Offset":"(50.202507,177.9581)"},"ID":14,"Name":"Damaged
+        State","Instant":true,"ExternalBehavior[]externalBehaviors":[3],"SharedNamedVariable[]variables":[],"Booleancollapsed":false},{"Type":"BehaviorDesigner.Runtime.Tasks.BehaviorTreeReference","NodeData":{"Offset":"(175.34729,182.962891)"},"ID":15,"Name":"Small
+        Atack","Instant":true,"ExternalBehavior[]externalBehaviors":[4],"SharedNamedVariable[]variables":[],"Booleancollapsed":false},{"Type":"BehaviorDesigner.Runtime.Tasks.BehaviorTreeReference","NodeData":{"Offset":"(300.353149,176.530121)"},"ID":16,"Name":"Chase
+        State","Instant":true,"ExternalBehavior[]externalBehaviors":[5],"SharedNamedVariable[]variables":[],"Booleancollapsed":false}]}]}]},"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Attack
+        State Count","IsShared":true,"SinglemValue":2},{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"Attack
+        Radius Offset","IsShared":true,"Vector3mValue":"(0,0.73,0)"},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Hit
         State Count","IsShared":true,"SinglemValue":1},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Dead
         State Count","IsShared":true,"SinglemValue":3},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"Random
         All Part Skin","IsShared":true,"BooleanmValue":true},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Range
@@ -49,7 +49,9 @@ MonoBehaviour:
         startIndex: 
         dataPosition: 
         unityObjects:
+        - {fileID: 0}
         - {fileID: 11400000, guid: 9ffa9afd197041147be8c6d34ea79e38, type: 2}
+        - {fileID: 0}
         - {fileID: 11400000, guid: 65be7006a3fe19647832091037b216cf, type: 2}
         - {fileID: 11400000, guid: 57f7c09dcb1cb4f4280ad9267ed46e8d, type: 2}
         - {fileID: 11400000, guid: 93c0d6de42cfb0c4ba385d20b9b98dc8, type: 2}

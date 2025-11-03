@@ -1187,13 +1187,14 @@ MonoBehaviour:
       parentIndex: 
       startIndex: 
       variableStartIndex: 
-      JSONSerialization: '{"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"Attack
-        Radius Offset","IsShared":true,"Vector3mValue":"(0,0.73,0)"},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Attack
-        State Count","IsShared":true,"SinglemValue":2},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Hit
+      JSONSerialization: '{"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Attack
+        State Count","IsShared":true,"SinglemValue":2},{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"Attack
+        Radius Offset","IsShared":true,"Vector3mValue":"(0,0.73,0)"},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Hit
         State Count","IsShared":true,"SinglemValue":1},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Dead
         State Count","IsShared":true,"SinglemValue":3},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"Random
         All Part Skin","IsShared":true,"BooleanmValue":true},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"Range
-        Weak Attack","IsShared":true,"SinglemValue":1},{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Target","IsShared":true}]}'
+        Weak Attack","IsShared":true,"SinglemValue":1},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"Last
+        Play Anim","IsShared":true,"StringmValue":"."},{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"Target","IsShared":true}]}'
       fieldSerializationData:
         typeName: []
         fieldNameHash: 
