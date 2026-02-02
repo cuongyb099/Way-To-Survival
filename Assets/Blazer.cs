@@ -77,4 +77,3 @@ public class Blazer : MonoBehaviour
         Gizmos.DrawRay(transform.position, transform.forward * rayDistance);
     }
 }
-

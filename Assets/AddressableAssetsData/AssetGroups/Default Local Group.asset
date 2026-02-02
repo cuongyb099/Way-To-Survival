@@ -59,6 +59,21 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8f081b839312ba54cb5a9a0ef6e7048f
+    m_Address: Assets/Prefab/Effects/Lightning.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c347d353b1b034147b27e248216a0948
+    m_Address: Assets/Prefab/VFXs/HeatDistortion.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 16865e5692d5afd408540d8e97d94290
+    m_Address: Assets/Prefab/VFXs/3DHeatDistortion.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: f87357868bafec74b8eaa3e2bab0161e, type: 2}
   m_SchemaSet:
