@@ -20,7 +20,7 @@ MonoBehaviour:
     x: 1851
     y: 294
     width: 3151
-    height: 4028
+    height: 4070
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2912,7 +2912,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614708}
   - {fileID: 8926484042661614710}
   - {fileID: 8926484042661614713}
-  m_UIPosition: {x: 2890, y: 3635}
+  m_UIPosition: {x: 2894, y: 3635}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
@@ -2922,6 +2922,8 @@ MonoBehaviour:
   - {fileID: 8926484042661615628}
   - {fileID: 8926484042661615631}
   - {fileID: 8926484042661615633}
+  - {fileID: 8926484042661615635}
+  - {fileID: 8926484042661615637}
   m_OutputSlots: []
   m_Label: 
   m_Data: {fileID: 8926484042661614633}
@@ -2947,9 +2949,9 @@ MonoBehaviour:
   vfxSystemSortPriority: 0
   sort: 0
   sortMode: 0
-  revertSorting: 0
+  revertSorting: 1
   indirectDraw: 0
-  computeCulling: 0
+  computeCulling: 1
   frustumCulling: 0
   castShadows: 0
   useExposureWeight: 0
@@ -2959,8 +2961,6 @@ MonoBehaviour:
     m_PropertyNames:
     - _QueueOffset
     - _QueueControl
-    - _BUILTIN_QueueOffset
-    - _BUILTIN_QueueControl
     - _BUILTIN_Surface
     - _BUILTIN_Blend
     - _BUILTIN_AlphaClip
@@ -2970,20 +2970,22 @@ MonoBehaviour:
     - _BUILTIN_ZWriteControl
     - _BUILTIN_ZTest
     - _BUILTIN_CullMode
+    - _BUILTIN_QueueOffset
+    - _BUILTIN_QueueControl
     m_PropertyValues:
     - 0
     - 0
+    - 1
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    - 2
+    - 4
+    - 0
     - 0
     - -1
-    - 0
-    - 0
-    - 1
-    - 1
-    - 0
-    - 1
-    - 0
-    - 4
-    - 2
   primitiveType: 1
   useGeometryShader: 0
 --- !u!114 &8926484042661614702
@@ -3411,7 +3413,7 @@ MonoBehaviour:
   useAlphaClipping: 0
   generateMotionVector: 0
   excludeFromTUAndAA: 0
-  sortingPriority: 0
+  sortingPriority: 1
   m_SubOutputs: []
   colorMapping: 0
   uvMode: 0
@@ -3422,7 +3424,7 @@ MonoBehaviour:
   sortMode: 0
   revertSorting: 0
   indirectDraw: 1
-  computeCulling: 0
+  computeCulling: 1
   frustumCulling: 0
   castShadows: 0
   useExposureWeight: 0
@@ -12406,7 +12408,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 36.19
+      m_SerializableObject: 3.2
     m_Space: 2147483647
   m_Property:
     name: _Noise_scale
@@ -12440,7 +12442,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0.232
+      m_SerializableObject: 0.613
     m_Space: 2147483647
   m_Property:
     name: _DistortionStrength
@@ -12610,10 +12612,78 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 1
+      m_SerializableObject: 0.83
     m_Space: 2147483647
   m_Property:
     name: _AlphaClip
+    m_serializedType:
+      m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+  m_Direction: 0
+  m_LinkedSlots: []
+--- !u!114 &8926484042661615635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f780aa281814f9842a7c076d436932e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UIIgnoredErrors: []
+  m_Parent: {fileID: 0}
+  m_Children: []
+  m_UIPosition: {x: 0, y: 0}
+  m_UICollapsed: 1
+  m_UISuperCollapsed: 0
+  m_MasterSlot: {fileID: 8926484042661615635}
+  m_MasterData:
+    m_Owner: {fileID: 8926484042661614701}
+    m_Value:
+      m_Type:
+        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      m_SerializableObject: 1
+    m_Space: 2147483647
+  m_Property:
+    name: _OpacityMultiplier
+    m_serializedType:
+      m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+  m_Direction: 0
+  m_LinkedSlots: []
+--- !u!114 &8926484042661615637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f780aa281814f9842a7c076d436932e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UIIgnoredErrors: []
+  m_Parent: {fileID: 0}
+  m_Children: []
+  m_UIPosition: {x: 0, y: 0}
+  m_UICollapsed: 1
+  m_UISuperCollapsed: 0
+  m_MasterSlot: {fileID: 8926484042661615637}
+  m_MasterData:
+    m_Owner: {fileID: 8926484042661614701}
+    m_Value:
+      m_Type:
+        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      m_SerializableObject: 0
+    m_Space: 2147483647
+  m_Property:
+    name: _Rotation_speed
     m_serializedType:
       m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089

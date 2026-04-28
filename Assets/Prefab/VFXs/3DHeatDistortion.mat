@@ -46,7 +46,7 @@ Material:
   m_CustomRenderQueue: 3000
   stringTagMap: {}
   disabledShaderPasses: []
-  m_LockedProperties: _Strength
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -90,18 +90,19 @@ Material:
     - _Cull: 0
     - _Density: 0.9
     - _DstBlend: 10
-    - _LOD: 0
-    - _Porosity: 4.7
+    - _GlowEnable: 1
+    - _LOD: 1.09
+    - _Porosity: 8.1
     - _QueueControl: 0
     - _QueueOffset: 0
     - _SrcBlend: 5
-    - _Strength: -0.11
+    - _Strength: -0.32
     - _Surface: 1
     - _ZTest: 4
     - _ZWrite: 0
     - _ZWriteControl: 2
     m_Colors:
     - _CloudColor: {r: 0.6331225, g: 1.1650062, b: 1.7207952, a: 0}
-    - _GlowColor: {r: 2.2706032, g: 0, b: 2.0482485, a: 0.65882355}
-    - _SurfaceColor: {r: 1.2240127, g: 0, b: 1.2240127, a: 1}
+    - _GlowColor: {r: 44.727043, g: 0, b: 36.654854, a: 0.74509805}
+    - _SurfaceColor: {r: 0, g: 1.3787905, b: 2.9960785, a: 0.78431374}
   m_BuildTextureStacks: []

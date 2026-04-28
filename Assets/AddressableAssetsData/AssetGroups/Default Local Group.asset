@@ -64,11 +64,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c347d353b1b034147b27e248216a0948
-    m_Address: Assets/Prefab/VFXs/HeatDistortion.mat
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 16865e5692d5afd408540d8e97d94290
     m_Address: Assets/Prefab/VFXs/3DHeatDistortion.mat
     m_ReadOnly: 0
