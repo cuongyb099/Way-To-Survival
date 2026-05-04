@@ -5,23 +5,22 @@ using UnityEngine;
 public class Blazer : MonoBehaviour
 {
     [Header("Cấu hình")]
-    public GameObject firePrefab;      // Prefab bãi lửa
-    public int poolSize = 80;           // Số lượng bãi lửa được tạo sẵn
-    public float rayDistance = 50f;    // Tầm bắn của ray
-    public LayerMask terrainMask;      // Layer terrain
-    public float minDelay = 0.1f;      // Delay nhỏ nhất
-    public float maxDelay = 0.3f;
-    public float firesPerShot = 20;      // Delay lớn nhất
+    public GameObject firePrefab;
+    public int poolSize = 80;
+    public float rayDistance = 50f;
+    public LayerMask terrainMask;
 
-    private List<GameObject> firePool; // Danh sách các bãi lửa
-    private int currentIndex = 0;      // Dùng để luân phiên tái sử dụng
-    private bool canShoot = true;      // Kiểm tra cooldown
+    [Header("Phân bố bãi lửa")]
+    public float minDistanceBetweenFires = 0.9f; // khoảng cách tối thiểu giữa các bãi lửa
+    public float maxDistanceBetweenFires = 2f; // khoảng cách tối thiểu giữa các bãi lửa
+
     public LaserTurretAtk LaserTurretAtk;
 
-    void Awake()
-    {
+    private List<GameObject> firePool;
+    private int currentIndex = 0;
 
-    }
+    private Vector3 lastSpawnPoint;
+    private bool hasLastPoint = false;
 
     void Start()
     {
@@ -29,7 +28,7 @@ public class Blazer : MonoBehaviour
         firePool = new List<GameObject>();
         for (int i = 0; i < poolSize; i++)
         {
-            GameObject fire = Instantiate(firePrefab);
+            GameObject fire = Instantiate(firePrefab, Vector3.zero, Quaternion.identity);
             fire.SetActive(false);
             firePool.Add(fire);
         }
@@ -41,34 +40,38 @@ public class Blazer : MonoBehaviour
         {
             ShootRay();
         }
+        else
+        {
+            // reset khi ngừng bắn để lần sau không bị lệch spacing
+            hasLastPoint = false;
+        }
     }
 
     void ShootRay()
     {
         Ray ray = new Ray(transform.position, transform.forward);
+
         if (Physics.Raycast(ray, out RaycastHit hit, rayDistance, terrainMask))
         {
-            // Lấy object trong pool
-            GameObject fire = firePool[currentIndex];
-            currentIndex = (currentIndex + 1) % poolSize;
+            // chỉ spawn nếu đủ khoảng cách
+            if (!hasLastPoint || Vector3.Distance(hit.point, lastSpawnPoint) >= minDistanceBetweenFires 
+            || Vector3.Distance(hit.point, lastSpawnPoint) <= maxDistanceBetweenFires)
+            {
+                GameObject fire = firePool[currentIndex];
+                currentIndex = (currentIndex + 1) % poolSize;
 
-            // Đặt vị trí và bật lại
-            fire.transform.position = hit.point;
-            fire.transform.rotation = Quaternion.LookRotation(hit.normal);
-            fire.SetActive(false);
-            fire.SetActive(true);
+                fire.transform.position = hit.point;
 
-            // Bắt đầu cooldown ngẫu nhiên
-            float delay = Random.Range(minDelay, maxDelay);
-            StartCoroutine(CooldownRoutine(delay));
+                fire.transform.rotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
+
+                // restart effect (nếu cần)
+                fire.SetActive(false);
+                fire.SetActive(true);
+
+                lastSpawnPoint = hit.point;
+                hasLastPoint = true;
+            }
         }
-    }
-
-    System.Collections.IEnumerator CooldownRoutine(float delay)
-    {
-        canShoot = false;
-        yield return new WaitForSeconds(delay);
-        canShoot = true;
     }
 
     void OnDrawGizmosSelected()

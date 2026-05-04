@@ -69,20 +69,26 @@ VisualEffect:
       - m_Value: 5
         m_Name: LifeTime
         m_Overridden: 1
-      - m_Value: 0.25
+      - m_Value: 0.48
         m_Name: Drag
         m_Overridden: 1
       - m_Value: 2.01
         m_Name: GravityModified
         m_Overridden: 1
-      - m_Value: 0.207
+      - m_Value: 0.11
         m_Name: Blend
         m_Overridden: 1
       - m_Value: 18
         m_Name: SprayingForce
         m_Overridden: 1
-      - m_Value: 600
+      - m_Value: 150
         m_Name: ConstantSpawnRate
+        m_Overridden: 1
+      - m_Value: 0.24
+        m_Name: HeatStrength
+        m_Overridden: 1
+      - m_Value: 189.7
+        m_Name: BurstSpawnRate
         m_Overridden: 1
     m_Vector2f:
       m_Array: []
@@ -155,8 +161,8 @@ VisualEffect:
           serializedVersion: 2
           m_Curve:
           - serializedVersion: 3
-            time: 0.005207062
-            value: 0.1
+            time: -0.021823883
+            value: 0.12526855
             inSlope: 0
             outSlope: 0
             tangentMode: 0
@@ -164,13 +170,22 @@ VisualEffect:
             inWeight: 0
             outWeight: 0
           - serializedVersion: 3
-            time: 0.29360393
-            value: 1.0208291
-            inSlope: 3.93343
-            outSlope: 3.93343
+            time: -0.0049204584
+            value: 0.22129369
+            inSlope: 1.9170842
+            outSlope: 1.9170842
             tangentMode: 0
             weightedMode: 0
             inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 0.29058003
+            value: 1.2180059
+            inSlope: 3.811244
+            outSlope: 3.811244
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.3087118
             outWeight: 0.33333334
           - serializedVersion: 3
             time: 0.68099976
@@ -236,13 +251,13 @@ VisualEffect:
           ctime0: 0
           ctime1: 694
           ctime2: 15035
-          ctime3: 19661
-          ctime4: 26908
-          ctime5: 35697
+          ctime3: 23361
+          ctime4: 34155
+          ctime5: 44178
           ctime6: 65535
           ctime7: 65535
           atime0: 0
-          atime1: 50346
+          atime1: 53122
           atime2: 65535
           atime3: 65535
           atime4: 0
