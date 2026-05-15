@@ -113,7 +113,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.33333334
+        time: 0.06666667
         value: 2.9861672
         inSlope: 5.8615384
         outSlope: 5.8615384
@@ -383,7 +383,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.33333334
+        time: 0.06666667
         value: 2.9861672
         inSlope: 5.8615384
         outSlope: 5.8615384

@@ -28,13 +28,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1957435220552577}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.5128522, z: -0, w: 0.858477}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 50, y: 50, z: 50}
+  m_LocalScale: {x: 150, y: 150, z: 150}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -61.708, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!120 &8261730164867585017
 LineRenderer:
   serializedVersion: 2
@@ -155,7 +155,11 @@ MonoBehaviour:
   animationName: LaserTurret
   repeat: 1
   ATKDelay: 2.5
-  isFiring: 0
+  flarePrefab: {fileID: 0}
+  flareSpawnPoint: {fileID: 8698602269395183611}
+  flarePoolSize: 20
+  flareLifetime: 2.02
+  isFiring: 1
 --- !u!95 &5969678087553657735
 Animator:
   serializedVersion: 5
@@ -189,13 +193,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43360481b2ba55146bf7cd3cddc55cc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePrefab: {fileID: 0}
-  poolSize: 80
+  firePrefab: {fileID: 1423612882063980489, guid: 936b42ba4de479f4a8084582b2ff18ee, type: 3}
+  poolSize: 400
   rayDistance: 50
   terrainMask:
     serializedVersion: 2
     m_Bits: 256
-  minDelay: 0.1
-  maxDelay: 0.3
-  firesPerShot: 20
+  minDistanceBetweenFires: 1
+  maxDistanceBetweenFires: 3
   LaserTurretAtk: {fileID: 8618107987044305992}

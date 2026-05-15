@@ -12,4 +12,165 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 877e1507ae8d81c40bf1b94c1a86036f, type: 3}
   m_Name: PlasmaBurst Lens Flare (SRP)
   m_EditorClassIdentifier: 
-  elements: []
+  elements:
+  - visible: 1
+    position: 0
+    positionOffset: {x: 0, y: 0}
+    angularOffset: 0
+    translationScale: {x: -3.78, y: 0.78}
+    m_LocalIntensity: 0.6
+    lensFlareTexture: {fileID: 0}
+    uniformScale: 0.37
+    sizeXY: {x: 0.5, y: 0.5}
+    allowMultipleElement: 1
+    m_Count: 8
+    preserveAspectRatio: 0
+    rotation: 0
+    tint: {r: 0.019031648, g: 0.26449153, b: 0.3735848, a: 0.101960786}
+    blendMode: 3
+    autoRotate: 0
+    flareType: 2
+    modulateByLightColor: 1
+    isFoldOpened: 1
+    distribution: 2
+    lengthSpread: 0.16
+    positionCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: -1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    scaleCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    seed: 45
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 0.19020793, g: 11.674797, b: 36.329643, a: 1}
+      key1: {r: 0.5, g: 0.5, b: 0.5, a: 0.8}
+      key2: {r: 0.5, g: 0.5, b: 0.5, a: 0}
+      key3: {r: 0.1931207, g: 0.1931207, b: 0.1931207, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 65535
+      ctime3: 56360
+      ctime4: 65535
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 29992
+      atime2: 65535
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_ColorSpace: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 3
+    m_IntensityVariation: 0.17
+    positionVariation: {x: -10.96, y: -0.01}
+    scaleVariation: -0.57
+    rotationVariation: 180
+    enableRadialDistortion: 1
+    targetSizeDistortion: {x: 1, y: 1}
+    distortionCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    distortionRelativeToCenter: 1
+    m_FallOff: 0.12
+    m_EdgeOffset: 1
+    m_SideCount: 9
+    m_SdfRoundness: 0.26
+    inverseSDF: 0
+    uniformAngle: 0
+    uniformAngleCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
