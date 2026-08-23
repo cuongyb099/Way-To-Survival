@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 989253057395662763}
   - component: {fileID: 7206304425667794233}
   - component: {fileID: -6794990134114030592}
+  - component: {fileID: 2586422653305916140}
+  - component: {fileID: -4320647500222929676}
   m_Layer: 0
   m_Name: Blazer
   m_TagString: Untagged
@@ -89,7 +91,7 @@ VisualEffect:
       - m_Value: 1
         m_Name: HeatStrength
         m_Overridden: 1
-      - m_Value: 30
+      - m_Value: 18
         m_Name: BurstSpawnRate
         m_Overridden: 1
       - m_Value: 3
@@ -294,6 +296,9 @@ VisualEffect:
       - m_Value: 0
         m_Name: HasDuration
         m_Overridden: 1
+      - m_Value: 1
+        m_Name: HeatDistortionEnable
+        m_Overridden: 1
 --- !u!73398921 &7206304425667794233
 VFXRenderer:
   serializedVersion: 1
@@ -358,6 +363,58 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers: []
   m_Enabled: 1
+--- !u!114 &2586422653305916140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423612882063980489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cc4ac3cd20e75d4fbb9c21ad464e094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 5
+--- !u!114 &-4320647500222929676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423612882063980489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 727730ed2672a4648877bc993ee91c77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debugLog: 1
+  visualEffect: {fileID: 0}
+  properties:
+  - propertyName: ConstantSpawnRate
+    propertyType: 0
+    enableScaling: 1
+    highFloatValue: 0
+    highIntValue: 0
+    highBoolValue: 1
+    mediumBoolValue: 1
+    lowBoolValue: 0
+  - propertyName: BurstSpawnRate
+    propertyType: 0
+    enableScaling: 1
+    highFloatValue: 0
+    highIntValue: 0
+    highBoolValue: 1
+    mediumBoolValue: 1
+    lowBoolValue: 0
+  - propertyName: HeatDistortionEnable
+    propertyType: 2
+    enableScaling: 1
+    highFloatValue: 0
+    highIntValue: 0
+    highBoolValue: 1
+    mediumBoolValue: 1
+    lowBoolValue: 0
 --- !u!1 &7935441492398842590
 GameObject:
   m_ObjectHideFlags: 0

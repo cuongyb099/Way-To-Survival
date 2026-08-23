@@ -12,7 +12,8 @@ public class LaserTurretAtk : MonoBehaviour
     public float ATKDelay = 2f;                   // Độ trễ giữa các lần bắn
 
     [Header("Flare")]
-    public GameObject flarePrefab;                // Prefab của Flare (GameObject)
+    public GameObject flarePrefab;     
+    public string flarePoolName = "LaserFlare";           // Prefab của Flare (GameObject)
     public Transform flareSpawnPoint;             // Vị trí nguồn bắn (đầu phát laser)
     public int flarePoolSize = 10;                // Số lượng flare trong pool
     public float flareLifetime = 0.5f;            // Thời gian flare tồn tại trước khi tắt
@@ -33,9 +34,6 @@ public class LaserTurretAtk : MonoBehaviour
             animator = GetComponent<Animator>();
 
         baseAnimLength = GetAnimationLength(animationName);
-
-        InitializeFlarePool();
-
         StartCoroutine(FireRoutine());
     }
 
@@ -57,7 +55,7 @@ public class LaserTurretAtk : MonoBehaviour
             animator.Play(animationName, 0, 0f);
 
             // Spawn flare tại đầu phát
-            SpawnFlare();
+            SpawnFlare(this.transform.position, transform.rotation);
 
             // Thời gian chạy animation (đã chia theo tốc độ)
             float currentAnimLength = baseAnimLength / animator.speed;
@@ -71,29 +69,28 @@ public class LaserTurretAtk : MonoBehaviour
 
         isFiring = false;
     }
-
-    private void InitializeFlarePool()
+    private void SpawnFlare(Vector3 position, Quaternion rotation)
     {
         if (flarePrefab == null) return;
 
-        for (int i = 0; i < flarePoolSize; i++)
+        if (ObjectPoolManager.Instance != null &&
+            ObjectPoolManager.Instance.HasPool(flarePoolName))
         {
-            GameObject flare = Instantiate(flarePrefab);
-            flare.SetActive(false);
-            flarePool.Enqueue(flare);
+            ObjectPoolManager.Instance.SpawnFromPool(
+                flarePoolName,
+                position,
+                rotation);
         }
-    }
+        else
+        {
+            GameObject fire = Instantiate(
+                flarePrefab,
+                position,
+                rotation);
 
-    private void SpawnFlare()
-    {
-        if (flarePrefab == null || flareSpawnPoint == null || flarePool.Count == 0)
-            return;
-
-        GameObject flare = flarePool.Dequeue();
-
-        flare.transform.SetPositionAndRotation(flareSpawnPoint.position, flareSpawnPoint.rotation);
-        flare.SetActive(true);
-
+            Destroy(flarePrefab, 5f); // hoặc cùng thời gian tồn tại của hiệu ứng
+        }
+        GameObject flare = flarePrefab;
         // Kích hoạt lại particle/VFX (nếu có component)
         var ps = flare.GetComponent<ParticleSystem>();
         if (ps != null)
